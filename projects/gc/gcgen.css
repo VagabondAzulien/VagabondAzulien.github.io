@@ -1,0 +1,101 @@
+/*	
+	CSS Document for gcgen.theinternetvagabond.com
+	Written by Bill Niblock
+	http://www.theinternetvagabond.com
+*/
+
+/*=====================================================
+	Miscellaneous Styles
+=====================================================*/
+
+body{
+	margin-left:auto; margin-right:auto; width: 900px; max-width: 900px;
+}
+
+.clean{	clear:both;}
+
+.top{
+	margin-left:auto; margin-right:auto; height: 30px; width: 400px;
+	padding: 10px;
+	background-color: lightgrey; border: 2px solid black;
+	text-align: center; vertical-align: middle;
+	font-weight: bolder;
+	color: darkgreen;
+}
+
+.main{
+	z-index: 5;
+}
+
+.bottom_message{
+	padding: 10px;
+	margin-left:auto; margin-right:auto; width: 700px;
+}
+
+.bot_text{
+	float:left; padding-top: 15px;
+	font: bold 15px arial,sans-serif;
+}
+
+.bot_button{
+	float:left;
+	margin-left: 10px; padding: 5px; width: 100px; height: 20px;
+	background-color: #7777DD; border: 1px solid grey;
+	text-align: center; cursor: pointer;
+}
+
+/*=====================================================
+	Choice-Area Styles
+=====================================================*/
+
+.choice_options{
+	padding: 10px;
+	margin-left:auto; margin-right:auto; width: 750px;
+}
+
+.choice{
+	float:left;
+	margin: 0px 50px; padding: 5px; width: 200px; height: 20px;
+	background-color: #D9D9D9; border: 1px solid grey;
+	text-align: center; cursor: pointer;
+}
+
+.notTHEchoice{
+	visibility: hidden;
+}
+
+.help{
+	float:left;
+	padding: 5px; width: 100px; height: 20px;
+	background-color: #DD5555; border: 1px solid black;
+	text-align: center; cursor: pointer;
+}
+
+/*=====================================================
+	Main-Area Styles
+=====================================================*/
+
+.generation_help{
+	display:none;
+	background-color: #DD5555; border: 2px solid red;
+	padding: 30px;
+	font: bold 15px arial,sans-serif; color: black;
+}
+
+.generation_opt{
+	display:none;
+	padding: 30px;
+	font: bold 15px arial,sans-serif;
+}
+
+.gen_stats{
+	float:left;
+	padding: 10px; width: 150px;
+}
+
+.gen_info{
+	float:left;
+	padding: 10px; width: 650px;
+}
+
+

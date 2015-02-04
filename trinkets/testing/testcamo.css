@@ -1,0 +1,296 @@
+/*   
+     CSS for www.theinternetvagabond.com
+     Written by Bill Niblock
+*/
+
+/* =============================
+		Utility Styles 
+============================= */
+
+	/* Font used for sub title.
+		Font found on http://www.fontspace.com
+		Font created by Michael Tension (mtension AT gmail DOT com)
+	*/
+	@font-face{
+		font-family: "header sub";
+		src: url("../trinkets/Prophecy_Script.ttf") format("truetype");
+	}
+	.clean{	clear:both;}
+	
+	body{
+		margin: 0px auto 0px auto; width: 1500px; max-width: 1500px;
+	}
+	
+/* =============================
+		Header Styles 
+============================= */
+	.header{
+		position:relative; top:-40px; left:-20px;
+		height:300px; width: 1500px;
+		background: url("cardboard_slogan1_small.png") no-repeat left top;
+	}
+	.header_title{
+		margin-left: 315px; margin-top: 40px;
+		float:left;
+	}
+		
+		.header_title_word{
+			float:left;
+			font: 2.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-style: italic; text-shadow: 2px 2px lightgrey; letter-spacing: 8px;
+		}
+		
+		.header_title_word:first-letter{
+			font: 2.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			vertical-align: -20px;
+			font-style: italic; text-shadow: 0px 0px white;
+		}
+	
+	.header_sub{ 
+		font: 1.2em "header sub";
+		text-align: center; vertical-align: center;
+		font-style: italic;
+	}
+	
+		.header_sub_border1{
+			padding-left: 250px; margin-left: -140px; margin-right: -5px;
+			border-top: 5px solid blue; border-top-right-radius: 10px;
+			border-right: 5px solid blue;
+		}
+	
+		.header_sub_border2{
+			padding: 0px 50px 10px 25px;
+			border-left: 5px solid blue; border-bottom-left-radius: 10px;
+			border-bottom: 5px solid blue;
+		}
+	
+	.header_other_buttons{
+		position: fixed; top: 0px; right:0px; width: 100px;
+		margin-top: 10px;
+	}
+			
+		.header_other_buttons_links{
+			list-style: none;
+		}
+		
+		.header_other_buttons_links_link{
+			position: relative;
+			margin-top: 20px; width: 50px; height: 50px; overflow: hidden; white-space: nowrap; padding-left: auto;
+			border-top: 5px solid DarkSlateBlue; border-left: 5px solid DarkSlateBlue; border-bottom: 5px solid DarkSlateBlue;
+			border-top-left-radius: 10px; border-bottom-left-radius: 10px;
+			background-color: SlateBlue; text-align: right; 
+			-o-transition-property: width, margin-left;
+			-moz-transition-property: width, margin-left;
+			-webkit-transition-property: width, margin-left;
+			-o-transition-duration: 1s, 1s;
+			-moz-transition-duration: 1s, 1s;
+			-webkit-transition-duration: 1s, 1s;
+		}
+		
+		.header_other_buttons_links_link:hover{
+			width: 200px;
+			margin-left: -150px;
+		}
+		
+		.hobll_img{
+			position: absolute; left: 0px; z-index: 2;
+			background-color: SlateBlue;
+		}
+		
+		.hobll_text{
+			position: absolute; right: 0px;
+			line-height: 50px; vertical-align: 12px;
+			font: 2.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			color: grey; text-shadow: 2px 2px black; letter-spacing: 3px;
+		}
+
+/* =============================
+		New Footer Styles 
+============================= */	
+	.footer{
+		position: fixed; bottom: -20px; left: 10px; right: 10px; height: 17px; z-index: 10;
+		border: 1px #666699 solid; border-top-left-radius: 5px; border-top-right-radius: 5px;
+		background-color: #666699;
+		-o-transition-property: bottom;
+		-moz-transition-property: bottom;
+		-webkit-transition-property: bottom;
+		-o-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-webkit-transition-duration: 1s;
+	}
+	.footer:hover{ bottom: 0px;}
+	.footer_notice{
+		position: absolute; left: 0px; right: 0px; margin-left: auto; margin-right: auto; width: 400px;
+		text-align: center;
+	}
+	.footer_notice_text{
+		font-weight: lighter; font-size: 10px; letter-spacing: 2px; color: #444444;
+		padding: 1px 7px; margin: -6px 10px 0px; 
+		border: 3px #996666 solid; border-radius: 5px;
+		background-color: #CC9999;
+		cursor: pointer;
+	}
+	
+/* =============================
+		Main Styles 
+============================= */
+	.main{
+		float: left;
+		position: absolute; top: 250px;
+		max-width: 1500px; height: 1000px;
+	}
+
+	.main_leftbar{
+		float:left; position: relative; left: 100px; top: 50px;
+		width: 15%;
+	}
+		
+		.leftbar{
+		/*margin-left: 125px; margin-top: 150px;*/
+		padding: 0px 0px 50px 0px;
+	}
+		
+		.leftbar_border1{
+			width: 30px; height: 300px;
+			padding-left: 10px; padding-bottom: 0px; margin-left: -10px;
+			border-left: 5px solid blue; border-bottom-left-radius: 10px;
+			border-bottom: 5px solid blue;
+			font: bolder 22px "Courier New", Courier, monospace;
+			text-shadow: 2px 2px lightgrey;
+			color: blue;
+		}
+			
+		.leftbar_border2{
+			width: 20px; padding-left: 10px; margin-left: 6px; margin-top: -5px;
+			border-top: 5px solid blue; border-top-right-radius: 10px;
+			border-right: 5px solid blue; border-bottom-left-radius: 0px;
+		}
+		
+			.leftbar_links{
+				margin-left: -44px; z-index: 8;
+				list-style: none;
+			}
+		
+			.leftbar_links_link{
+				position: relative;
+				height: 40px; width: 40px; margin-top: 15px; margin-bottom: 15px;
+				background-color: white; white-space: nowrap; overflow: hidden;			
+				border: 5px solid blue; border-radius: 10px;
+				-o-transition-property: width;
+				-moz-transition-property: width;
+				-webkit-transition-property: width;
+				-ms-transition-property: width;
+				-o-transition-duration: 1s;
+				-moz-transition-duration: 1s;
+				-webkit-transition-duration: 1s;
+				-ms-transition-duration: 1s;
+			}
+			
+			.leftbar_links_link:hover{
+				width: 180px;
+			}
+
+			.lbll_text{
+				float: left; position: absolute; right: 0px; width: 140px; height: 100%; z-index: 9;
+				font: 1.7em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				text-shadow: 2px 2px lightgrey; letter-spacing: 1px; text-align: right;
+			}
+			.lbll_img{
+				float: left; position: absolute; left: 0px; z-index: 10;
+			}
+
+	.main_posts{
+		float:left; position: relative; top: -100px;
+		margin: 0px auto 0px 50px;
+		width: 80%; max-width: 1300px;
+	}
+		
+/* =============================
+		Post Styles 
+============================= */
+	.dyna_post{
+		display: none;
+		background-color: #DD5555; border: 2px solid red; border-radius: 10px;
+		padding: 10px; height: 120px;
+		font: 15px "Lucida Sans Unicode", "Lucida Grande", sans-serif; color: black;
+	}
+	
+		.about_cont{
+			display: none;
+		}
+	
+		.about_title{
+			float:left;
+			font: 2.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-style: italic; text-shadow: 2px 2px lightgrey; letter-spacing: 8px;
+		}
+		
+		.about_title:first-letter{
+			font: 2.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			vertical-align: -20px;
+			font-style: italic; text-shadow: 3px 3px lightgrey;
+		}
+		
+		.about_info{
+			padding-left: 250px;
+		}
+		
+		.sort_cont{
+			display: none;
+		}
+		
+		.sort_title{
+			float:left;
+			font: 2.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-style: italic; text-shadow: 2px 2px lightgrey; letter-spacing: 8px;
+		}
+		
+		.sort_title:first-letter{
+			font: 2.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			vertical-align: -20px;
+			font-style: italic; text-shadow: 3px 3px lightgrey;
+		}
+		
+		.sort_info{
+			padding-left: 250px; height: 100px;
+		}
+	
+	.text_post{
+		height: 150px; overflow: hidden;
+		padding: 10px 200px 10px 30px; margin: 50px 0px;
+	}
+	
+		.text_post#gplus{
+			border-top: 5px solid green; border-left: 5px solid gold; border-bottom: 5px solid blue; border-right: 5px solid red;
+			/*background: url('') no-repeat top right; */
+			
+		}
+		
+		.text_post#twit{
+			border: 5px solid lightblue; border-radius: 10px;
+		
+		}
+		
+		.text_post#vaga{
+			border: 5px solid black; border-top-right-radius: 25px; border-bottom-left-radius: 25px;
+		
+		}
+	
+		.text_post#other{
+			display: none;
+		
+		}
+		
+/* =======================================
+		Responsive -- Width: 1024
+======================================= */
+		
+		
+/* =======================================
+		Responsive -- Width: 700
+======================================= */		
+
+
+/* =======================================
+		Responsive -- Width: 480
+======================================= */

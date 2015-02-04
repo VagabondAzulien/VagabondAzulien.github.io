@@ -1,0 +1,150 @@
+<!--
+	+++++++++++++++++++++++++++++++++++++++++++++
+	|	JS for gcgen.theinternetvagabond.com	|
+	|	By Bill "VagabondAzulien" Niblock		|
+	|	Copyright 2012 TheInternetVagabond		|
+	+++++++++++++++++++++++++++++++++++++++++++++
+
+	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	|	A generator for quickly making characters for Bill Adcock's Green City setting.		|
+	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<html>
+	<head>
+		<title>Green City Character Generator</title>
+		<meta name="description" content="Character generator for Bill Adcock's 'Green City' Campaign" />
+		<meta name="keywords" content="internet, vagabond green city character" />
+		<meta name="author" content="Bill 'Vagabond Azulien' Nibz" />
+	
+		<link rel="stylesheet" type="text/css" href="gcgen.css" />
+		<link rel="stylesheet" type="text/css" href="../../doodads/footercss.css" />
+		<script type="text/javascript" src="../../doodads/jquery.js"></script>
+		<script type="text/javascript" src="../../doodads/vagabondsigns.js"></script>
+		<script type="text/javascript" src="gcgen.js"></script>
+	</head>
+	
+	<body>
+		<div class="top">Green City Character Generator</div>
+		<div class="main">
+		<!-- This section determines how the generator proceedes -->	
+			<div class="choice_options">
+				<div class="choice" id="option1">Choose Your Class</div>
+				<div class="help" id="option_help">--HELP--</div>
+				<div class="choice" id="option2">Choose Your Stats</div>
+			</div>
+			<div class="clean"></div>
+		<!-- This section falls beneath the above section, and depending on which option is chosen
+			will display the next appropriate steps in finishing up character development. -->
+			<!-- The HELP option; Explains what the options mean. -->
+			<div class="generation_help" id="gen_help">
+				<p> To begin generating a character, select one of the two generation options (as explained below). If you wish
+					to generate another character, simply refresh the page.
+					<br />
+				</p>
+				<p>	There are two ways to generate a character.
+					<ul>
+						<li>The first option allows you to choose your class. You first roll your stats, which get applied to your
+						attributes in the order your rolled them. You then choose a class which best fits your attributes.</li>
+						<br />
+						<li>The second options allows you to choose your stats. You first roll your stats, which you get to place
+						in whichever attributes you choose. You then are randomly assigned a class.</li>
+					</ul>
+				</p>
+			</div>
+			<!-- The FIRST option; Choose your class. -->
+			<div class="generation_opt" id="generation1">
+				<div>
+					<div class="gen_stats">
+						<ul>
+							<li>CHA: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>CON: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>DEX: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>INT: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>STA: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>WIS: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+						</ul>
+					</div>
+					<div class="gen_info">
+						<ul>
+							<li>You choose to live life as a daring... 
+								<select id="clsDD">
+									<option id="clsHP" value="10">Dwarf</option>
+									<option id="clsHP" value="6">Cleric</option>
+									<option id="clsHP" value="8">Fighter</option>
+									<option id="clsHP" value="4">Magic-User</option>
+									<option id="clsHP" value="6">Specialist</option>
+									<option id="clsHP" value="6">Elf</option>
+								</select>
+							</li>
+							<br />
+							<li>You begin with <span id="showHPArea"></span> (+CON modifier) maximum hit points.</li>
+							<br />
+							<li>You begin your adventure with <script type="text/javascript">document.write(rollChar_wealth())</script> silver pieces.</li>
+							<br />
+							<li><script type="text/javascript">document.write(rollChar_BItems())</script></li>
+							<br />
+						</ul>
+					</div>
+				</div>
+				<div class="clean"></div>
+				<div class="bottom_message">
+					<div class="bot_text">Now just choose a name and you're ready to play! Or perhaps you'd like to... </div>
+					<div class="bot_button" onClick="location.reload(true)">Roll Again</div>
+				</div>
+			</div>
+			<!-- The SECOND option; Choose your stats. -->
+			<div class="generation_opt" id="generation2">
+				<div>
+					<div class="gen_stats">
+						<ul>
+							<li>Stat 1: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>Stat 2: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>Stat 3: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>Stat 4: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>Stat 5: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+							<li>Stat 6: <script type="text/javascript">document.write(rollChar_stat())</script></li>
+							<br />
+						</ul>
+					</div>
+					<div class="gen_info">
+						<ul>
+							<li><script type="text/javascript">document.write(rollChar_Class())</script></li>
+							<br />
+							<li>You begin with <script type="text/javascript">document.write(rollChar_HP())</script> (+CON modifier) maximum hit points.</li>
+							<br />
+							<li>You begin your adventure with <script type="text/javascript">document.write(rollChar_wealth())</script> silver pieces.</li>
+							<br />
+							<li><script type="text/javascript">document.write(rollChar_BItems())</script></li>
+							<br />
+						</ul>
+					</div>
+				</div>
+				<div class="clean"></div>
+				<div class="bottom_message">
+					<div class="bot_text">Now just choose a name and you're ready to play! Or perhaps you'd like to... </div>
+					<div class="bot_button" onClick="location.reload(true)">Roll Again</div>
+				</div>
+			</div>
+		</div>
+		
+	<!-- Vagabond Footer -->
+		<div class="footer">
+			<div class="footer_notice">
+				<div id="vagabond_notice" class="footer_notice_text" onClick="cycleArray()">The Internet Vagabond &copy 2009-2012</div>
+			</div>
+		</div>
+	<!-- End Footer -->
+	</body>
+</html>

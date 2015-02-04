@@ -1,0 +1,278 @@
+/*   
+     CSS for hmu.theinternetvagabond.com
+     Written by Bill Niblock
+*/
+
+/* =============================
+		Meta Styles 
+============================= */
+	.clean{	clear:both;}
+	
+	.error{
+		margin: auto; padding-top: 10%;
+		width: 400px; height: 400px;
+		font: bolder 16px serif; color: red;
+		text-align: center; letter-spacing: 2px; vertical-align: middle;
+	}
+	
+	body { background-color: ;}
+	
+	.header{
+		position: fixed; top: 0px; left: 0px; right: 0px;
+	}
+	
+	.torso{
+		position: fixed; top: 100px; left: 0px; right: 0px; bottom: 75px;
+	}
+	
+/* =============================
+		Title Styles 
+============================= */
+	.title_cont{
+		float: left;
+		position: relative; top: 0px; left: 20px;
+	}
+	.title{
+		font: italic bolder 24px serif;
+		color: blue; letter-spacing: 5px;
+	}
+	.btitle{
+		font: italic bolder 58px serif;
+		color: red;
+	}
+	.utitle{
+		width: 100%; margin: 0px 0px 20px 75px; height: 2px; border-width: 0px;
+		color: yellow; background-color: yellow;
+	}
+	.stitle{
+		position: absolute; right: -70px; bottom: -10px;
+	}
+
+/* =============================
+		Current Fight Styles 
+============================= */
+	.current_cont{
+		float: left;
+		position: absolute; top: 15px; right: 30px;
+	}
+	.current{
+		float: left;
+		position: absolute; right: 0px; width: 800px;
+	}
+	.current_team#team1{
+		float: left; width: 300px; height: 25px;
+		padding: 5px 10px 0px 10px; margin: 0px 10px;
+		border: 3px solid brown; background-color: #D29494;
+		font: italic bold 16px serif; text-align: center;
+		cursor: pointer;
+	}
+	.current_team#team2{
+		float: left; width: 300px; height: 25px;
+		padding: 5px 10px 0px 10px; margin: 0px 10px;
+		border: 3px solid orange; background-color: #FFD280;
+		font: italic bold 16px serif; text-align: center;
+		cursor: pointer;
+	}
+	.current_vs{
+		float: left; width: 50px; padding: 7.5px 0px 0px 0px;
+		font: bold 20px; text-align: center;
+		color: black; text-decoration: overline underline;
+	}
+	.current_arena{
+		position: relative; bottom: -10px; right: 30px; width: 400px; height: 20px;
+		padding: 2px 20px; margin-left: auto; margin-right: auto;
+		border: 3px solid black; background-color: lightgrey;
+		font: italic bold 16px serif; text-align: center; vertical-align: middle;
+		cursor: pointer;
+	}
+	
+/* =============================
+		Menu Styles 
+============================= */
+	.menu_cont{
+		position: relative; top: 10px;
+		margin-left: auto; margin-right: auto; width: 1060px;
+		padding: 0px 0px 0px 0px;
+	}
+	.menu_item{
+		float: left; width:150px; height: 28px;
+		background-color: white;
+		display: block; text-align: center; color: blue;
+		font-size: 24px; letter-spacing: 2px;
+		border: 3px solid blue; border-radius: 20px;
+		margin-left: 10px; margin-right: 10px;
+		cursor: pointer;
+	}
+	.menu_item_selected{
+		float: left; width:150px; height: 28px;
+		background-color: blue;
+		display: block; text-align: center; color: yellow;
+		font-size: 24px; letter-spacing: 2px;
+		border: 3px solid blue; border-radius: 20px;
+		margin-left: 10px; margin-right: 10px;
+		cursor: crosshair;
+	}
+
+/* =============================
+		Footer Styles 
+============================= */
+	.tiv_footer{
+		position: fixed; bottom: -20px; left: 10px; right: 10px; height: 17px; z-index: 10;
+		border: 1px #666699 solid; border-top-left-radius: 5px; border-top-right-radius: 5px;
+		background-color: #666699;
+		-o-transition-property: bottom;
+		-moz-transition-property: bottom;
+		-webkit-transition-property: bottom;
+		-o-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-webkit-transition-duration: 1s;
+	}
+	.tiv_footer:hover{ bottom: 0px;}
+	
+	.tiv_footer_notice{
+		position: absolute; left: 0px; right: 0px; margin-left: auto; margin-right: auto; width: 400px;
+		text-align: center;
+	}
+	.tiv_footer_notice_text{
+		font-weight: lighter; font-size: 10px; letter-spacing: 2px; color: #444444;
+		padding: 1px 7px; margin: -6px 10px 0px; 
+		border: 3px #996666 solid; border-radius: 5px;
+		background-color: #CC9999;
+		cursor: pointer;
+	}
+	
+/* =============================
+		Main Styles 
+============================= */
+	.main{
+		position: relative; top: 15px;
+		margin-left: auto; margin-right: auto; 
+		width: 100%; max-width: 1600px; height: 100%;
+		overflow: auto;
+	}
+
+/* =============================
+		Main Styles - Stories 
+============================= */
+	.stories{
+		margin-left: auto; margin-right: auto; padding-top: 2%;
+		min-width: 1000px; max-width: 1000px; width: 1000px;
+	}
+	.story_cont{
+		border: 2px solid blue; border-radius: 10px;
+		font: 18px serif;
+	}
+	.story_title{
+		padding: 5px 5px 5px 30px;
+		background-color: blue; color: yellow;
+		border-top-left-radius: 8px; border-top-right-radius: 8px;
+	}
+	.story_details{
+		padding: 10px;
+	}
+	.story_cont[id^=fight] .story_details{
+		display: none;
+	}
+
+/* =============================
+		Main Styles - Heroes 
+============================= */
+
+
+/* =============================
+		Main Styles - Teams 
+============================= */
+	.teams{
+		margin-left: auto; margin-right: auto; padding-left: 3%;
+		min-width: 1200px; max-width: 1200px; width: 1200px;
+	}
+	.team_cont{
+		float: left; width: 480px; height: 150px;
+		padding: 10px; margin: 3%;
+		border-top: 4px solid darkgrey; border-left: 4px solid darkgrey;
+		border-right: 4px solid grey; border-bottom: 4px solid grey;
+		box-shadow: 15px 20px 5px #D9D9D9;
+	}
+	.team_cont#team1{
+		background-color: #D29494;
+	}
+	.team_pic{
+		float: left; width: 140px; height: 140px; z-index: 1;
+		margin-top: 2px; margin-bottom: 2px; margin-left: 2px;
+		border: 2px solid grey;	outline: 2px solid darkgrey;
+		background-color: white;
+	}
+	.team_syn{
+		float: left;
+		width: 300px; height: 140px;
+		padding: 15px;
+	}
+	.team_title{
+		font: bold 20px serif;
+	}
+	.team_about{
+		font: 16px serif;
+	}
+
+	/*The Info-Popup Styles for the Teams page */
+	
+	.info_popup{
+		position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 2;
+		display: none;
+	}
+	.info_popup_background{
+		position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 3;
+		margin-left: auto; margin-right: auto; padding: 20px;
+		background-color: black;
+		display: none;
+	}
+	.info_popup_foreground{
+		position: relative; top: 5%; bottom: 5%; z-index: 4;
+		margin-left: auto; margin-right: auto; width: 500px; height: 90%;
+		background-color: white;
+	}
+	.info_popup_close{
+		position: absolute; top: 2px; right: 2px; padding-left: 5px;
+		background-color: darkred; color: lightgrey;
+		font: 10px sans-serif; letter-spacing: 5px; text-align: center;
+		cursor: crosshair;
+	}
+	.info_popup_detail{
+		padding: 20px;
+	
+	}
+	
+/* =============================
+		Main Styles - Arenas 
+============================= */
+	.arenas{
+		margin-left: auto; margin-right: auto; padding-left: 3%;
+		min-width: 1200px; max-width: 1200px; width: 1200px;
+	}
+	.arena_cont{
+		float: left; width: 40%; height: 100px;
+		padding: 10px; margin: 3%; background-color: #FAFAFA;
+		border-top: 4px solid darkgrey; border-left: 4px solid darkgrey;
+		border-right: 4px solid grey; border-bottom: 4px solid grey;
+		box-shadow: 15px 20px 5px #D9D9D9;
+	}
+	.arena_title{
+		font: bold 20px serif;
+		text-align: center;
+	}
+	.arena_limit{
+		font: bold 12px serif;
+		text-align: right;
+	}
+	.arena_about{
+		font: italic 16px serif;
+	}
+
+/* =============================
+		Main Styles - Results 
+============================= */
+
+
+/* =============================
+		Main Styles - Login/Betting 
+============================= */
