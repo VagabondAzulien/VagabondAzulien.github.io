@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>The Internet Vagabond :: Home</title>
+
+        <meta name="description" 
+              content="Rants of a wandering techy, in search of truth, knowledge, and a decent ping." />
+	<meta name="keywords" content="internet, vagabond" />
+	<meta name="author" content="Bill 'Vagabond Azulien' Nibz" />
+	
+	<link rel="stylesheet" type="text/css" href="css2.css" />
+	<script type="text/javascript" src="testing/jquery.js"></script> 
+	<script type="text/javascript" src="testing/test.js"></script>
+</head>
+<body>
+
+<!-- Top Bar -->
+     <div id="top" class="top">
+          <div id="icon"><img /></div>
+          <div id="bar"></div>
+          <div id="follow">
+               <div id="gplus"></div>
+               <div id="tweet"></div>
+               <div id="twitc"></div>
+          </div>
+     </div>
+
+<!-- Main Content Section -->
+     <div id="mid" class="mid">
+          <div id="post"></div>
+     </div>
+
+<!-- Footer -->
+     <div id="bottom" class="bottom">
+          <ul id="info">
+               <li id="license"></li>
+               <li id="contact"></li>
+          </ul>
+     </div>
+
+</body>
