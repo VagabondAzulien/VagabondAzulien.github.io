@@ -5,7 +5,6 @@
 
         <meta name="description" 
               content="Rants of a wandering techy, in search of truth, knowledge, and a decent ping." />
-	<meta name="keywords" content="internet, vagabond" />
 	<meta name="author" content="Bill 'Vagabond Azulien' Nibz" />
 	
 	<link rel="stylesheet" type="text/css" href="css2.css" />
@@ -18,11 +17,11 @@
      <div id="top" class="top">
           <div id="icon"><img /></div>
           <div id="bar"></div>
-          <div id="follow">
-               <div id="gplus"></div>
-               <div id="tweet"></div>
-               <div id="twitc"></div>
-          </div>
+          <ul id="follow">
+               <li id="gplus"></li>
+               <li id="tweet"></li>
+               <li id="twitc"></li>
+          </ul>
      </div>
 
 <!-- Main Content Section -->
@@ -33,9 +32,15 @@
 <!-- Footer -->
      <div id="bottom" class="bottom">
           <ul id="info">
-               <li id="license"></li>
-               <li id="contact"></li>
+               <li id="license">i
+                    <a href="http://www.wtfpl.net/">
+                         <img src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-2.png"
+                              width="80" height="15" alt="WTFPL" />
+                    </a>
+               </li>
+               <li id="cwrite">&copy 2015 - Niblock</li>
           </ul>
      </div>
 
 </body>
+</html>
