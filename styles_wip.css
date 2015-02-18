@@ -1,0 +1,97 @@
+/*
+ * CSS for theinternetvagabond.com
+ * (C)2015 Bill Niblock
+ * Licensed under the WTFPL [http://www.wtfpl.net]
+ */
+
+/* General */
+
+.clean { clear:both;}
+
+body {
+     position: relative; 
+}
+
+/* Header */
+header {
+     position: fixed; top: 0px; left: 0px; right: 0px;
+     margin: 0px; padding: 10px; z-index: 5;
+     background-color: white;
+     border-bottom: 1px solid lightgrey;
+     box-shadow: 0px 2px 10px -5px blue;
+}
+
+header a {
+     position: absolute; top: 10px; right: 10px;
+     color: white; text-shadow: 0px 0px 5px blue;
+}
+
+#title {
+     float: left;
+     list-style: none;
+     margin: 0px; padding: 0px;
+}
+
+#title li {
+     float:left; margin: 0px; padding: 0px;
+     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 1.2em;
+}
+
+#title li::first-letter {
+     margin: 0px; padding: 0px 2px;
+     font: 1.3em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     color: white; text-shadow: 0px 0px 10px blue;
+}
+
+/* Body */
+main {
+     margin: 40px 40px; padding: 10px; z-index: 0;
+     background-color: #F0F5F5;
+}
+/* Sidebar */
+#navbar {
+     position: fixed; top: 0px; right: 0px; bottom: 0px;
+     width: 0px; margin: 0px; padding: 0px; z-index: 10;
+     background-color: #202020;
+     transition: width 0.5s ease;
+}
+
+#navbar:target {
+     width: 300px;
+}
+
+#follow {
+     position: absolute; right: 0px; height: 32px;
+     overflow: hidden; white-space: nowrap;
+     float: right;
+     list-style: none;
+     margin: 0px; padding: 0px; vertical-align: middle;
+}
+
+#follow li {
+     float: left;
+     padding: 0px 9px;
+}
+
+#navigation {
+     position: absolute; top: 50px; bottom: 40px;
+     list-style: none;
+}
+
+#navigation li {
+     padding: 10px 0px;
+     color: #888888;
+}
+
+#info {
+     float: left; position: absolute; bottom: 0px; 
+     padding: 0px; margin: 0px auto; height: 20px;
+     list-style: none;
+     margin: 0px auto;
+}
+
+#info li {
+     float: left; margin: 0px; padding: 0px 5px;
+     color: #888888;
+}
