@@ -24,7 +24,7 @@ header {
 #title {
      float: left;
      list-style: none;
-     margin: 0px; padding: 0px;
+     margin: 0px 25px; padding: 0px;
 }
 
 #title li {
@@ -50,11 +50,15 @@ main {
      width: 400px; margin: 0px; padding: 0px; z-index: 10; opacity: 100%
 }
 
-#navbar div {
+#navbar #bar {
      position: absolute; top: 0px; right: 0px; bottom: 0px;
-     width: 0px; margin: 0px; padding: 0px; overflow: hidden; white-space: nowrap;
+     width: 0px; margin: 0px; padding: 0px; overflow-x: hidden; white-space: nowrap;
      background-color: #202020;
      transition: width 0.5s ease;
+}
+
+#navbar a {
+     text-decoration: none;
 }
 
 #navbar #toggle-navbar {
@@ -64,29 +68,29 @@ main {
 #navbar #toggle {
      position: absolute; right: 0px;
      margin: 0px; padding: 13px 25px; z-index: 11;
-     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     font: 1.3em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
      color: darkgrey;  text-shadow: 0px 0px 5px white;
 }
 
-#toggle-navbar:checked + div {
+#toggle-navbar:checked + #bar {
      width: 300px;
 }
 
 #follow {
-     position: absolute; bottom: 100px; 
-     list-style: none;
-     margin: 0px; padding: 0px; vertical-align: middle;
+     position: absolute; bottom: 100px; left: 0px;
+     width: 100%; margin: 0px auto; padding: 0px;
+     text-align: center;
 }
 
-#follow li {
-     float: left;
+#follow a {
      padding: 0px 9px;
 }
 
 #navigation {
-     position: absolute; top: 20%;
+     position: absolute; top: 12%; bottom: 18%; left: 0px; right: 0px;
      list-style: none;
      margin: 10px;
+     border-bottom: 1px solid grey;
 }
 
 #navigation li {
@@ -96,12 +100,16 @@ main {
 
 #info {
      position: absolute; bottom: 0px; 
-     padding: 10px; margin: 10px auto; 
-     list-style: none;
-     width: 100%; margin: 0px auto;
+     padding: 10px; margin: 10px auto; overflow-x: hidden;
+     width: 100%; margin: 0px auto; text-align: center;
 }
 
-#info li {
-     float: left; margin: 0px; padding: 0px 5px;
-     color: #888888;
+#info #cw {
+     margin: 0px auto; padding: 10px 0px; width: 100%; 
+     font: 0.9em "Lucida Sans Unicode", "Lucida Grande", sans-serif; text-align: center;
+     letter-spacing: 0.4em; color: grey;
+}
+
+#info a {
+     padding: 0px 5px;
 }
