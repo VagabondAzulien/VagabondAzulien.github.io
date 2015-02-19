@@ -21,11 +21,6 @@ header {
      box-shadow: 0px 2px 10px -5px blue;
 }
 
-header a {
-     position: absolute; top: 10px; right: 10px;
-     color: white; text-shadow: 0px 0px 5px blue;
-}
-
 #title {
      float: left;
      list-style: none;
@@ -52,19 +47,33 @@ main {
 /* Sidebar */
 #navbar {
      position: fixed; top: 0px; right: 0px; bottom: 0px;
-     width: 0px; margin: 0px; padding: 0px; z-index: 10;
+     width: 400px; margin: 0px; padding: 0px; z-index: 10; opacity: 100%
+}
+
+#navbar div {
+     position: absolute; top: 0px; right: 0px; bottom: 0px;
+     width: 0px; margin: 0px; padding: 0px; overflow: hidden; white-space: nowrap;
      background-color: #202020;
      transition: width 0.5s ease;
 }
 
-#navbar:target {
+#navbar #toggle-navbar {
+     display:none;
+}
+
+#navbar #toggle {
+     position: absolute; right: 0px;
+     margin: 0px; padding: 13px 25px; z-index: 11;
+     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     color: darkgrey;  text-shadow: 0px 0px 5px white;
+}
+
+#toggle-navbar:checked + div {
      width: 300px;
 }
 
 #follow {
-     position: absolute; right: 0px; height: 32px;
-     overflow: hidden; white-space: nowrap;
-     float: right;
+     position: absolute; bottom: 100px; 
      list-style: none;
      margin: 0px; padding: 0px; vertical-align: middle;
 }
@@ -75,20 +84,21 @@ main {
 }
 
 #navigation {
-     position: absolute; top: 50px; bottom: 40px;
+     position: absolute; top: 20%;
      list-style: none;
+     margin: 10px;
 }
 
 #navigation li {
-     padding: 10px 0px;
+     padding: 10px 10px;
      color: #888888;
 }
 
 #info {
-     float: left; position: absolute; bottom: 0px; 
-     padding: 0px; margin: 0px auto; height: 20px;
+     position: absolute; bottom: 0px; 
+     padding: 10px; margin: 10px auto; 
      list-style: none;
-     margin: 0px auto;
+     width: 100%; margin: 0px auto;
 }
 
 #info li {
