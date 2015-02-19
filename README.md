@@ -1,12 +1,4 @@
-+======================================================+
-+                                                      +
-+    README / CHANGELOG FOR THEINTERNETVAGABOND.COM    +
-+                                                      +
-+======================================================+
 
-======
-README
-======
 
 This site is a small chunk of virtual real-estate for Bill Niblock.
 
@@ -15,9 +7,7 @@ All stuff here is my opinion yada yada yada.
 Nothing I say is profound or visionary, and sometimes it makes sense.
 
 
-=========
-CHANGELOG
-=========
+###CHANGELOG
 
 
 2015/02/09
