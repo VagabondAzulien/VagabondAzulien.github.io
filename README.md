@@ -16,6 +16,7 @@ Nothing I say is profound or visionary, and sometimes it makes sense.
 ######2015/02/21
 * + Replaced old site with new site
 * - Removed old site files (moved to archive)
+
 ######2015/02/09
 * + Updated WIP files (significantly)
 * - Removed a lot of useless files
