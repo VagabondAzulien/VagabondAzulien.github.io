@@ -2,114 +2,82 @@
 <html>
 <head>
 	<title>The Internet Vagabond :: Home</title>
-	<meta name="description" content="The rants of the wandering computer scientist, constantly in search of truth, knowledge, and a decent ping." />
-	<meta name="keywords" content="internet, vagabond" />
+
+        <meta name="description" 
+              content="Rants of a wandering techy, in search of truth, knowledge, and a decent ping." />
 	<meta name="author" content="Bill 'Vagabond Azulien' Nibz" />
 	
-	<link rel="stylesheet" type="text/css" href="css2.css" />
-	<script type="text/javascript" src="trinkets/testing/jquery.js"></script> 
-	<script type="text/javascript" src="trinkets/testing/test.js"></script>
+	<link rel="stylesheet" type="text/css" href="src/styles.css" />
 </head>
 <body>
-	
-	<div id="page">
-	
-	<!-- Left-Bar -->
 
-<div class="lft_col">
-<section class="leftbar">
-<header class="leftbar_border1"><br />F<br />O<br />L<br />L<br />L<br />O<br />W<br /><br />M<br />E<br /></header>
-<div class="leftbar_border2">
-<ul class="leftbar_links">
-        <li class="leftbar_links_link">
-                <a href="https://plus.google.com/108889767571068230161" title="The Internet Vagabond on Google+!">
-                        <div class="lbll_img"><img src="trinkets/testing/gplogo_small.png" alt="Google+" /></div>
-                        <div class="lbll_text">Google+&nbsp </div>
-                        <div class="clean"></div>
-                </a>
-        </li>
-        <li class="leftbar_links_link">
-                <a href="https://twitter.com/#!/Azulien" title="The Internet Vagabond on Twitter!">
-                        <div class="lbll_img"><img src="trinkets/testing/twlogo_small.png" alt="Twitter" /></div>
-                        <div class="lbll_text">Twitter&nbsp </div>
-                        <div class="clean"></div>
-                </a>
-        </li>
-        <li class="leftbar_links_link">
-                <a href="http://www.youtube.com/user/TheInternetVagabond" title="The Internet Vagabond on YouTube!">
-                        <div class="lbll_img"><img src="trinkets/testing/ytlogo_small.png" alt="YouTube" /></div>
-                        <div class="lbll_text">YouTube&nbsp </div>
-                        <div class="clean"></div>
-                </a>
-        </li>
-        <li class="leftbar_links_link">
-                <a href="http://steamcommunity.com/id/azulien" title="The Internet Vagabond gaming on Steam!">
-                        <div class="lbll_img"><img src="trinkets/testing/steam_logo.png" alt="Steam" /></div>
-                        <div class="lbll_text">Steam&nbsp </div>
-                        <div class="clean"></div>
-                </a>
-        </li>
-        <li class="leftbar_links_link">
-                <a href="http://www.twitch.tv/vagabondazulien" title="The Internet Vagabond live-streaming on Twitch.tv!">
-                        <div class="lbll_img"><img src="trinkets/testing/ttvlogo_small.png" alt="Twitch.tv" /></div>
-                        <div class="lbll_text">Twitch.tv&nbsp </div>
-                        <div class="clean"></div>
-                </a>
-        </li>
-</ul>
-</div>
-</section> <!-- End .leftbar -->
-</div> <!-- End .lft_col -->
-		
-<!-- End Left Bar -->
-<!-- Main Section -->
+<!-- Top Bar -->
+     <header>
+          <ul id="title">
+               <li>The</li><li>Internet</li><li>Vagabond</li>
+          </ul>
+     </header>
 
-<section class="mid_col">
-<header class="title">
-<div class="page_title">
-<div class="page_title_word">THE &nbsp&nbsp </div>
-<div class="page_title_word">INTERNET &nbsp&nbsp</div>
-<div class="page_title_word">VAGABOND &nbsp&nbsp&nbsp </div>
-</div>
-<div class="clean"></div>
-<div class="page_title_sub">
-<span class="page_title_sub_border1"></span>
-<span class="page_title_sub_border2">In search of truth, knowledge, and a decent ping</span>
-</div>
-<header>
+     <div class="clean"></div>
+<!-- Main Content Section -->
+     <main>
+          <div id="post">
+               <p>Welcome to The Internet Vagabond, a small slice of Internet real-estate for Bill Niblock. Nothing I say is visionary or profound, and sometimes it makes sense.</p>
+          </div>
+     </main>
 
-<div class="main_post">
+     <div class="clean"></div>
+<!--Sidebar -->
+     <nav id="navbar">
+          <label for="toggle-navbar" id="toggle">&#9776</label>
+          <input type="checkbox" id="toggle-navbar" />
+          <div id="bar">
+               <ul id="navigation">
+                    <li>Home</li>
+                    <li>Projects</li>
+                    <ul id="projects">
+                         <li>GitHub Page</li>
+                         <li>Antennae</li>
+                    </ul>
+               </ul>
+               <div id="follow">
+                         <a href="https://github.com/VagabondAzulien">
+                              <img src="src/images/github_light.png"
+                                   width="32" height="32" alt="GitHub"
+                                   title="My GitHub Repos" />
+                         </a>
+                         <a href="https://twitter.com/Azulien">
+                              <img src="src/images/twitter_light.png"
+                                   width="32" height="32" alt="Twitter"
+                                   title="My Twitter Feed" />
+                         </a>
+                         <a href="http://www.twitch.tv/vagabondazulien/profile">
+                              <img src="src/images/twitch_light.png"
+                                   width="32" height="32" alt="Twitch"
+                                   title="My Twitch Profile" />
+                         </a>
+                         <a href="http://steamcommunity.com/id/azulien">
+                              <img src="src/images/steam_light.png"
+                                   width="32" height="32" alt="Steam"
+                                   title="My Steam Profile" />
+                         </a>
+               </div>
+               <div id="info">
+                    <div id="cw">Niblock&copy2015</div><br />
+                    <a href="http://www.wtfpl.net/">
+                         <img src="src/images/wtfpl-badge.png"
+                              width="80" height="15" alt="WTFPL" 
+                              title="Licensed under the WTFPL." />
+                    </a>
+                    <a href="http://www.w3.org/html/logo/">
+                         <img src="src/images/html5-badge.png" 
+                                   width="50" height="15" alt="HTML5 | CSS3" 
+                                   title="HTML5 Powered, CSS3 Styled" />
+                    </a>
+               </div>
+          </div>
+     </nav>
 
-<!-- This section contains the pulled-in posts from multiple sources that compose the main content of the page -->
-<div class="text_post" id="temp">
-<p>Welcome to <span style="font-style:italic">The Internet Vagabond</span></p><br />
-<p>This "About" page will often serve as a temporary front page while I mess around with the rest of the site. Sorry for any inconveniences!</p><br />
-<p>Feel free to find me on the web by following any of the links to the left.</p>
-</div>
-
-<div class="text_post" id="about">
-<div class="about_title">About The Vagabond</div>
-<p>My name is Bill Niblock. I am a computer scientist by education, a computer junkie by hobby, and a gamer by preference.</p><br />
-<p>While not slaving away at my day job, I can most likely be found staring into a glowing rectangle, watching text and motion picture fly by. I am an avid gamer, preferring the PC over most consoles, but I by no means neglect their worthiness. I spend a lot of time on YouTube, even more time on reddit, and somehow even more time on game-streaming sites. Common between all these (except maybe YouTube) is the awesome community that gaming can provide, an environment which I believe is of great importance to the future of gaming, and is still very much in its infant stage. I hope someday to help foster said community into a veritable juggernaut of awesome.</p><br />
-<p>Aside from gaming, I also enjoy coding. As of the time of this rendition of my about page, I can't claim much in the way of worthwhile web applications. I have a comfy job, and a comfy life, and complacency breeds apathy; in other words, I'm lazy. I enjoy exploring new technologies, and I hope that in the near future, I can combine them with my love for the gaming community to create something truely magnificent. Stay tuned!</p><br />
-<p>Offline, I am an amateur philosopher, an aspiring musician, an avid reader, and a novice socialite. There are many aspects of my life that I enjoy jumping between, and I hope that through this site, I can share many of them with you.</p>
-<br /><br /><hr width="60%" /><br />
-<div class="about_title">About The Site</div>
-<p><span style="font-style:italic">The Internet Vagabond</span> is the personal site of me, Bill Niblock. Mostly a blog, this site moreso serves as a digital playground, for me to experiment with new features in web development.</p><br />
-<p>Initially a pet-project, I hope to develop the site into something more than just another blog. Many of the projects I think of I hope to develop on this site, making use of it for commentary, community and statuses. While I can understand the importance of maintaining secrecy in business endeavors, I can also appreciate that many of those endeavors are lost to endless bureaucracy due to exactly that secrecy. For many of my projects, it would be far better if they even saw the light of day than be held back simply because I thought I could make a few bucks on them.</p><br />
-<p>I also want this site to act as a "social front page" for my online presence. By pulling in my Twitter posts, my Google+ posts, and mixing in any stand-alone articles, I can gather anything and everything interesting about me or by me in one location. I've never been a proponent of narcisistic endeavors, but I can justify this one as a worthwhile pursuit of knowledge. Besides, if someone else stumbles upon my site and thinks they would like a similar layout or blog, then they have a starting place and some example code to work with</p>
-<br /><br /><hr width="60%" /><br />
-<div class="about_title">Parting Thoughts</div>
-<p>This site has always been about sharing my adventures throughout life, both on and off the Internet. I hope that you enjoy the journey as much as (presumably) I do! Thanks for stopping by!</p>
-<br /><br />
-</div>
-
-</div> <!-- END .main_post -->
-</section> <!-- END .main -->
-
-<!-- End Main Section -->
-
-
-</div> <!-- END .page -->
+     <div class="clean"></div>
 </body>
-</html>	
+</html>

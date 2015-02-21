@@ -12,7 +12,12 @@ body {
      position: relative; 
 }
 
-/* Header */
+/**********
+ *        *
+ * Header *
+ *        *  
+ **********/
+
 header {
      position: fixed; top: 0px; left: 0px; right: 0px;
      margin: 0px; padding: 10px; z-index: 5;
@@ -39,12 +44,12 @@ header {
      color: white; text-shadow: 0px 0px 10px blue;
 }
 
-/* Body */
-main {
-     margin: 40px 40px; padding: 10px; z-index: 0;
-     background-color: #F0F5F5;
-}
-/* Sidebar */
+/*********** 
+ *         *
+ * Sidebar *
+ *         *
+ ***********/
+
 #navbar {
      position: fixed; top: 0px; right: 0px; bottom: 0px;
      width: 400px; margin: 0px; padding: 0px; z-index: 10; opacity: 100%
@@ -112,4 +117,38 @@ main {
 
 #info a {
      padding: 0px 5px;
+}
+
+/********
+ *      *
+ * Body *
+ *      *
+ ********/
+
+main {
+     position: fixed; top: 0px; bottom: 0px; height: 100%;
+     margin: 40px 40px; padding: 10px; z-index: 0;
+     background-color: #EBEBFA;
+}
+
+#about {
+     position: relative;
+     margin: 0px auto; padding: 0px;
+}
+
+#about div { 
+     margin: 0px auto; padding: 0px 20px; width: 100%;
+}
+
+#about #blurb {
+     float: left; width: 40%;
+     margin: 0px auto;
+}
+
+#blurb h3 {
+     text-align: right;
+     padding: 0px;
+     border-bottom: 1px solid darkgrey;
+     font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 1.2em;
 }
