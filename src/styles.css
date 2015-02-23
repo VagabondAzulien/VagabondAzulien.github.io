@@ -144,23 +144,23 @@ article {
      margin: 50px auto; padding: 10px;
 }
 
-article h1 {     
-     font: 1.1em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 1.2em;
+article h1 {
+     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     text-shadow: 2px 2px #DEDEDE; color: darkgrey;
 }
 
 article h1::first-letter {
-     margin: 0px; padding: 0px 2px;
+     margin: 0px; padding: 0px;
      font: 1.3em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
      color: white; text-shadow: 0px 0px 10px blue;
 }
 
 article h2 {
      text-align: right;
-     padding: 0px;
+     padding: 10px;
      border-bottom: 1px solid darkgrey;
      font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 1.2em;
+     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 0.6em;
 }
 
 article p {
