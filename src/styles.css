@@ -131,21 +131,23 @@ main {
      background-color: #EBEBFA;
 }
 
-#about {
+article {
      position: relative;
      margin: 0px auto; padding: 0px;
 }
 
-#about div { 
-     margin: 0px auto; padding: 0px 20px; width: 100%;
+article h1 {     
+     font: 1.1em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 1.2em;
 }
 
-#about #post {
-     float: left; width: 40%;
-     margin: 0px auto;
+article h1::first-letter {
+     margin: 0px; padding: 0px 2px;
+     font: 1.3em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     color: white; text-shadow: 0px 0px 10px blue;
 }
 
-#post h3 {
+article h3 {
      text-align: right;
      padding: 0px;
      border-bottom: 1px solid darkgrey;

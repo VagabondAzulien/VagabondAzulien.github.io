@@ -41,7 +41,7 @@ a simple link back to the source will do.
 
 > **DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
 >
-> _Version 2, December 2004_
+> _Version 2, December 2004_ || 
 > _Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>_
 >
 > Everyone is permitted to copy and distribute verbatim or modified 
