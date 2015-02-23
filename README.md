@@ -8,12 +8,14 @@ Nothing I say is profound or visionary, and sometimes it makes sense.
 
 ###To-Do
 * [ ] Finalize migration to Jekyll
+* [ ] CSS: Establish responsive design.
 * [ ] Work on GitHub project pages for few projects
 * [ ] Posts? Content? Establish a purpose.
 
 ####Latest Update :: 2015/02/23
 * + Updates site to make use of Jekyll
 * + Modified Readme to include the License
+* + Updated Home page information
 
 Previous updates can be found here (or below, for now).
 

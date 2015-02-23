@@ -126,14 +126,14 @@ header {
  ********/
 
 main {
-     position: fixed; top: 0px; bottom: 0px; height: 100%;
-     margin: 40px 40px; padding: 10px; z-index: 0;
+     position: fixed; top: 0px; left: 0px; bottom: 0px; z-index: 0;
+     overflow: auto;
      background-color: #EBEBFA;
 }
 
 article {
-     position: relative;
-     margin: 0px auto; padding: 0px;
+     position: relative; width: 60%;
+     margin: 50px auto; padding: 10px;
 }
 
 article h1 {     
@@ -147,10 +147,14 @@ article h1::first-letter {
      color: white; text-shadow: 0px 0px 10px blue;
 }
 
-article h3 {
+article h2 {
      text-align: right;
      padding: 0px;
      border-bottom: 1px solid darkgrey;
      font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
      text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 1.2em;
+}
+
+article p {
+     padding: 0px 10px;
 }
