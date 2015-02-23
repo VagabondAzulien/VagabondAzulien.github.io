@@ -39,17 +39,15 @@ license text of which can be found below. However, any content under
 this copywrite and credit me if you so choose to redistribute these posts;
 a simple link back to the source will do.
 
-
-     DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-               Version 2, December 2004 
-
-   Copyright (C) 2004 Sam Hocevar <sam@hocevar.net> 
-
-Everyone is permitted to copy and distribute verbatim or modified 
-copies of this license document, and changing it is allowed as long 
-as the name is changed. 
-
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
-
-     0. You just DO WHAT THE FUCK YOU WANT TO.
+> **DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
+> _Version 2, December 2004_
+> _Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>_
+>
+> Everyone is permitted to copy and distribute verbatim or modified 
+> copies of this license document, and changing it is allowed as long 
+> as the name is changed. 
+>
+> DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+> TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+>
+>     0. You just DO WHAT THE FUCK YOU WANT TO.
