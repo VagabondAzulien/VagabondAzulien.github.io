@@ -140,12 +140,12 @@ main {
      margin: 0px auto; padding: 0px 20px; width: 100%;
 }
 
-#about #blurb {
+#about #post {
      float: left; width: 40%;
      margin: 0px auto;
 }
 
-#blurb h3 {
+#post h3 {
      text-align: right;
      padding: 0px;
      border-bottom: 1px solid darkgrey;
