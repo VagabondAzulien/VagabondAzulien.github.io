@@ -81,7 +81,7 @@ header {
      width: 300px;
 }
 
-#bar header {
+#bar #header {
 
 }
 
@@ -97,7 +97,7 @@ header {
      color: #888888;
 }
 
-#bar footer {
+#bar #footer {
 
 }
 
