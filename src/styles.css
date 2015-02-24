@@ -97,6 +97,25 @@ header {
      color: #888888;
 }
 
+#navigation #expand {
+    padding: 0px 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+#menu-selection {
+     height: 0%;
+     transition: height 0.5s ease;
+}
+
+#navigation #toggle-section {
+     display: none;
+}
+
+#toggle-section:checked + #menu-section {
+     height: 100%;
+}
+
 #bar #footer {
 
 }

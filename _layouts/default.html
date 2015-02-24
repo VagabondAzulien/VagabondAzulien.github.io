@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
      <title>The Internet Vagabond :: {{ page.tabtitle }}</title>
@@ -8,7 +8,8 @@
            knowledge, and a decent ping." />
      <meta name="author" content="Bill 'Vagabond Azulien' Nibz" />
 	
-     <link rel="stylesheet" type="text/css" href="{{ site.url }}/src/styles.css" />
+     <link rel="stylesheet" type="text/css" 
+           href="{{ site.url }}/src/styles.css" />
 </head>
 <body>
 
@@ -29,7 +30,19 @@
                <section id="header">
                     <ul id="navigation">
                          <li>Home</li>
-                         <li>Posts</li>
+                         <li>
+                              <label for="toggle-section" id="expand">
+                                   Posts</label>
+                         </li>
+                              <input type="checkbox" id="toggle-section" />
+                              <ul id="menu-section">
+                                   {% for post in site.posts %}
+                                   <li>
+                                        <a href="{{ post.url }}">
+                                             {{ post.title }}</a>
+                                   </li>
+                                   {% endfor %}
+                              </ul>
                          <li>Projects</li>
                          <ul id="projects">
                               <li>GitHub Page</li>
@@ -40,22 +53,22 @@
                <section id="footer">
                     <div id="follow">
                          <a href="https://github.com/VagabondAzulien">
-                              <img src="src/images/github_light.png"
+                              <img src="{{ site.url }}/src/images/github_light.png"
                                    width="32" height="32" alt="GitHub"
                                    title="My GitHub Repos" />
                          </a>
                          <a href="https://twitter.com/Azulien">
-                              <img src="src/images/twitter_light.png"
+                              <img src="{{ site.url }}/src/images/twitter_light.png"
                                    width="32" height="32" alt="Twitter"
                                    title="My Twitter Feed" />
                          </a>
                          <a href="http://www.twitch.tv/vagabondazulien/profile">
-                              <img src="src/images/twitch_light.png"
+                              <img src="{{ site.url }}/src/images/twitch_light.png"
                                    width="32" height="32" alt="Twitch"
                                    title="My Twitch Profile" />
                          </a>
                          <a href="http://steamcommunity.com/id/azulien">
-                              <img src="src/images/steam_light.png"
+                              <img src="{{ site.url }}/src/images/steam_light.png"
                                    width="32" height="32" alt="Steam"
                                    title="My Steam Profile" />
                          </a>
@@ -63,12 +76,12 @@
                     <div id="info">
                          <div id="cw">Niblock&copy2015</div><br />
                          <a href="http://www.wtfpl.net/">
-                              <img src="src/images/wtfpl-badge.png"
+                              <img src="{{ site.url }}/src/images/wtfpl-badge.png"
                                    width="80" height="15" alt="WTFPL" 
                                    title="Licensed under the WTFPL." />
                          </a>
                          <a href="http://www.w3.org/html/logo/">
-                              <img src="src/images/html5-badge.png" 
+                              <img src="{{ site.url }}/src/images/html5-badge.png" 
                                         width="50" height="15" alt="HTML5 | CSS3" 
                                         title="HTML5 Powered, CSS3 Styled" />
                          </a>
