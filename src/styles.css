@@ -104,8 +104,8 @@ header {
 }
 
 #menu-selection {
-     height: 0%;
-     transition: height 0.5s ease;
+     visibility: hidden;
+     transition: visibility 0.5s ease;
 }
 
 #navigation #toggle-section {
@@ -113,7 +113,7 @@ header {
 }
 
 #toggle-section:checked + #menu-section {
-     height: 100%;
+     visibility: visible;
 }
 
 #bar #footer {
