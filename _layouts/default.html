@@ -30,12 +30,20 @@
                <section id="header">
                     <ul id="navigation">
                          <li>Home</li>
-                         <li>
-                              <label for="toggle-section" id="expand">
-                                   Posts</label>
-                         </li>
-                              <input type="checkbox" id="toggle-section" />
-                              <ul id="menu-section">
+                         <li>Projects</li>
+                              <ul id="projects">
+                                   <li>GitHub Page</li>
+                                   <ul>
+                                        <li>[ Page ]</li>
+                                        <li>[ Source ]</li>
+                                   </ul>
+                                   <li>Antennae</li>
+                                        <li>[ Page ]</li>
+                                        <li>[ Source ]</li>
+                                   </ul>
+                              </ul>
+                         <li>Posts</li>
+                              <ul id="posts">
                                    {% for post in site.posts %}
                                    <li>
                                         <a href="{{ post.url }}">
@@ -43,11 +51,6 @@
                                    </li>
                                    {% endfor %}
                               </ul>
-                         <li>Projects</li>
-                         <ul id="projects">
-                              <li>GitHub Page</li>
-                              <li>Antennae</li>
-                         </ul>
                     </ul>
                </section> 
                <section id="footer">

@@ -103,18 +103,7 @@ header {
     border-bottom: 1px solid grey;
 }
 
-#menu-selection {
-     visibility: hidden;
-     transition: visibility 0.5s ease;
-}
 
-#navigation #toggle-section {
-     display: none;
-}
-
-#toggle-section:checked + #menu-section {
-     visibility: visible;
-}
 
 #bar #footer {
 
