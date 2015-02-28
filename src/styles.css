@@ -10,6 +10,7 @@
 
 body {
      position: relative; 
+     background-color: #EBEBFA;
 }
 
 /**********
@@ -82,14 +83,14 @@ header {
 }
 
 #bar #header {
-
+     position: relative; top: 10%;
+     width: 100%;
 }
 
 #navigation {
      position: absolute; top: 12%; bottom: 18%; left: 0px; right: 0px;
      list-style: none;
      margin: 10px;
-     border-bottom: 1px solid grey;
 }
 
 #navigation li {
@@ -142,13 +143,13 @@ header {
  ********/
 
 main {
-     position: fixed; top: 0px; left: 0px; bottom: 0px; z-index: 0;
+     position: relative; top: 0px; left: 0px; z-index: 0;
+     width: 60%; min-width: 800px; height: 100%; min-height: 800px;
+     margin: 0px auto;
      overflow: auto;
-     background-color: #EBEBFA;
 }
 
 article {
-     position: relative; width: 60%;
      margin: 50px auto; padding: 10px;
 }
 
@@ -165,6 +166,14 @@ article h1::first-letter {
 
 article h2 {
      text-align: right;
+     padding: 10px;
+     border-bottom: 1px solid darkgrey;
+     font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 0.6em;
+}
+
+article h3 {
+     text-align: left;
      padding: 10px;
      border-bottom: 1px solid darkgrey;
      font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
