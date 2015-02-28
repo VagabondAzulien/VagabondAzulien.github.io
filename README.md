@@ -9,6 +9,7 @@ Nothing I say is profound or visionary, and sometimes it makes sense.
 ###To-Do
 * [ ] Finalize migration to Jekyll
 * [ ] CSS: Establish responsive design.
+* [ ] CSS: De-clutter
 * [ ] Work on GitHub project pages for few projects
 * [ ] Posts? Content? Establish a purpose.
 
@@ -36,10 +37,9 @@ Previous updates can be found here (or below, for now).
 ###License
 
 This site is licensed under the [WTFPL](http://www.wtfpl.net/), the full
-license text of which can be found below. However, any content under
-\_posts is copywrite Bill Niblock, and I would ask that you please honor
-this copywrite and credit me if you so choose to redistribute these posts;
-a simple link back to the source will do.
+license text of which can be found below. Everything in \_posts is copyright
+Bill Niblock; if you redistribute it, please credit me. A link to the source
+would be even better.
 
 > **DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
 >
