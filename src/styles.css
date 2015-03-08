@@ -91,6 +91,7 @@ header {
      position: absolute; top: 12%; bottom: 18%; left: 0px; right: 0px;
      list-style: none;
      margin: 10px;
+     color: darkgrey;
 }
 
 #navigation a:link,a:visited,a:focus {
@@ -103,6 +104,7 @@ header {
 
 #navigation li {
      padding: 15px 10px;
+     font-weight: bold;
 }
 
 #navigation #projects {
@@ -111,10 +113,12 @@ header {
 
 #projects li {
      padding: 10px;
+     font-weight: normal;
 }
 
 #projects div {
      text-align: center;
+     font-size: 0.9em;
 }
 
 #navigation #posts {
@@ -123,6 +127,11 @@ header {
 
 #posts li {
      padding: 10px;
+     font-weight: normal;
+}
+
+#posts a {
+     font-style: italic;
 }
 
 #bar #footer {
