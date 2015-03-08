@@ -13,6 +13,10 @@ body {
      background-color: #EBEBFA;
 }
 
+a,a:visited,a:link,a:focus {
+     text-decoration: none;
+}
+
 /**********
  *        *
  * Header *
@@ -63,10 +67,6 @@ header {
      transition: right 0.5s ease;
 }
 
-#navbar a {
-     text-decoration: none;
-}
-
 #navbar #toggle-navbar {
      display:none;
 }
@@ -93,9 +93,16 @@ header {
      margin: 10px;
 }
 
+#navigation a:link,a:visited,a:focus {
+     color: darkgrey;
+}
+
+#navigation a:hover {
+     color: white;
+}
+
 #navigation li {
      padding: 15px 10px;
-     color: #888888;
 }
 
 #navigation #projects {
