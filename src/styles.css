@@ -57,10 +57,10 @@ header {
 }
 
 #navbar #bar {
-     position: absolute; top: 0px; right: 0px; bottom: 0px;
-     width: 0px; margin: 0px; padding: 0px; overflow-x: hidden; 
+     position: absolute; top: 0px; right: -300px; bottom: 0px;
+     width: 300px; margin: 0px; padding: 0px; overflow-x: hidden; 
      background-color: #202020;
-     transition: width 0.5s ease;
+     transition: right 0.5s ease;
 }
 
 #navbar a {
@@ -79,7 +79,7 @@ header {
 }
 
 #toggle-navbar:checked + #bar {
-     width: 300px;
+     right: 0px;
 }
 
 #bar #header {
@@ -106,37 +106,41 @@ header {
      padding: 10px;
 }
 
+#projects div {
+     text-align: center;
+}
+
+#navigation #posts {
+     list-style: none;
+}
+
 #navigation #expand {
     padding: 0px 20px;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
 }
 
-
-
 #bar #footer {
-
-}
-
-#follow {
-     position: absolute; bottom: 100px; left: 0px;
-     width: 100%; margin: 0px auto; padding: 0px;
+     position: absolute; bottom: 0px;
+     width: 100%;
+     padding: 10px 0px;
      text-align: center;
+
 }
+
+#follow { }
 
 #follow a {
      padding: 0px 9px;
 }
 
 #info {
-     position: absolute; bottom: 0px; 
-     padding: 10px; margin: 10px auto; overflow-x: hidden;
-     width: 100%; margin: 0px auto; text-align: center;
+     padding: 10px;
+     width: 100%;
 }
 
 #info #cw {
-     margin: 0px auto; padding: 10px 0px; width: 100%; 
-     font: 0.9em "Lucida Sans Unicode", "Lucida Grande", sans-serif; text-align: center;
+     font: 0.9em "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
      letter-spacing: 0.4em; color: grey;
 }
 
