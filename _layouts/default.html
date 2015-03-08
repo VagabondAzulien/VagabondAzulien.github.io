@@ -32,30 +32,29 @@
                          <li>Home</li>
                          <li>Projects</li>
                               <ul id="projects">
-                                   <li>GitHub Page</li>
-                                   <ul>
-                                        <li>[ Page ]</li>
-                                        <li>[ Source ]</li>
-                                   </ul>
-                                   <li>Dot Files</li>
-                                   <ul>
-                                        <li>[ Page ]</li>
-                                        <li>[ Source ]</li>
-                                   </ul>
-                                   <li>Antennae</li>
-                                   <ul>
-                                        <li>[ Page ]</li>
-                                        <li>[ Source ]</li>
-                                   </ul>
+                                   <li>GitHub Page<br />
+                                        <div>[ Page ]</div>
+                                        <div>[ Source ]</div>
+                                   </li>
+                                   <li>Dot Files<br />
+                                        <div>[ Page ]</div>
+                                        <div>[ Source ]</div>
+                                   </li>
+                                   <li>Antennae<br />
+                                        <div>[ Page ]</div>
+                                        <div>[ Source ]</div>
+                                   </li>
+                                   <li> ... more ... </li>
                               </ul>
                          <li>Posts</li>
                               <ul id="posts">
-                                   {% for post in site.posts %}
+                                   {% for post in site.posts limit:3 %}
                                    <li>
                                         <a href="{{ post.url }}">
                                              {{ post.title }}</a>
                                    </li>
                                    {% endfor %}
+                                   <li> ... more ... </li>
                               </ul>
                     </ul>
                </section> 

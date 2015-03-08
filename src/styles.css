@@ -58,7 +58,7 @@ header {
 
 #navbar #bar {
      position: absolute; top: 0px; right: 0px; bottom: 0px;
-     width: 0px; margin: 0px; padding: 0px; overflow-x: hidden; white-space: nowrap;
+     width: 0px; margin: 0px; padding: 0px; overflow-x: hidden; 
      background-color: #202020;
      transition: width 0.5s ease;
 }
@@ -96,6 +96,14 @@ header {
 #navigation li {
      padding: 10px 10px;
      color: #888888;
+}
+
+#navigation #projects {
+     list-style: none;
+}
+
+#projects li {
+     padding: 10px;
 }
 
 #navigation #expand {
