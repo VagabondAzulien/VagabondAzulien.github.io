@@ -8,6 +8,8 @@ Nothing I say is profound or visionary, and sometimes it makes sense.
 
 ###To-Do
 * [ ] Finalize migration to Jekyll
+* [ ] Create custom 404 page
+* [ ] Create a favicon
 * [ ] CSS: Establish responsive design.
 * [ ] CSS: De-clutter
 * [ ] Work on GitHub project pages for few projects
