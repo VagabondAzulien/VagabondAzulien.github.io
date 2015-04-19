@@ -7,15 +7,13 @@ All stuff here is my opinion yada yada yada.
 Nothing I say is profound or visionary, and sometimes it makes sense.
 
 ###To-Do
-* [ ] Create a favicon
 * [ ] CSS: Establish responsive design.
-* [ ] CSS: De-clutter
 * [ ] Work on GitHub project pages for few projects
 * [ ] Posts? Content? Establish a purpose.
 
-####Latest Update :: 2015/04/10
-* Removed unnecessary update information.
-* Created and implemented custom 404 page.
+####Latest Update :: 2015/04/19
+* Updated favicon
+* Cleaned up code a bit
 
 ###License
 
