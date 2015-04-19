@@ -7,32 +7,15 @@ All stuff here is my opinion yada yada yada.
 Nothing I say is profound or visionary, and sometimes it makes sense.
 
 ###To-Do
-* [ ] Finalize migration to Jekyll
+* [ ] Create a favicon
 * [ ] CSS: Establish responsive design.
 * [ ] CSS: De-clutter
 * [ ] Work on GitHub project pages for few projects
 * [ ] Posts? Content? Establish a purpose.
 
-####Latest Update :: 2015/02/23
-* + Updates site to make use of Jekyll
-* + Modified Readme to include the License
-* + Updated Home page information
-
-Previous updates can be found here (or below, for now).
-
-######2015/02/21
-* + Replaced old site with new site
-* - Removed old site files (moved to archive)
-
-######2015/02/19
-* + Updated WIP files (significantly)
-* - Removed a lot of useless files
-
-######2015/02/09
-* + Created file
-* + Notable existing "updates"
-    * + Uploaded all files
-    * + Fixed spacing in css/index files
+####Latest Update :: 2015/04/10
+* Removed unnecessary update information.
+* Created and implemented custom 404 page.
 
 ###License
 
