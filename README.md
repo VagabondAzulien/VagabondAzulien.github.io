@@ -8,12 +8,13 @@ Nothing I say is profound or visionary, and sometimes it makes sense.
 
 ###To-Do
 * [ ] CSS: Establish responsive design.
-* [ ] Work on GitHub project pages for few projects
-* [ ] Posts? Content? Establish a purpose.
+* [ ] CSS: Add 'Home' icon on non-home pages.
+* [ ] Posts: Update style with small footer.
+* [ ] Work on GitHub project pages for few projects.
 
-####Latest Update :: 2015/04/19
-* Updated favicon
-* Cleaned up code a bit
+####Latest Update :: 2015/05/04
+* New article! "The Philosophy of Bill, Part 1"
+* Added draft of upcoming article on TLS
 
 ###License
 
