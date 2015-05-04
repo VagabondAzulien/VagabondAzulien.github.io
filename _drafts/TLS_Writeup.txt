@@ -37,6 +37,8 @@ Basics of Certificates
      public keys. 
 
 ============================
+TLS: An examination into the Security of the Internet, Part 1
+
 
 TLS, more often referred to as SSL, is the means by which a secure connection is
 established over a computer network. Most often these connections are
@@ -91,7 +93,7 @@ Step 2: Establish an SSL/TLS Connection
           certificate. A certificate is basically a container for a server's
           public key, but with many additional details, and often signed by a
           certificate authority, to further verify the certificate contains the
-          proper key. More on certificates below.
+          proper key. More on certificates in part 2.
 
           3. The client then uses the server's public key to encrypt a secret.
           This secret is then sent back to the server.
@@ -116,7 +118,9 @@ Step 3: Establish an HTTP connection
 Of course this is an over-simplification of the whole stream. TCP itself is
 worthy of many research papers. However, many sources on TCP already do an apt
 job of explaining it in understandable ways. I felt that SSL was less-so
-explained, so I wanted to dive a bit more into that.
+explained, so I wanted to dive a bit more into that. In Part 2, I'll dive more
+into the TLS handshake, what certificates are and how they play a role, and the
+importance of secure ciphersuites for keys.
 
           
 ============================
@@ -126,4 +130,3 @@ Sources
      https://security.stackexchange.com/questions/6290/how-is-it-possible-that-people-observing-an-https-connection-being-established-w
      [3]
      https://security.stackexchange.com/questions/20803/how-does-ssl-tls-work
-     [4] 
