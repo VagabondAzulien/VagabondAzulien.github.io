@@ -1,44 +1,4 @@
-TLS - Transport-Layer Security
-
-Asymmetric Key Authentication:
-     - Relies on two keys: Public key, Private key
-     - Both keys are related, but impossible (computationally infeasable) to
-       identify the private key based on the public key [1][2]
-     - The public key can be distributed publicly
-          - Used to encrypt message to the owner of the private paired key
-          - Used to verify signatures from the private key
-     - The private key is kept secret
-          - Used to decrypt message from the public paired key
-          - Used to as a digital signature
-
-Basics of an Asymmetric Key handshake:
-     1. Client reaches out to server, requesting a secure connection
-     2. Server acknowledges request, sends back it's public key
-          - This is commonly known as a certificate. Often signed by a
-            third-party to ensure it is what it's supposed to be.
-     3. Client uses this public key to encrypt a secret, and sends the package
-     back to the server.
-     4. The server then uses it's private key to decrypt the public-key
-     encrypted secret, and uses that secret hence forth to encrypt all traffic.
-     5. A private connection is now established.
-
-Basics of Certificates
-     1. A certificate is a vessel for a server to provide authentication
-     information.
-     2. Typically a certificate will contain the following information:
-          - A UUID of the certificate itself
-          - The subject of the certificate
-          - The signature, and signature algorithm used
-          - The issuer of the certificate, as well as dates when it is valid
-          - The purpose of the key
-          - The thumbprint, and algorithm, used to hash the key
-          - The public key itself
-     3. Certificate Authorities act as a third part to verify the integrity of
-     public keys. 
-
-============================
 TLS: An examination into the Security of the Internet, Part 1
-
 
 TLS, more often referred to as SSL, is the means by which a secure connection is
 established over a computer network. Most often these connections are
@@ -130,3 +90,41 @@ Sources
      https://security.stackexchange.com/questions/6290/how-is-it-possible-that-people-observing-an-https-connection-being-established-w
      [3]
      https://security.stackexchange.com/questions/20803/how-does-ssl-tls-work
+
+============================
+Notes
+Asymmetric Key Authentication:
+     - Relies on two keys: Public key, Private key
+     - Both keys are related, but impossible (computationally infeasable) to
+       identify the private key based on the public key [1][2]
+     - The public key can be distributed publicly
+          - Used to encrypt message to the owner of the private paired key
+          - Used to verify signatures from the private key
+     - The private key is kept secret
+          - Used to decrypt message from the public paired key
+          - Used to as a digital signature
+
+Basics of an Asymmetric Key handshake:
+     1. Client reaches out to server, requesting a secure connection
+     2. Server acknowledges request, sends back it's public key
+          - This is commonly known as a certificate. Often signed by a
+            third-party to ensure it is what it's supposed to be.
+     3. Client uses this public key to encrypt a secret, and sends the package
+     back to the server.
+     4. The server then uses it's private key to decrypt the public-key
+     encrypted secret, and uses that secret hence forth to encrypt all traffic.
+     5. A private connection is now established.
+
+Basics of Certificates
+     1. A certificate is a vessel for a server to provide authentication
+     information.
+     2. Typically a certificate will contain the following information:
+          - A UUID of the certificate itself
+          - The subject of the certificate
+          - The signature, and signature algorithm used
+          - The issuer of the certificate, as well as dates when it is valid
+          - The purpose of the key
+          - The thumbprint, and algorithm, used to hash the key
+          - The public key itself
+     3. Certificate Authorities act as a third part to verify the integrity of
+     public keys. 
