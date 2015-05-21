@@ -192,7 +192,7 @@ article h1::first-letter {
 }
 
 article h2 {
-     text-align: right;
+     text-align: left;
      padding: 10px;
      border-bottom: 1px solid darkgrey;
      font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -200,7 +200,7 @@ article h2 {
 }
 
 article h3 {
-     text-align: left;
+     text-align: right;
      padding: 10px;
      border-bottom: 1px solid darkgrey;
      font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
