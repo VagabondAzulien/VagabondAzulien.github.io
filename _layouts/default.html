@@ -31,10 +31,12 @@
      <input type="checkbox" id="toggle-navbar" />
      <div id="bar">
           <section id="header">
-               <ul id="navigation">
+          <input type="radio" name="menu_buttons" id="mb_1" />
+          <div id="menu" name="navigation">
+               <ul id="nav_list">
                <li><a href="http://www.theinternetvagabond.com">
                     Home</a></li>
-               <li>Projects</li>
+               <li><label for="mb_2" id="projs_label">Projects</label></li>
                     <ul id="projects">
                     <li>GitHub Page<br />
                     <div>
@@ -55,7 +57,7 @@
                     </div>
                     </li>
                     </ul>
-               <li>Posts</li>
+               <li><label for="mb_3" id="posts_label"> Posts</label></li>
                     <ul id="posts">
                          {% for post in site.posts limit:3 %}
                          <li>
@@ -65,6 +67,43 @@
                          {% endfor %}
                     </ul>
                </ul>
+          </div>
+          <input type="radio" name="menu_buttons" id="mb_2" />
+          <div id="menu" name="projects_all">
+               <ul id="projects">
+                    <li><label for="mb_1" id="nav_label">Main Menu</label></li>
+                    <li>GitHub Page<br />
+                    <div>
+                         <a href="#">[ Page ]</a>
+                         <a href="https://github.com/VagabondAzulien/VagabondAzulien.github.io">[ Source ]</a>
+                    </div>
+                    </li>
+                    <li>Dot Files<br />
+                    <div>
+                         <a href="#">[ Page ]</a>
+                         <a href="#">[ Source ]</a>
+                    </div>
+                    </li>
+                    <li>Antennae<br />
+                    <div>
+                         <a href="#">[ Page ]</a>
+                         <a href="https://github.com/VagabondAzulien/antennae">[ Source ]</a>
+                    </div>
+                    </li>
+               </ul>
+          </div>
+          <input type="radio" name="menu_buttons" id="mb_3" />
+          <div id="menu" name="posts_all">
+               <ul id="posts">
+                    <li><label for="mb_1" id="nav_label">Main Menu</label></li>
+                    {% for post in site.posts %}
+                    <li>
+                         <a href="{{ post.url }}">
+                              {{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+               </ul>
+          </div>
           </section> 
           <section id="footer">
           <div id="follow">
