@@ -49,69 +49,62 @@ header {
      color: white; text-shadow: 0px 0px 10px blue;
 }
 
-/*********** 
- *         *
- * Sidebar *
- *         *
- ***********/
-
-#navbar {
-     position: fixed; top: 0px; right: 0px; bottom: 0px;
-     width: 400px; margin: 0px; padding: 0px; z-index: 2; opacity: 100%
-}
-
-#navbar #bar {
-     position: absolute; top: 0px; right: -300px; bottom: 0px;
-     width: 300px; margin: 0px; padding: 0px; overflow-x: hidden; 
-     background-color: #202020;
-     transition: right 0.5s ease;
-}
-
-#navbar #toggle-navbar {
-     display:none;
-}
-
-#navbar #toggle {
+#toggle {
      position: absolute; right: 0px;
      margin: 0px; padding: 13px 25px; z-index: 3;
      font: 1.3em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
      color: darkgrey;  text-shadow: 0px 0px 5px white;
 }
 
+#toggle-navbar {
+     display:none;
+}
+
+/*********** 
+ *         *
+ * Sidebar *
+ *         *
+ ***********/
+
+#bar {
+     position: fixed; top: 0px; right: -300px; bottom: 0px;
+     width: 300px; margin: 0px; padding: 0px; overflow-x: hidden; 
+     background-color: #202020;
+     transition: right 0.5s ease;
+}
+
+
 #toggle-navbar:checked + #bar {
      right: 0px;
 }
 
 #bar #header {
-     position: relative; top: 10%;
+     position: relative;
+     margin: 10% 0px;
      width: 100%;
 }
 
 #menu {
-     position: absolute; top: 12%; bottom: 18%; left: 0px; right: 0px;
-     margin: 10px;
-     z-index: 4;
+     position: relative; 
+     margin: 10px; z-index: 4;
+     list-style: none;
      color: darkgrey; background-color: #202020;
 }
 
-#nav_list {
-     list-style: none;
-}
-
-#navigation a:link,a:visited,a:focus {
+#menu a:link,a:visited,a:focus {
      color: darkgrey;
 }
 
-#navigation a:hover {
+#menu a:hover {
      color: white;
 }
 
-#navigation li {
+#menu li {
      padding: 15px 10px;
      font-weight: bold;
 }
 
-#navigation #projects {
+#menu #projects {
      list-style: none;
 }
 
@@ -125,7 +118,7 @@ header {
      font-size: 0.9em;
 }
 
-#navigation #posts {
+#menu #posts {
      list-style: none;
 }
 
@@ -152,7 +145,7 @@ header {
      padding: 10px 0px;
      text-align: center;
      background-color: #202020;
-
+     z-index: 6;
 }
 
 #follow { }
