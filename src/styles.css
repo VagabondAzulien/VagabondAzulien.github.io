@@ -86,7 +86,7 @@ header {
 }
 
 #menu {
-     position: relative; 
+     position: absolute; 
      margin: 10px; z-index: 4;
      list-style: none;
      color: darkgrey; background-color: #202020;
