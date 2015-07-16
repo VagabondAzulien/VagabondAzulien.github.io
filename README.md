@@ -9,19 +9,17 @@ Nothing I say is profound or visionary, and sometimes it makes sense.
 ###To-Do
 * [ ] CSS: Establish responsive design.
 * [ ] CSS: Add 'Home' icon on non-home pages.
-* [ ] Posts: Update style with small footer.
 * [ ] Work on GitHub project pages for few projects.
 
-####Latest Update :: 2015/05/04
-* New article! "The Philosophy of Bill, Part 1"
-* Added draft of upcoming article on TLS
+####Latest Update :: 2015/07/09
+* New article: A Good Friend's Father 
 
 ###License
 
-This site is licensed under the [WTFPL](http://www.wtfpl.net/), the full
-license text of which can be found below. Everything in \_posts is copyright
-Bill Niblock; if you redistribute it, please credit me. A link to the source
-would be even better.
+This site is licensed under the [WTFPL](http://www.wtfpl.net/), the full license
+text of which can be found below. Everything in \_posts and \_drafts is
+copyright Bill Niblock; if you redistribute it, please credit me. A link to the
+source would be even better.
 
 > **DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
 >
