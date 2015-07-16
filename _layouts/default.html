@@ -22,49 +22,50 @@
           <li>The</li><li>Internet</li><li>Vagabond</li>
      </ul>
 
-     <label for="toggle-navbar" id="toggle">&#9776</label>
 </header>
 
 <div class="clean"></div>
 
 <!--Sidebar -->
+<label for="toggle-navbar" id="toggle">&#9776</label>
 <input type="checkbox" id="toggle-navbar" />
 <nav id="bar">
      <section id="header">
           <input type="radio" name="menu_buttons" checked="checked" id="mb_1" />
           <ul id="menu" name="navigation">
-               <li><a href="http://www.theinternetvagabond.com">
-                    Home</a></li>
-               <li><label for="mb_2" id="projs_label">Projects</label></li>
-                    <ul id="projects">
-                    <li>GitHub Page<br />
-                    <div>
-                         <a href="#">[ Page ]</a>
-                         <a href="https://github.com/VagabondAzulien/VagabondAzulien.github.io">[ Source ]</a>
-                    </div>
+          <li><a href="http://www.theinternetvagabond.com">
+               Home</a></li>
+          <li><label for="mb_2" id="projs_label">Projects</label></li>
+               <ul id="projects">
+               <li>GitHub Page<br />
+               <div>
+                    <a href="#">[ Page ]</a>
+                    <a href="https://github.com/VagabondAzulien/VagabondAzulien.github.io">[ Source ]</a>
+               </div>
+               </li>
+               <li>Dot Files<br />
+               <div>
+                    <a href="#">[ Page ]</a>
+                    <a href="#">[ Source ]</a>
+               </div>
+               </li>
+               <li>Antennae<br />
+               <div>
+                    <a href="#">[ Page ]</a>
+                    <a href="https://github.com/VagabondAzulien/antennae">
+                         [ Source ]</a>
+               </div>
+               </li>
+               </ul>
+          <li><label for="mb_3" id="posts_label"> Posts</label></li>
+               <ul id="posts">
+                    {% for post in site.posts limit:3 %}
+                    <li>
+                         <a href="{{ post.url }}">
+                              {{ post.title }}</a>
                     </li>
-                    <li>Dot Files<br />
-                    <div>
-                         <a href="#">[ Page ]</a>
-                         <a href="#">[ Source ]</a>
-                    </div>
-                    </li>
-                    <li>Antennae<br />
-                    <div>
-                         <a href="#">[ Page ]</a>
-                         <a href="https://github.com/VagabondAzulien/antennae">[ Source ]</a>
-                    </div>
-                    </li>
-                    </ul>
-               <li><label for="mb_3" id="posts_label"> Posts</label></li>
-                    <ul id="posts">
-                         {% for post in site.posts limit:3 %}
-                         <li>
-                              <a href="{{ post.url }}">
-                                   {{ post.title }}</a>
-                         </li>
-                         {% endfor %}
-                    </ul>
+                    {% endfor %}
+               </ul>
           </ul>
           <input type="radio" name="menu_buttons" id="mb_2" />
           <ul id="menu" name="projects_all">
