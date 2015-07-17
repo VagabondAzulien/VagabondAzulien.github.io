@@ -102,10 +102,13 @@ header {
 
 #menu li {
      padding: 15px 10px;
+}
+
+[name=navigation] {
      font-weight: bold;
 }
 
-#menu #projects {
+#projects {
      list-style: none;
 }
 
@@ -119,7 +122,7 @@ header {
      font-size: 0.9em;
 }
 
-#menu #posts {
+#posts {
      list-style: none;
 }
 
@@ -129,6 +132,15 @@ header {
 }
 
 #posts a {
+     font-style: italic;
+}
+
+[name=projects_all] div {
+     text-align: center;
+     font-size: 0.9em;
+}
+
+[name=posts_all] {
      font-style: italic;
 }
 
