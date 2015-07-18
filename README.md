@@ -8,11 +8,10 @@ Nothing I say is profound or visionary, and sometimes it makes sense.
 
 ###To-Do
 * [ ] CSS: Establish responsive design.
-* [ ] CSS: Add 'Home' icon on non-home pages.
 * [ ] Work on GitHub project pages for few projects.
 
-####Latest Update :: 2015/07/09
-* New article: A Good Friend's Father 
+####Latest Update :: 2015/07/18
+* Finalized current iteration of right-side menu.
 
 ###License
 

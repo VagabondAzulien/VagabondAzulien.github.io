@@ -19,6 +19,7 @@ a,a:visited,a:link,a:focus {
 
 label {
      cursor: pointer;
+     font-weight: bold;
 }
 
 label:hover{
