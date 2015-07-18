@@ -21,6 +21,10 @@ label {
      cursor: pointer;
 }
 
+label:hover{
+     color: white;
+}
+
 /**********
  *        *
  * Header *
@@ -146,13 +150,8 @@ header {
 }
 
 [name=projects_all] li {
-     padding: 10px;
      font-weight: normal;
-}
-
-[name=projects_all] li:first-child {
-     padding: 10px;
-     font-weight: bold;
+     margin: 0px 20px;
 }
 
 [name=posts_all] a{
@@ -160,22 +159,17 @@ header {
 }
 
 [name=posts_all] li {
-     padding: 10px;
      font-weight: normal;
-}
-
-[name=posts_all] li:first-child {
-     padding: 10px;
-     font-weight: bold;
+     margin: 0px 20px;
 }
 
 [name=menu_buttons] {
-     display: none; }
+     display: none;
+}
 
 [name=menu_buttons]:checked + #menu {
      z-index: 5;
 }
-
 
 #bar #footer {
      position: absolute; bottom: 0px;
