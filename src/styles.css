@@ -17,6 +17,10 @@ a,a:visited,a:link,a:focus {
      text-decoration: none;
 }
 
+label {
+     cursor: pointer;
+}
+
 /**********
  *        *
  * Header *
@@ -51,7 +55,7 @@ header {
 
 #toggle {
      position: absolute; right: 0px;
-     margin: 0px; padding: 13px 25px; z-index: 3;
+     margin: 0px; padding: 8px 25px; z-index: 3;
      font: 1.3em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
      color: darkgrey;  text-shadow: 0px 0px 5px white;
 }
@@ -141,8 +145,28 @@ header {
      font-size: 0.9em;
 }
 
-[name=posts_all] {
+[name=projects_all] li {
+     padding: 10px;
+     font-weight: normal;
+}
+
+[name=projects_all] li:first-child {
+     padding: 10px;
+     font-weight: bold;
+}
+
+[name=posts_all] a{
      font-style: italic;
+}
+
+[name=posts_all] li {
+     padding: 10px;
+     font-weight: normal;
+}
+
+[name=posts_all] li:first-child {
+     padding: 10px;
+     font-weight: bold;
 }
 
 [name=menu_buttons] {
