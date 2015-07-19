@@ -1,12 +1,12 @@
 ---
 project:
-     - title: "GitHub Pages"
+     - name: "GitHub Pages"
        s_url: "https://github.com/VagabondAzulien/VagabondAzulien.github.io"
        p_url: ""
-     - title: "Dotfiles"
+     - name: "Dotfiles"
        s_url: "https://github.com/VagabondAzulien/dotfiles"
        p_url: ""
-     - title: "Antennae"
+     - name: "Antennae"
        s_url: "https://github.com/VagabondAzulien/antennae"
        p_url: ""
 ---
