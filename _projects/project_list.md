@@ -1,3 +1,4 @@
+---
 project:
      - title: "GitHub Pages"
        s_url: "https://github.com/VagabondAzulien/VagabondAzulien.github.io"
@@ -8,3 +9,4 @@ project:
      - title: "Antennae"
        s_url: "https://github.com/VagabondAzulien/antennae"
        p_url: ""
+---
