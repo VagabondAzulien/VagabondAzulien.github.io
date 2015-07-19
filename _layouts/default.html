@@ -37,15 +37,13 @@
                Home</a></li>
           <li><label for="mb_2" id="projs_label">Projects</label></li>
                <ul id="projects">
-                    {% for proj in site.projects %}
-                    {% for pr in proj.project limit:3 %}
-                         <li>{{ pr.name }}<br />
+                    {% for pr in site.projects limit:3 %}
+                         <li>{{ pr.title }}<br />
                               <div>
                                    <a href="{{ pr.p_url }}">[ Page ]</a>
                                    <a href="{{ pr.s_url }}">[ Source ]</a>
                               </div>
                          </li>
-                    {% endfor %}
                     {% endfor %}
                </ul>
           <li><label for="mb_3" id="posts_label"> Posts</label></li>
@@ -61,15 +59,13 @@
           <input type="radio" name="menu_buttons" id="mb_2" />
           <ul id="menu" name="projects_all">
                <li><label for="mb_1" id="nav_label">Main Menu</label></li>
-                    {% for proj in site.projects %}
-                    {% for pr in proj.project %}
-                         <li>{{ pr.name }}<br />
+                    {% for pr in site.projects %}
+                         <li>{{ pr.title }}<br />
                               <div>
                                    <a href="{{ pr.p_url }}">[ Page ]</a>
                                    <a href="{{ pr.s_url }}">[ Source ]</a>
                               </div>
                          </li>
-                    {% endfor %}
                     {% endfor %}
           </ul>
           <input type="radio" name="menu_buttons" id="mb_3" />
