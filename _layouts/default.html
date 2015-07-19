@@ -37,7 +37,7 @@
                Home</a></li>
           <li><label for="mb_2" id="projs_label">Projects</label></li>
                <ul id="projects">
-                    {% for project in site.project %}
+                    {% for project in site.projects %}
                     {% for pr in project.project limit:3 %}
                          <li>{{ pr.title }}<br />
                               <div>
@@ -61,7 +61,7 @@
           <input type="radio" name="menu_buttons" id="mb_2" />
           <ul id="menu" name="projects_all">
                <li><label for="mb_1" id="nav_label">Main Menu</label></li>
-                    {% for project in site.project %}
+                    {% for project in site.projects %}
                     {% for pr in project.project %}
                          <li>{{ pr.title }}<br />
                               <div>
