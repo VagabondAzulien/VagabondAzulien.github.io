@@ -1,0 +1,96 @@
+---
+     layout: default
+     tabtitle: Stoicismv1
+     title: Stoicismv1
+     tags: philosophy
+---
+
+<article>
+     <h1>Stoicismv1</h1>
+     <p>Sherman J. Clark wrote a fantastic article on the Stoicism Today blog in
+     December which really spoke to me. It approached some of the questions and
+     problems I've had with Stoicism in an elegant and enlightening way, which
+     has led to my significantly greater understanding of Stoicism (albeit, my
+     flavor of Stoicism). Notably, and what I want to highlight here, were the
+     topics of <i>Selfishness</i>, <i>Metaphysics</i>, and <i>Balance</i>.</p>
+
+     <h2>Selfishness</h2>
+     <p>I have a difficult time with the idea of a universal brotherhood. Most
+     of this is literally my problem: I cannot properly picture it, nor
+     understand how to approach or pursue it. When Stoicism speaks of the
+     importance of community or of a universal brotherhood, I generally switch
+     off. Appropriately, I have a difficult time understanding how Stoic pursuit
+     is anything but selfish. Everything I pursue, everything I read and try to
+     apply, seems to benefit solely me. There is an argument to be made that by
+     bettering myself I better others around me, but that's not fulfilling.
+     Clark specifically cites this issue towards the end of his article: "I do
+     not believe it possible to find within stoicism any principle that
+     definitively rules out selfishness or guarantees other-regarding behavior."
+     My thoughts exactly. However, like much in Stoicism and life in general,
+     the answers are rarely written down, and must be discovered. Building on
+     this, Clark proposes that the impetus for selflessness, or at least
+     community, comes from the simple fact that learning is best done
+     communally. Learning and growing in isolation does not present the most
+     complete understanding of anything. And as I'll point out further down,
+     learning is actually quite important!</p>
+
+     <h2>Metaphysics</h2>
+
+     <h2>Balance</h2>
+     <p> By balance, I mean the balance of stoic thought managing emotions. It
+     is common for Stoic teaching to be applied to negative emotions and
+     situations. Many blogs, books, and classes focus on applying a Stoic
+     mindset to stress, anxiety, depression, and the unfavorable situations that
+     cause those and other similar types of emotions to arise. Clark is
+     quick to propose a more important question: what happens when this approach
+     is fully applied? What happens when a full pursuit of Stoicism is taken
+     seriously? I appreciate Clark's use of the word "serious" when he speaks of
+     this pursuit. It implies to me that half-way applying Stoic thought is an
+     immature pursuit. That is to say, similar to an immature fruit tree, you
+     have only part of the system available to you. This is often how I've felt.
+     I know and understand the power of applying Stoic thought to difficult
+     situations. I want to know, as Clark puts it, if there is any room left for
+     joy after we've fully applied the Stoic philosophy.</p>
+
+     <p><i>"it is neither appealing nor intellectually honest to take comfort
+     from a philosophy that works only if you do not think about it too
+     carefully"</i></p>
+
+     <p>Clark investigates 5 possible answers to this dilemma, none of which
+     fully answer our question. However, he does propose a solution, and it is a
+     solution which resonates with me deeply: "true stoic joy comes through
+     comprehension, understanding, and insight." When I read this conclusion, it
+     was literally enlightening. Suddenly, all the frustration and concern that
+     I was abusing Stoic thought just for temporary solace, was lifted from me.
+     I felt relieved, joyful, and even a sense of success. <p>
+
+     <br /><h4>[Bill Niblock][2016-01-29][Philosophy]</h4>
+</article>
+
+<!-- ================================= -->
+<!-- ================================= -->
+
+<!-- Notes
+
+Source:
+https://blogs.exeter.ac.uk/stoicismtoday/2015/12/19/how-now-horatio-the-stoic-joy-of-physics-and-friendship-by-sherman-j-clark/
+
+
+- Selfish vs community
+
+- Nature
+     - nature is the universe
+     - we should live in accordance with nature. what does that mean?
+     - best way is to constantly seek to understand nature
+
+- Positive and negative emotions
+     - Easy to apply stoic practices to negative emotions
+     - What happens when applied to positive emotions?
+     - "it is neither appealing nor intellectually honest to take comfort from a
+       philosophy that works only if you do not think about it too carefully"
+     - I like how a full pursuit of Stoicism is often classified by Clark as
+       "serious" pursuit. Several implications; importance of the word.
+-->
+
+<!-- ================================= -->
+<!-- ================================= -->
