@@ -10,33 +10,64 @@
      <p>Sherman J. Clark wrote a fantastic article on the Stoicism Today blog in
      December which really spoke to me. It approached some of the questions and
      problems I've had with Stoicism in an elegant and enlightening way, which
-     has led to my significantly greater understanding of Stoicism (albeit, my
-     flavor of Stoicism). Notably, and what I want to highlight here, were the
-     topics of <i>Selfishness</i>, <i>Metaphysics</i>, and <i>Balance</i>.</p>
+     has led to my significantly greater understanding of Stoicism. Notably, and
+     what I want to highlight here, were the topics of <i>Selfishness</i>,
+     <i>Metaphysics</i>, and <i>Balance</i>.</p>
 
-     <h2>Selfishness</h2>
-     <p>I have a difficult time with the idea of a universal brotherhood. Most
-     of this is literally my problem: I cannot properly picture it, nor
-     understand how to approach or pursue it. When Stoicism speaks of the
-     importance of community or of a universal brotherhood, I generally switch
-     off. Appropriately, I have a difficult time understanding how Stoic pursuit
-     is anything but selfish. Everything I pursue, everything I read and try to
-     apply, seems to benefit solely me. There is an argument to be made that by
-     bettering myself I better others around me, but that's not fulfilling.
-     Clark specifically cites this issue towards the end of his article: "I do
-     not believe it possible to find within stoicism any principle that
-     definitively rules out selfishness or guarantees other-regarding behavior."
-     My thoughts exactly. However, like much in Stoicism and life in general,
-     the answers are rarely written down, and must be discovered. Building on
-     this, Clark proposes that the impetus for selflessness, or at least
-     community, comes from the simple fact that learning is best done
-     communally. Learning and growing in isolation does not present the most
-     complete understanding of anything. And as I'll point out further down,
-     learning is actually quite important!</p>
+     <h3>Selfishness</h3>
+     <p>I have a difficult time with the idea of a universal brotherhood. I
+     cannot properly picture it, nor understand how to approach or pursue it.
+     When Stoicism speaks of the importance of community or of a universal
+     brotherhood, I generally switch off. Appropriately, I have a difficult time
+     understanding how Stoic pursuit is anything but selfish. Everything I
+     pursue, everything I read and try to apply, seems to benefit solely me.
+     There is an argument to be made that by bettering myself I better others
+     around me, but that does not provide a fulfilling conclusion. It doesn't
+     actually promote social action, rather it proposes a benefit if I take
+     action. I'm looking for a reason to take that action, which seems to be
+     lacking. Clark specifically cites this issue towards the end of his
+     article: "I do not believe it possible to find within stoicism any
+     principle that definitively rules out selfishness or guarantees
+     other-regarding behavior." My thoughts exactly. Clark thus proposes that
+     the impetus for selflessness, or at least community, comes from the simple
+     fact that learning is best done communally. This I can certainly agree
+     with, if only considering the obvious fact that I do not know every answer
+     to every question, and thus I must seek them from external sources.
+     Learning with others promotes diverse opinions and solutions, often outside
+     the scope of my approach.</p>
 
-     <h2>Metaphysics</h2>
+     <p><i>"Not only do we need the insights of others to help us understand our
+     world better, but our own experience and understanding is best achieved not
+     in isolation but in shared conversation—dialectic."</i></p>
 
-     <h2>Balance</h2>
+     <p>This point is building block 1; the first of three pieces to a puzzle:
+     <b>learning promotes selflessness</b>.</p>
+
+     <h3>Metaphysics</h3>
+     <p>To paraphrase Carl Sagan, we are the universe's way of understanding
+     itself. To Stoics, the universe is often synonymous with Nature. Living in
+     accordance with Nature is basically Stoic virtue. That's a very big
+     basically, and a very simplified view of Stoic virtue. However (a) I'm not
+     very good at explaining this; and (b) it's a <b>very</b> involved topic. I
+     want to touch on it briefly, since it is both covered by Clark and also
+     relevant to the discussion. Clark makes a very straight-forward argument
+     that Physics, or science to a more general degree, is appropriate as a
+     Stoic virtue. Again he touches on the importance of learning, and expands
+     it to how science is the means by which we can learn and understand the
+     beauty and order of our universe. By learning and understanding more about
+     the universe (Nature), we can better live in accordance with Nature. I'm
+     simplifying again significantly, but I think it boils down to knowledge.
+     Temperance and courage, two significant Stoic virtues, are defined by Clark
+     as a symptom of awareness. Temperance is the awareness that what others
+     crave is not worth craving after; courage is the awareness that what others
+     fear is not worth fearing. If virtues are best defined as properly attuned
+     awareness, then what better awareness to develop than the awareness of how
+     the universe works? As a computer scientist, and a person who finds great joy
+     in understanding systems and why they work, this makes perfect sense to me.
+     Building block 2: <b>awareness and understanding is the foundation of
+     virtue</b>.
+
+     <h3>Balance</h3>
      <p> By balance, I mean the balance of stoic thought managing emotions. It
      is common for Stoic teaching to be applied to negative emotions and
      situations. Many blogs, books, and classes focus on applying a Stoic
@@ -52,17 +83,32 @@
      situations. I want to know, as Clark puts it, if there is any room left for
      joy after we've fully applied the Stoic philosophy.</p>
 
-     <p><i>"it is neither appealing nor intellectually honest to take comfort
+     <p><i>"It is neither appealing nor intellectually honest to take comfort
      from a philosophy that works only if you do not think about it too
-     carefully"</i></p>
+     carefully."</i></p>
 
      <p>Clark investigates 5 possible answers to this dilemma, none of which
      fully answer our question. However, he does propose a solution, and it is a
      solution which resonates with me deeply: "true stoic joy comes through
-     comprehension, understanding, and insight." When I read this conclusion, it
-     was literally enlightening. Suddenly, all the frustration and concern that
-     I was abusing Stoic thought just for temporary solace, was lifted from me.
-     I felt relieved, joyful, and even a sense of success. <p>
+     comprehension, understanding, and insight." And that's the final building
+     block.</p>
+
+     <h2>Completing the Puzzle</h2>
+     <p>Putting it all together, what I took from Clark, and what has helped me
+     to better understand Stoicism as it applies to me:</p>
+
+     <p><b>True stoic joy comes from learning about our universe,
+     together.</b></p>
+
+     <p>This has always been what has brought me the most happiness, but to hear
+     it from someone else now makes it much more potent. I think it boils down
+     to an affirmation of my discovery by another. Almost ironically so,
+     considering one of the first topics I wrote about above was my general
+     disregard of community in Stoicism.
+
+     <p>Sherman J. Clark's article can be found on the Stoicism Today blog,
+     linked here: [<a
+     href="https://blogs.exeter.ac.uk/stoicismtoday/2015/12/19/how-now-horatio-the-stoic-joy-of-physics-and-friendship-by-sherman-j-clark/">Link</a>]</p>
 
      <br /><h4>[Bill Niblock][2016-01-29][Philosophy]</h4>
 </article>
