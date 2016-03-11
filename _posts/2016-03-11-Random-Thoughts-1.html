@@ -1,0 +1,190 @@
+---
+     layout: default
+     tabtitle: Random Thoughts
+     title: Random Thoughts 1
+     tags: technology, gaming
+---
+
+<article>
+     <h1>Disjointed Thoughts</h1>
+
+     <p>I'm on vacation this week, which is pretty grand. Thus far I've
+     accomplished one of the 4 rather meager goals I set for myself, played
+     plenty of games, caught up on some reading and videos and feeds, and slept
+     in far later than I should have. In doing the reading, primarily an article
+     on 'Wait, But Why' about Elon Musk [
+     <a
+     href="http://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html">link</a>
+      ], I found my mind wandering across a few different thoughts, that I felt
+     were worth jotting down, though I couldn't imagine dedicating an entire
+     post to; paragraph-worthy thoughts. So, let's just throw them all
+     together!</p>
+
+     <h2>Thought 1: Chef and Automation</h2>
+     <p>The aforementioned article speaks a lot of the idea of a chef versus a
+     cook, and how we should all aspire to be chefs. This coincides mostly in
+     name alone, but also by proxy with Chef, the configuration management
+     software. We've been implementing Chef at work, and I dabbled in it a bit
+     here and there. Actually, the primary impetus behind learning Ruby was
+     Chef. A solution Chef was supposed to provide was the opportunity for
+     automation. On the surface, I was onboard. Once I learned more, I cannot
+     agree with Chef being the proper tool. I should preface any
+     computer-related topics I discuss with the disclaimer that I find the Unix
+     Philosophy very appealing, that I believe that efficient tools don't need
+     fancy GUIs or complicated philosophies or use cases, and that the terminal
+     is a very beautiful place. Chef's use is as configuration management:
+     ensuring that all hosts managed by it are kept synchronized. With respect
+     to automation, this means Chef is ideal for placing the automation files
+     onto hosts, ensuring they're current, and accessible. However, when it
+     comes to automation, I think a different tool is required. My initial
+     thought is using SSH to run the remote commands. I've got a bit of a crush
+     on SSH. I think it's an incredible and powerful tool. I think the
+     combination of Chef for configuration deployment and SSH for remote
+     execution is a pretty dang good couple.</p>
+
+     <h2>Thought 2: Ayn Rand and Objectivism</h2>
+     <p>I have taken an unfair and rather ignorant position against Rand and her
+     objectivism. I can all but blame my father for the position, since as an
+     angsty teenager, hearing him support something, however slightly, meant I
+     had to disagree with it. That being said, my experience of Rand is probably
+     the same as many other Americans: I read a few of her works in high-school,
+     promptly forgot about it, and then learned via blog posts and Wikipedia
+     what she was all about. Even writing this I have a bit of a sour taste,
+     formed by biases developed in ignorance. I have decided to test my
+     assumptions, by reading and analysing Rand's works and philosophy
+     first-hand. Look forward (or don't) to a post specifically on Rand, her
+     works, and her philosophy. Just... don't wait up for it. This one will take
+     me a while...</p>
+
+     <h2>Thought 3: Developments</h2>
+     <p>A few projects I've been working on that have excited me.</p>
+     <h3>IRC Bot</h3>
+     <p>I love IRC. I think it's still the most powerful chat service available,
+     and doubly so for technical chat needs. I can certainly understand why
+     HipChat or Slack is chosen over IRC, but I can't agree with the decision.
+     Regardless of that battlefield, to better make use of IRC, I am creating a
+     bot. Thus far I've built it using Cinch [ <a
+          href="https://github.com/cinchrb/cinch">link</a> ], but I think in the
+     future the goal will be to refactor Cinch out in favor of my own code.
+     Nothing against Cinch, but the fewer dependencies the better. The one
+     unavoidable dependency is Gearman, which is a distributed job system.
+     Gearman allows me to have a bot written in Ruby, but execute shell scripts
+     natively without exposing a shell, and without tying up resources. This is
+     very useful considering the purpose of the bot is mostly for operational
+     information, such as host health, network quality, and even automation.
+     It's been a very fun process thus far, and I look forward to continuing to
+     expand and consider functionality.</p>
+
+     <h3>Dotfiles</h3>
+     <p>My dotfiles are like a beautiful garden secluded from the world: fun to
+     work on, but generally fruitless. In a continuing effort to remove any
+     unnecessary dependencies, I have resumed my investigation into using Make
+     to manage my dotfiles. I found a fantastic article detailing
+     self-documented Makefiles [ <a
+          href="http://marmelab.com/blog/2016/02/29/auto-documented-makefile.html">link</a>
+     ] and some assorted sources of others using Makefiles to manage their
+     dotfiles. I'm quite excited about this development, because it means my
+     dotfiles should be deployable across any Unix platform.</p>
+
+     <h3>Documentation</h3>
+     <p>I find myself writing a decent amount of documentation at work. While
+     speaking with co-workers about this, and pondering why documentation is
+     often so lacking, I've decided on the following conclusions: documentation
+     is tedious; and documentation is hard. I've been mulling over the idea of a
+     documentation engine build on git and leveraging GitHub technology. When I
+     think about documentation, I like comparing it to programming:
+     documentation is just code in English. If you follow my premise, then it's
+     perfectly reasonable to expect the same services for documentation as we
+     have for code: linters, style guides, builders, automated deployments, pull
+     requests, etc. Git (and GitHub) already provide version control, which
+     should be essential for any documentation engine. Build on top of that
+     services which hook into the repositories, and I think documentation could
+     be made significantly less tedious, while considerably more standardized,
+     accessible, and useful.</p>
+
+     <h2>Thought 4: Guild Wars 2</h2>
+     <p>I really enjoy Guild Wars 2. However, one unfortunate thing is the state
+     of my favorite class, warrior, in the standardized player-versus-player
+     format (sPvP). I've been thinking a bit about how to improve warrior, and I
+     think I've come up with some interesting ideas. On the off-chance that
+     someone from ANet finds this post, let me here and now give you full
+     permission to use any and all ideas related to GW2 as you see fit;
+     considering it in the public domain. My favorite warrior, WilsonStorm, once
+     quipped that warriors don't have any fancy magic to do their stuff with,
+     they just hit things. I like this summary: the warrior is a martial master,
+     who relies on pure physical capabilities and eschews any magical help. With
+     that in mind, I would propose the following 3 major changes:</p>
+
+     <p><ul>
+          <li style="font-weight: bold">Embrace the Adrenaline</li>
+          <li style="font-weight: bold">Make Stances Like Attunements</li>
+          <li style="font-weight: bold">Make Banners Like Spirit Weapons</li>
+     </ul></p>
+
+     <h3>Embrace the Adrenaline</h3>
+     <p>I would like to see more functionality provided by default from
+     adrenaline. An example would be decreasing weapon-skill cooldown based on
+     the level of adrenaline, 1 second less per level of adrenaline. I like
+     keeping some functionality in traits, though,  because it encourages build
+     diversity and can force critical decisions.</p>
+
+     <h3>Make Stances Like Attunements</h3>
+     <p>Not as in they become F1-F4, but in the following sense: Only one stance
+     can be active at a time, activating stances provides an ongoing lesser
+     benefit, and activating the stance again provides a temporary significant
+     benefit but ends the stance. Let's take Berserker Stance as an example. In
+     its current iteration, it gives you adrenaline every second, and resistance
+     every 3 seconds, for the duration of the stance. In my revised iteration,
+     you would activate a stance, and have a passive benefit plus a new active
+     option. So, you activate Berserker Stance and start gaining adrenaline
+     every second (while in combat). Then you can activate it again to gain
+     resistance (say, 3 stacks every 3 seconds for 6 seconds). This would remove
+     the passive benefit of Berserker Stance, and put it onto cooldown. However,
+     you can only have one stance active at a time! So, say you were in
+     Berserker Stance, and suddenly you wanted to be in Balanced Stance. By
+     activating Balanced Stance, you would deactivate Berserker Stance without
+     using it's active ability, putting it onto a shorter cooldown than normal.
+     As part of this change, I would probably revisit what each stance does as
+     well, since some wouldn't properly fit into the new format.</p>
+
+     <h3>Make Banners Like Spirit Weapons</h3>
+     <p>Again, not exactly like Spirit Weapons, but drawing similarities. First,
+     instead of banners being bundles summoned at a location, they would provide
+     an aura around the warrior when activated. This would be visually apparent
+     by the warrior literally having a banner on their back. Each aura would do
+     what the current banners do, but would be centered on the warrior. After
+     being activated, the banner skill will flip to a secondary skill similar to
+     how Spirit Weapons flip after being summoned. This would be the previous
+     on-summon ability. So, when you activate Battle Standard, you start
+     eminating the passives to everyone around you for the entire duration.
+     After being activated, Battle Standard flips to a secondary skill that is
+     the AoE revive. Unlike stances (and just like spirit weapons), multiple
+     banners can be active at once, so the passives could need adjustment, but
+     probably not much. The only downfall to this is the loss of the banner as a
+     bundle/weapon, but I can't imagine many people actually use it as such.</p>
+
+     <p>I think the really excited thing about these changes would be the build
+     potential. Consider a build that uses a stance and a banner! There's
+     suddenly actual use for banners outside of niche builds or one-off uses in
+     dungeons! Stances and banners actually require planning and tactical usage
+     rather than reactionary button-mashing to break stuns or revive team mates!
+     And warriors gain much-needed viability in a team, due to providing buffs
+     to team mates, and better damage output.</p>
+
+
+     <br /><h4>[Bill Niblock][2016-03-11][Gaming, Technology]</h4>
+
+</article>
+
+<!-- ================================= -->
+<!-- ================================= -->
+
+<!-- Notes
+
+Sources:
+     http://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html
+
+-->
+
+<!-- ================================= -->
+<!-- ================================= -->
