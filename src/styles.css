@@ -6,24 +6,17 @@
 
 /* General */
 
-.clean { clear:both;}
-
 body {
-     position: relative;
-     background-color: #EBEBFA;
+     background-color: #3b3b3b;
 }
 
 a,a:visited,a:link,a:focus {
-     text-decoration: none;
-}
-
-label {
-     cursor: pointer;
-     font-weight: bold;
-}
-
-label:hover{
+     text-decoration: underline;
      color: white;
+}
+
+a:hover {
+    font-weight: bold;
 }
 
 /**********
@@ -32,41 +25,29 @@ label:hover{
  *        *
  **********/
 
-header {
+.header {
      position: fixed; top: 0px; left: 0px; right: 0px;
      margin: 0px; padding: 10px; z-index: 1;
-     background-color: white;
-     border-bottom: 1px solid lightgrey;
-     box-shadow: 0px 2px 10px -5px blue;
+     background-color: #202020;
+     border-bottom: 1px solid #8D3FC5;
+     box-shadow: 0px 5px 30px -5px #8D3FC5;
 }
 
-#title {
-     float: left;
-     list-style: none;
+.title {
+    display: flex;
      margin: 0px 25px; padding: 0px;
 }
 
-#title li {
-     float:left; margin: 0px; padding: 0px;
+.title div {
+     margin: 0px; padding: 0px;
      font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 1.2em;
+     color: darkgrey; letter-spacing: 1.2em;
 }
 
-#title li::first-letter {
+.title div::first-letter {
      margin: 0px; padding: 0px 2px;
-     font: 1.3em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     color: white; text-shadow: 0px 0px 10px blue;
-}
-
-#toggle {
-     position: absolute; right: 0px;
-     margin: 0px; padding: 8px 25px; z-index: 3;
-     font: 1.3em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     color: darkgrey;  text-shadow: 0px 0px 5px white;
-}
-
-#toggle-navbar {
-     display:none;
+     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     color: white;
 }
 
 /***********
@@ -74,131 +55,38 @@ header {
  * Sidebar *
  *         *
  ***********/
-
-#bar {
-     position: fixed; top: 0px; right: -300px; bottom: 0px;
-     width: 300px; margin: 0px; padding: 0px; overflow-x: hidden;
-     background-color: #202020;
-     z-index: 2;
-     transition: right 0.5s ease;
+.menu {
+    position: fixed; right: 0px; top: 0px; bottom:0px;
+    background-color: #202020;
+    list-style: none;
+    z-index: 2;
 }
 
-
-#toggle-navbar:checked + #bar {
-     right: 0px;
+.menu a:link,a:visited,a:focus {
+    text-decoration: none;
+    color: darkgrey;
 }
 
-#bar #header {
-     position: absolute; top: 0px; bottom: 40px;
-     margin: 10% 0px;
-     width: 100%;
+.menu a:hover {
+    font-weight: normal;
+    color: white;
 }
 
-#menu {
-     position: absolute;
-     margin: 10px; padding: 10px; width: 100%; height: 100%;
-     z-index: 4;
-     list-style: none;
-     color: darkgrey; background-color: #202020;
+.menu li {
+    list-style: none;
+    padding: 15px 10px;
+    color: darkgrey;
 }
 
-#menu a:link,a:visited,a:focus {
-     color: darkgrey;
+#footer {
+    position: absolute; bottom: 1em; left: 0px; right: 0px;
+    text-align: center;
 }
 
-#menu a:hover {
-     color: white;
-}
-
-#menu li {
-     padding: 15px 10px;
-}
-
-[name=navigation] {
-     font-weight: bold;
-}
-
-#projects {
-     list-style: none;
-}
-
-#projects li {
-     padding: 10px;
-     font-weight: normal;
-}
-
-#projects div {
-     text-align: center;
-     font-size: 0.9em;
-}
-
-#posts {
-     list-style: none;
-}
-
-#posts li {
-     padding: 10px 0px;
-     font-weight: normal;
-}
-
-#posts a {
-     font-style: italic;
-}
-
-[name=projects_all] div {
-     text-align: center;
-     font-size: 0.9em;
-}
-
-[name=projects_all] li {
-     font-weight: normal;
-     margin: 0px 20px;
-}
-
-[name=posts_all] a{
-     font-style: italic;
-}
-
-[name=posts_all] li {
-     font-weight: normal;
-     margin: 0px 20px;
-}
-
-[name=menu_buttons] {
-     display: none;
-}
-
-[name=menu_buttons]:checked + #menu {
-     z-index: 5;
-}
-
-#bar #footer {
-     position: absolute; bottom: 0px;
-     width: 100%;
-     padding: 10px 0px;
-     text-align: center;
-     background-color: #202020;
-     z-index: 6;
-}
-
-#follow { }
-
-#follow a {
-     padding: 0px 9px;
-}
-
-#info {
-     padding: 10px;
-     width: 100%;
-}
-
-#info #cw {
-     font: 0.9em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     letter-spacing: 0.4em; color: grey;
-}
-
-#info a {
-     padding: 0px 5px;
+#footer #cw {
+    font: 0.9em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    letter-spacing: 0.4em; padding: 1em 0 0.5em 0;
+    color: darkgrey;
 }
 
 /********
@@ -206,28 +94,25 @@ header {
  * Body *
  *      *
  ********/
-
-main {
-     position: relative; top: 0px; left: 0px; z-index: 0;
-     width: 60%; min-width: 800px; height: 100%; min-height: 800px;
-     margin: 0px auto;
-     overflow: auto;
+#content {
+    margin: 0em 5em;
 }
 
 article {
      margin: 50px auto; padding: 10px;
+     line-height: 1.5em; letter-spacing: 0.1em;
 }
 
 article h1 {
      padding: 10px;
      font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 0.5em;
+     color: darkgrey; letter-spacing: 0.5em;
 }
 
 article h1::first-letter {
      margin: 0px; padding: 0px;
-     font: 1.3em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     color: white; text-shadow: 0px 0px 10px blue;
+     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     color: white;
 }
 
 article h2 {
@@ -235,7 +120,7 @@ article h2 {
      padding: 10px;
      border-bottom: 1px solid darkgrey;
      font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 0.6em;
+     color: darkgrey; letter-spacing: 0.6em;
 }
 
 article h3 {
@@ -243,7 +128,7 @@ article h3 {
      padding: 10px;
      border-bottom: 1px solid darkgrey;
      font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     text-shadow: 2px 2px #DEDEDE; color: darkgrey; letter-spacing: 0.6em;
+     color: darkgrey; letter-spacing: 0.6em;
 }
 
 article h4 {
@@ -256,4 +141,5 @@ article h4 {
 
 article p {
      padding: 0px 25px;
+     color: white;
 }
