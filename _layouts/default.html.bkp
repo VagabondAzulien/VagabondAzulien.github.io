@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>The Internet Vagabond :: {{ page.tabtitle }}</title>
+
+     <meta name="description" 
+           content="Rants of a wandering techy, in search of truth,
+           knowledge, and a decent ping." />
+     <meta name="author" content="Bill 'Vagabond Azulien' Nibz" />
+	
+     <link rel="stylesheet" type="text/css" 
+           href="{{ site.url }}/src/styles.css" />
+
+     <link rel="icon" type="image/x-icon"
+          href="{{ site.url }}/src/images/favicon.ico" />
+</head>
+<body>
+
+<!-- Top Bar -->
+<header>
+     <ul id="title">
+          <li>The</li><li>Internet</li><li>Vagabond</li>
+     </ul>
+
+</header>
+
+<div class="clean"></div>
+
+<!--Sidebar -->
+<label for="toggle-navbar" id="toggle" style="position:fixed">&#9776</label>
+<input type="checkbox" id="toggle-navbar" />
+<nav id="bar">
+     <section id="header">
+          <input type="radio" name="menu_buttons" checked="checked" id="mb_1" />
+          <ul id="menu" name="navigation">
+          <li><a href="http://www.theinternetvagabond.com">
+               Home</a></li>
+          <li><label for="mb_2" id="projs_label">Projects</label></li>
+               <ul id="projects">
+                    {% for pr in site.projects limit:3 %}
+                         <li>{{ pr.title }}<br />
+                              <div>
+                                   <a href="{{ pr.p_url }}">[ Page ]</a>
+                                   <a href="{{ pr.s_url }}">[ Source ]</a>
+                              </div>
+                         </li>
+                    {% endfor %}
+               </ul>
+          <li><label for="mb_3" id="posts_label"> Posts</label></li>
+               <ul id="posts">
+                    {% for post in site.posts limit:3 %}
+                    <li>
+                         <a href="{{ post.url }}">
+                              {{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+               </ul>
+          </ul>
+          <input type="radio" name="menu_buttons" id="mb_2" />
+          <ul id="menu" name="projects_all">
+               <li><label for="mb_1" id="nav_label">Main Menu</label></li>
+                    {% for pr in site.projects %}
+                         <li>{{ pr.title }}<br />
+                              <div>
+                                   <a href="{{ pr.p_url }}">[ Page ]</a>
+                                   <a href="{{ pr.s_url }}">[ Source ]</a>
+                              </div>
+                         </li>
+                    {% endfor %}
+          </ul>
+          <input type="radio" name="menu_buttons" id="mb_3" />
+          <ul id="menu" name="posts_all">
+               <li><label for="mb_1" id="nav_label">Main Menu</label></li>
+               {% for post in site.posts %}
+               <li>
+                    <a href="{{ post.url }}">
+                         {{ post.title }}</a>
+               </li>
+               {% endfor %}
+          </ul>
+     </section> 
+     <section id="footer">
+     <div id="follow">
+          <a href="https://github.com/VagabondAzulien">
+               <img src="{{ site.url }}/src/images/github_light.png"
+                    width="32" height="32" alt="GitHub"
+                    title="My GitHub Repos" />
+          </a>
+          <a href="https://twitter.com/Azulien">
+               <img src="{{ site.url }}/src/images/twitter_light.png"
+                    width="32" height="32" alt="Twitter"
+                    title="My Twitter Feed" />
+          </a>
+          <a href="http://www.twitch.tv/vagabondazulien/profile">
+               <img src="{{ site.url }}/src/images/twitch_light.png"
+                    width="32" height="32" alt="Twitch"
+                    title="My Twitch Profile" />
+          </a>
+          <a href="http://steamcommunity.com/id/azulien">
+               <img src="{{ site.url }}/src/images/steam_light.png"
+                    width="32" height="32" alt="Steam"
+                    title="My Steam Profile" />
+          </a>
+     </div>
+     <div id="info">
+          <div id="cw">Niblock&copy2015</div><br />
+          <a href="http://www.wtfpl.net/">
+               <img src="{{ site.url }}/src/images/wtfpl-badge.png"
+                    width="80" height="15" alt="WTFPL" 
+                    title="Licensed under the WTFPL." />
+          </a>
+          <a href="http://www.w3.org/html/logo/">
+               <img src="{{ site.url }}/src/images/html5-badge.png" 
+                         width="50" height="15" alt="HTML5 | CSS3" 
+                         title="HTML5 Powered, CSS3 Styled" />
+          </a>
+     </div>
+     </section>
+</nav>
+
+<div class="clean"></div>
+
+<!-- Main Content Section -->
+<main>
+     
+     {{ content }}
+
+</main>
+
+<div class="clean"></div>
+</body>
+</html>
