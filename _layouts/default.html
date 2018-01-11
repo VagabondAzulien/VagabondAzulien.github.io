@@ -27,24 +27,19 @@
         </div>
     </div>
     <div class="pure-g pure-u-1-5 menu">
-        <div class="pure-u-1">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li>Projects</li>
-                    <ul id="projects">
-                        {% for pr in site.projects limit:3 %}
-                        <li>{{ pr.title }}</li>
-                        {% endfor %}
-                    </ul>
-                <li>Posts</li>
-                    <ul id="posts">
-                        {% for post in site.posts limit:3 %}
-                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-            </ul>
-        </div> 
+        <div class="pure-u-1" id="tags">
+        </div>
         <div class="pure-g" id="footer">
+            <div class="pure-u-1" id="about">
+                <h2>The Site</h2>
+                <p>This site is a small slice of internet real-estate that I use for
+                    occasional writing. Nothing I say is visionary or profound. I
+                    will tend to focus on technology, gaming, and philosophy.</p>
+                <h2>The Vagabond</h2>
+                <p>My name is Bill Niblock. I'm a computer scientist by education, a
+                    technologist by trade, a gamer by hobby, and a philosopher by
+                    mistake.</p>
+            </div>
             <div class="pure-u-1-4">
                 <a href="https://github.com/VagabondAzulien">
                     <img src="{{ site.url }}/src/images/github_light.png"
