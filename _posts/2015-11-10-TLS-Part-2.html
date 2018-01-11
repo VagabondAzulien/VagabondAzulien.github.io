@@ -3,131 +3,135 @@
      tabtitle: An Examination of TLS, Part 2
      title: An Examination of TLS, Part 2
      tags: tech
----
-
-<article>
-     <h1>TLS: An examination into the Security of the Internet, Part 2</h1>
-
-     <p>TLS, more often referred to as SSL, is the means by which a secure
+     short_desc: "TLS, more often referred to as SSL, is the means by which a secure
      connection is established over a computer network. Part 1 examines how to
      establish a secure connection using TLS. This article examines further the
      techniques and technology that makes TLS secure. Specifically, a brief
      examination of certificates, cipher suites, and public-key
-     authentication.</p>
+     authentication."
+---
 
-     <h2>Certificates</h2>
-     <p>A certificate is a vessel for a domain to provide authentication
-     information. More specifically, and perhaps most importantly, a certificate
-     is the package which transfers a key. TLS relies entirely upon Public-Key
-     Authentication to setup a secure connection. The challenge with Public-Key
-     Authentication is often sharing keys in a verifiable and secure manner.
-     This is to say that, despite public keys being public, you still need to
-     verify the owner of the key. This is where certificates, and Certificate
-     Authorities come in. Each certificate is tailored to a specific domain. It
-     includes not only the public key for a user to connect to the server with,
-     but also meta-data about the certificate: a UUID, and information about the
-     Certificate Authority; a signature authorizing the certificate, as well as
-     the encryption used for the signature; a thumbprint of the key, and details
-     of the algorithm used to hash the key; and a purpose for the certificate.
-     Certificates may contain additional details, but the aforementioned list is
-     required.</p>
+<h1>TLS: An examination into the Security of the Internet, Part 2</h1>
 
-     <p>A Certificate Authority (CA) is a trusted third-party repository of
-     signed keys. The purpose of a CA is very specific: verification. A CA will
-     generate and issue a key-pair to a domain. The domain can then share the
-     public key using a certificate. How specifically a CA verifies the domains
-     and keys is out of scope of this discussion, but Wikipedia provides many
-     details on the techniques used.</p>
+<p>TLS, more often referred to as SSL, is the means by which a secure
+connection is established over a computer network. Part 1 examines how to
+establish a secure connection using TLS. This article examines further the
+techniques and technology that makes TLS secure. Specifically, a brief
+examination of certificates, cipher suites, and public-key
+authentication.</p>
 
-     <h2>Cipher Suites</h2>
-     <p>A cipher is the algorithm used to encrypt information. Ciphers are
-     incredibly complex mathematical formulae, and are well beyond my
-     understanding. However, it is important to note that the strength of a key
-     is only as strong as the cipher suite used to generate it. Likewise, the
-     strength of a certificate is only as strong as the cipher used to sign
-     it. Keep this in mind when you generate and work with keys.</p>
+<h2>Certificates</h2>
+<p>A certificate is a vessel for a domain to provide authentication
+information. More specifically, and perhaps most importantly, a certificate
+is the package which transfers a key. TLS relies entirely upon Public-Key
+Authentication to setup a secure connection. The challenge with Public-Key
+Authentication is often sharing keys in a verifiable and secure manner.
+This is to say that, despite public keys being public, you still need to
+verify the owner of the key. This is where certificates, and Certificate
+Authorities come in. Each certificate is tailored to a specific domain. It
+includes not only the public key for a user to connect to the server with,
+but also meta-data about the certificate: a UUID, and information about the
+Certificate Authority; a signature authorizing the certificate, as well as
+the encryption used for the signature; a thumbprint of the key, and details
+of the algorithm used to hash the key; and a purpose for the certificate.
+Certificates may contain additional details, but the aforementioned list is
+required.</p>
 
-     <h2>Public-Key Authentication</h2>
-     <p>The most important part of TLS is public-key authentication. I would
-     argue that public-key authentication is one of the most important facets of
-     the technical world. Because of this, I want to recap in more general terms
-     how public-key authentication works:</p>
+<p>A Certificate Authority (CA) is a trusted third-party repository of
+signed keys. The purpose of a CA is very specific: verification. A CA will
+generate and issue a key-pair to a domain. The domain can then share the
+public key using a certificate. How specifically a CA verifies the domains
+and keys is out of scope of this discussion, but Wikipedia provides many
+details on the techniques used.</p>
 
-     <ol>
-          <li>Two parties want to establish a secure connection.</li>
-          <li>Each party generates two keys: one to share publicly, one to keep
-          secret.</li>
-          <li>Each party then shares their public keys.</li>
-     </ol>
+<h2>Cipher Suites</h2>
+<p>A cipher is the algorithm used to encrypt information. Ciphers are
+incredibly complex mathematical formulae, and are well beyond my
+understanding. However, it is important to note that the strength of a key
+is only as strong as the cipher suite used to generate it. Likewise, the
+strength of a certificate is only as strong as the cipher used to sign
+it. Keep this in mind when you generate and work with keys.</p>
 
-     <p>Now, whenever one of the two parties wants to securely communicate with
-     the other, they "sign" (encrypt) the communication with their private key.
-     The second party can then use the public key of the first party to verify
-     the identify of the sender, and decrypt the message.
+<h2>Public-Key Authentication</h2>
+<p>The most important part of TLS is public-key authentication. I would
+argue that public-key authentication is one of the most important facets of
+the technical world. Because of this, I want to recap in more general terms
+how public-key authentication works:</p>
 
-     <h2>Conclusion</h2>
-     <p>Security is a very deep and involved topic, but one I feel every
-     Sys-Admin should know a bit about. While these posts are only meant to serve
-     as a high-level overview of TLS, there are many more-detailed sources
-     available. I would suggest a visit to your local Wikipedia as a good first
-     step. Thanks for reading.</p>
+<ol>
+  <li>Two parties want to establish a secure connection.</li>
+  <li>Each party generates two keys: one to share publicly, one to keep
+  secret.</li>
+  <li>Each party then shares their public keys.</li>
+</ol>
 
-     <h3>Sources</h3>
-     <ol>
-          <li><a href="https://en.wikipedia.org/wiki/Public-key_cryptography">
-                    Wikipedia: Public-key Cryptography</a></li>
-          <li><a
-               href="https://security.stackexchange.com/questions/6290/how-is-it-possible-that-people-observing-an-https-connection-being-established-w">Stack
-               Exchange: How is it possible that people observing an HTTPS
-               connection being established wouldn't know how to decrypt
-               it?</a></li>
-          <li><a
-               href="https://security.stackexchange.com/questions/20803/how-does-ssl-tls-work">
-               Stack Exchange: How Does SSL/TLS work?</a></li>
-     </ol>
+<p>Now, whenever one of the two parties wants to securely communicate with
+the other, they "sign" (encrypt) the communication with their private key.
+The second party can then use the public key of the first party to verify
+the identify of the sender, and decrypt the message.
 
-     <br /><h4>[Bill Niblock][2015-11-10][Technology]</h4>
-</article>
+<h2>Conclusion</h2>
+<p>Security is a very deep and involved topic, but one I feel every
+Sys-Admin should know a bit about. While these posts are only meant to serve
+as a high-level overview of TLS, there are many more-detailed sources
+available. I would suggest a visit to your local Wikipedia as a good first
+step. Thanks for reading.</p>
+
+<h3>Sources</h3>
+<ol>
+  <li><a href="https://en.wikipedia.org/wiki/Public-key_cryptography">
+            Wikipedia: Public-key Cryptography</a></li>
+  <li><a
+       href="https://security.stackexchange.com/questions/6290/how-is-it-possible-that-people-observing-an-https-connection-being-established-w">Stack
+       Exchange: How is it possible that people observing an HTTPS
+       connection being established wouldn't know how to decrypt
+       it?</a></li>
+  <li><a
+       href="https://security.stackexchange.com/questions/20803/how-does-ssl-tls-work">
+       Stack Exchange: How Does SSL/TLS work?</a></li>
+</ol>
+
+<br /><h4>[Bill Niblock][2015-11-10][Technology]</h4>
 
 <!-- ================================= -->
 <!-- ================================= -->
 
 <!-- Notes (because why remove them?)
 Asymmetric Key Authentication:
-     - Relies on two keys: Public key, Private key
-     - Both keys are related, but impossible (computationally infeasible) to
-       identify the private key based on the public key [1][2]
-     - The public key can be distributed publicly
-          - Used to encrypt message to the owner of the private paired key
-          - Used to verify signatures from the private key
-     - The private key is kept secret
-          - Used to decrypt message from the public paired key
-          - Used to as a digital signature
+- Relies on two keys: Public key, Private key
+- Both keys are related, but impossible (computationally infeasible) to
+identify the private key based on the public key [1][2]
+- The public key can be distributed publicly
+  - Used to encrypt message to the owner of the private paired key
+  - Used to verify signatures from the private key
+- The private key is kept secret
+  - Used to decrypt message from the public paired key
+  - Used to as a digital signature
 
 Basics of an Asymmetric Key handshake:
-     1. Client reaches out to server, requesting a secure connection
-     2. Server acknowledges request, sends back it's public key
-          - This is commonly known as a certificate. Often signed by a
-            third-party to ensure it is what it's supposed to be.
-     3. Client uses this public key to encrypt a secret, and sends the package
-     back to the server.
-     4. The server then uses it's private key to decrypt the public-key
-     encrypted secret, and uses that secret hence forth to encrypt all traffic.
-     5. A private connection is now established.
+1. Client reaches out to server, requesting a secure connection
+2. Server acknowledges request, sends back it's public key
+  - This is commonly known as a certificate. Often signed by a
+    third-party to ensure it is what it's supposed to be.
+3. Client uses this public key to encrypt a secret, and sends the package
+back to the server.
+4. The server then uses it's private key to decrypt the public-key
+encrypted secret, and uses that secret hence forth to encrypt all traffic.
+5. A private connection is now established.
 
 Basics of Certificates
-     1. A certificate is a vessel for a server to provide authentication
-     information.
-     2. Typically a certificate will contain the following information:
-          - A UUID of the certificate itself
-          - The subject of the certificate
-          - The signature, and signature algorithm used
-          - The issuer of the certificate, as well as dates when it is valid
-          - The purpose of the key
-          - The thumbprint, and algorithm, used to hash the key
-          - The public key itself
-     3. Certificate Authorities act as a third part to verify the integrity of
-     public keys.
+1. A certificate is a vessel for a server to provide authentication
+information.
+2. Typically a certificate will contain the following information:
+  - A UUID of the certificate itself
+  - The subject of the certificate
+  - The signature, and signature algorithm used
+  - The issuer of the certificate, as well as dates when it is valid
+  - The purpose of the key
+  - The thumbprint, and algorithm, used to hash the key
+  - The public key itself
+3. Certificate Authorities act as a third part to verify the integrity of
+public keys.
 -->
 
 <!-- ================================= -->
