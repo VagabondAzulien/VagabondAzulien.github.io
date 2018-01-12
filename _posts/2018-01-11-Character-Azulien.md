@@ -1,8 +1,8 @@
 ---
-     layout: default
      tabtitle: "Azulien Blackblade"
      title: "Character Backstory: Azulien Blackblade"
      tags: [gaming, dnd, writing]
+     pub: "2018-01-12"
      short_desc: "Here's the character backstory for one of my older characters
      from a game long since forgotten: Azulien Blackblade. Enjoy!"
 ---

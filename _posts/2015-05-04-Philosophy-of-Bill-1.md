@@ -1,8 +1,8 @@
 ---
-     layout: default
-     tabtitle: Philosophy of Bill, Abbreviated
+     tabtitle: Philosophy of Bill
      title: The Philosophy of Bill, Abbreviated
      tags: philosophy
+     pub: "2015-05-04"
      short_desc: "I consider myself a very philosophical person. That doesn't
      mean I'm any good at philosophy, I just tend to think a lot about ethics,
      morality, and happiness. Recently I've been thinking more about my
@@ -103,5 +103,3 @@ perhaps it's an unfair-share. That's what makes it worth it, though, to me.
 I seek to learn, and in doing so, find happiness and confusion. It's a
 recursive system: the confusion leads to learning, which leads to happiness
 and confusion. And I love recursion.
-
-#### [Bill Niblock][2015-05-04][Philosophy]
