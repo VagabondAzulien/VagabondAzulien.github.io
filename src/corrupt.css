@@ -1,0 +1,230 @@
+/*
+ * Corrupt: A simple, responsive theme for Jekyll
+ * CSS for theinternetvagabond.com
+ * (C)2015 Bill Niblock
+ * Licensed under the WTFPL [http://www.wtfpl.net]
+*/
+
+
+/* General */
+html {
+    font-family: sans-serif;
+    /* Change this value to any color you want */
+    --hilite: #8D3FC5;
+}
+
+body {
+    background-color: #202020;
+    margin: 0;
+}
+
+a,a:visited,a:link,a:focus {
+    text-decoration: underline; color: white;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+.cor_page {
+    display: flex; flex-flow: row wrap;
+}
+
+.cor_content {
+    width: 100%;
+    background-color: #3B3B3B;
+}
+
+/* Header */
+.cor_head {
+    position: fixed; top: 0px; left: 0px; right: 0px;
+    margin: 0px; padding: 10px; z-index: 1;
+    background-color: #202020;
+    border-bottom: 1px solid var(--hilite);
+    box-shadow: 0px 5px 30px -5px var(--hilite);
+}
+
+.title {
+    display: flex;
+    margin: 0px 25px; padding: 0px;
+}
+
+.title div {
+    margin: 0px; padding: 0px;
+    font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.8em;
+}
+
+.title div::first-letter {
+    margin: 0px; padding: 0px 2px;
+    font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+
+/* Sidebar */
+.cor_menu {
+    display: flex;
+    background-color: #202020;
+    z-index: 2; width: 100%;
+}
+
+.cor_menu a:link,a:visited,a:focus {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.cor_menu a:hover {
+    font-weight: normal;
+    color: white;
+}
+
+.cor_footer {
+    display: flex; flex-flow: row wrap;
+    text-align: center;
+    border-top: 1px solid var(--hilite);
+    box-shadow: 0px 0px 30px 0px var(--hilite);
+}
+
+.cor_footer #about {
+    display: flex;
+    flex-flow: column;
+}
+
+.cor_footer #about p {
+    line-height: 1.5em; letter-spacing: 0.1em; text-align: left; color: white;
+    padding: 0em 1em;
+}
+
+.cor_footer #about h2 {
+    text-align: right;
+    padding: 10px;
+    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.6em;
+}
+
+.cor_footer #social {
+    display: flex; flex-flow: row; width: 100%;
+    padding-bottom: 15px;
+}
+
+.cor_footer #social div {
+    width: 25%; text-align: center;
+}
+
+/* Index */
+#posts a,a:visited,a:link,a:focus {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+#posts a:hover {
+    font-style: normal;
+    color: white;
+}
+
+#posts #details {
+    display: flex; flex-flow: row wrap;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid darkgrey;
+    font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.4em;
+}
+
+#posts #date {
+    width: 100%;
+    text-align: center;
+    color: grey;
+}
+
+#posts #tags {
+    width: 100%;
+    text-align: center;
+    color: grey;
+}
+
+#posts #desc {
+    padding: 0em 2em 2em 2em;
+    color: white;
+}
+
+/* Content */
+#content {
+    margin: 75px 5% 5% 5%;
+    line-height: 1.5em; letter-spacing: 0.1em;
+}
+
+#content h1 {
+    padding: 10px;
+    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.5em;
+}
+
+#content h1::first-letter {
+    margin: 0px; padding: 0px;
+    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+
+#content h2 {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid darkgrey;
+    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.6em;
+}
+
+#content h3 {
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid darkgrey;
+    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.6em;
+}
+
+#content h4 {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid darkgrey;
+    font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.4em;
+}
+
+#content p {
+    padding: 0em 2em;
+    color: white;
+}
+
+/* Mobile First */
+@media only screen and (min-width: 1250px) and (min-height: 750px) {
+    .title div {
+        font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        color: darkgrey; letter-spacing: 1.2em;
+    }
+    .title div::first-letter {
+        font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+    .cor_content {
+        width: 80%;
+    }
+    #posts #date {
+        width: 50%;
+        text-align: left;
+        color: grey;
+    }
+
+    #posts #tags {
+        width: 50%;
+        text-align: right;
+        color: grey;
+    }
+    .cor_menu {
+        width: 20%;
+    }
+    .cor_footer {
+        position: fixed;
+        bottom: 0;
+        border: none;
+        box-shadow: unset;
+    }
+}
