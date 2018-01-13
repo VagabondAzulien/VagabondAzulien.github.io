@@ -1,9 +1,5 @@
----
-    layout: corrupt_index
-    tabtitle: Home
----
-
-{% for post in site.posts limit:5 %}
+{% for post in site.posts %}
+    {% if post.topics contains page.title %}
     <div id="posts">
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <div class="" id="details">
@@ -16,4 +12,5 @@
         </div>
         <div id="desc">{{ post.short_desc }}</div>
     </div>
+    {% endif %}
 {% endfor %}
