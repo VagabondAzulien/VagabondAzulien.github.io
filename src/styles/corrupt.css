@@ -66,6 +66,8 @@ a:hover {
     display: flex;
     background-color: #202020;
     z-index: 2; width: 100%;
+    border-top: 1px solid var(--hilite);
+    box-shadow: 0px 0px 30px 0px var(--hilite);
 }
 
 .cor_menu a:link,a:visited,a:focus {
@@ -78,11 +80,22 @@ a:hover {
     color: white;
 }
 
+.cor_topics {
+    display: flex; flex-flow: row wrap; justify-content: center;
+    width: 100%;
+    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center; color: darkgrey; letter-spacing: 0.6em; line-height: 2.0em;
+    padding: 10px;
+}
+
+.cor_topics div {
+    padding: 1em 1em 0em 1em;
+}
+
 .cor_footer {
     display: flex; flex-flow: row wrap;
+    width: 100%;
     text-align: center;
-    border-top: 1px solid var(--hilite);
-    box-shadow: 0px 0px 30px 0px var(--hilite);
 }
 
 .cor_footer #about {
@@ -219,14 +232,16 @@ a:hover {
 }
 
 /* Mobile First */
-@media only screen and (min-width: 1250px) and (min-height: 750px) {
-    .title div {
-        font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+@media only screen and (min-width: 768px) {
+    .title div { font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         color: darkgrey; letter-spacing: 1.2em;
     }
     .title div::first-letter {
         font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     }
+}
+
+@media only screen and (min-width: 1250px) and (min-height: 750px) {
     .cor_content {
         width: 80%;
     }
@@ -243,11 +258,16 @@ a:hover {
     }
     .cor_menu {
         width: 20%;
-    }
-    .cor_footer {
-        position: fixed;
-        bottom: 0;
         border: none;
         box-shadow: unset;
+    }
+    .cor_topics {
+        position: fixed; top: 75px; right: 0px;
+        font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        text-align: right; color: darkgrey; letter-spacing: 0.6em; line-height: 2.0em;
+        padding: 10px;
+    }
+    .cor_footer {
+        position: fixed; bottom: 0; width: unset;
     }
 }
