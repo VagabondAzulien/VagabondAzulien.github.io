@@ -148,6 +148,29 @@ a:hover {
     color: white;
 }
 
+#all_button {
+    padding: 5px; margin: 2em; width: unset;
+    text-align: center;
+    border: 1px solid darkgrey;
+}
+
+#all_button a,a:visited,a:link,a:focus {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+#all_button a:hover {
+    font-style: normal;
+    color: white;
+}
+
+/* Collection */
+#cor_coll_title {
+    margin: 0px; padding-bottom: 10px;
+    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.5em; text-align: center;
+}
+
 /* Content */
 #content {
     margin: 75px 5% 5% 5%;
