@@ -4,16 +4,14 @@ This site is a small chunk of virtual real-estate for Bill Niblock.
 
 All stuff here is my opinion yada yada yada.
 
-Nothing I say is profound or visionary, and sometimes it makes sense.
+### To-Do
+* [ ] Update 404 page
+* [ ] Finalize theme, and publish it?
 
-###To-Do
-* [ ] CSS: Establish responsive design.
-* [ ] Work on GitHub project pages for few projects.
+#### Latest Update :: 2018-01-11
+* Completely redesigned site to a new custom theme, called Corrupted.
 
-####Latest Update :: 2015/07/18
-* Finalized current iteration of right-side menu.
-
-###License
+### License
 
 This site is licensed under the [WTFPL](http://www.wtfpl.net/), the full license
 text of which can be found below. Everything in \_posts and \_drafts is
