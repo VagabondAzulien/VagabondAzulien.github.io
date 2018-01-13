@@ -1,7 +1,19 @@
+collections:
+  topics:
+    output: true
+
 defaults:
   -
     scope:
+      path: ''
       type: "posts"
     values:
       layout: "corrupt_post"
       author: "Bill Niblock"
+  -
+    scope:
+      path: ''
+      type: "topics"
+    values:
+      layout: "corrupt_collection"
+      permalink: "/topics/:name"

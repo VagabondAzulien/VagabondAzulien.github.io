@@ -1,7 +1,7 @@
 ---
      tabtitle: Philosophy of Bill
      title: The Philosophy of Bill, Abbreviated
-     tags: philosophy
+     topics: philosophy
      pub: "2015-05-04"
      short_desc: "I consider myself a very philosophical person. That doesn't
      mean I'm any good at philosophy, I just tend to think a lot about ethics,
