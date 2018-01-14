@@ -1,7 +1,7 @@
 <div class="cor_menu">
     <div class="cor_topics">
-        <div><a href="/">Home</a></div>
-        {% for topic in topics %}
+        <div><a href="/">home</a></div>
+        {% for topic in site.topics %}
             <div><a href="/topics/{{ topic.title }}">{{ topic.title }}</a></div>
         {% endfor %}
     </div>

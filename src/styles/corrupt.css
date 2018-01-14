@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: #202020;
+    background-color: #3B3B3B;
     margin: 0;
 }
 
@@ -64,6 +64,7 @@ a:hover {
 /* Sidebar */
 .cor_menu {
     display: flex;
+    flex-flow: column wrap;
     background-color: #202020;
     z-index: 2; width: 100%;
     border-top: 1px solid var(--hilite);
@@ -82,14 +83,22 @@ a:hover {
 
 .cor_topics {
     display: flex; flex-flow: row wrap; justify-content: center;
-    width: 100%;
     font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-align: center; color: darkgrey; letter-spacing: 0.6em; line-height: 2.0em;
-    padding: 10px;
 }
 
 .cor_topics div {
-    padding: 1em 1em 0em 1em;
+    padding: 10px 10px 0px 10px;
+}
+
+.cor_topics a,a:visited,a:link,a:focus {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+.cor_topics a:hover {
+    font-style: normal;
+    color: white;
 }
 
 .cor_footer {
@@ -262,10 +271,9 @@ a:hover {
         box-shadow: unset;
     }
     .cor_topics {
-        position: fixed; top: 75px; right: 0px;
+        position: fixed; top: 75px; right: 0px; display: unset;
         font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         text-align: right; color: darkgrey; letter-spacing: 0.6em; line-height: 2.0em;
-        padding: 10px;
     }
     .cor_footer {
         position: fixed; bottom: 0; width: unset;
