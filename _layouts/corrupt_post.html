@@ -19,7 +19,10 @@
         </div>
         <div id="content">
             {{ content }}
-            <h4>[{{ page.author }}][{{ page.pub }}][{{ page.tags }}]</h4>
+            <h4>[ {{ page.author }} ][ {{ page.pub }} ][
+            {% for topic in page.topics %}
+                <a href="/topics/{{topic}}">{{topic}}</a> 
+            {% endfor %}]</h4>
         </div>
     </div>
     {% include cor_menu.html %}
