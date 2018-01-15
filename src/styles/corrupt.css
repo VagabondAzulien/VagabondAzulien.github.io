@@ -240,6 +240,14 @@ a:hover {
     color: white;
 }
 
+#content ul {
+    color: white;
+}
+
+#content ol {
+    color: white;
+}
+
 /* Mobile First */
 @media only screen and (min-width: 768px) {
     .title div { font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
