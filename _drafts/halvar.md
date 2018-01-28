@@ -1,14 +1,14 @@
 ---
      tabtitle: "Character Write-up: Halvar"
      title: "Character Write-up: Halvar, Rune Bearer"
-     topics: [writing, gaming]
+     topics: [gaming, writing]
      pub: "2018-01-27"
      short_desc: "The backstory for my first character in a new 5th Edition
      Dungeons and Dragons campaign. Meet Halvar, a brash young warrior looking
      for glory!"
 ---
 
-# Halvar, Rune Bearer
+# Character Backstory: Halvar, Rune Bearer
 
 The boy stirred. A movement in his room brought his senses to him. It moved like
 a shadow, hunting across his wall, and he feared he was the prey. Slipping
@@ -93,7 +93,7 @@ Baldur’s face, when he shared of his glory.
 
 In a white blur, Ivar was torn from his side. Stumbling slightly, he turned to
 see a great white wolf, the size of a small horse, with Ivar’s neck in its
-teeth. With a snarl, it ripped the life from Ivar, and as blood dripped from its
+teeth. With a snarl, it ripped the life from him, and as blood dripped from its
 mouth, it spoke in the common tongue.
 
 “You will die this night, rune bearer. You cannot be allowed to live.”
@@ -130,7 +130,7 @@ fang. A vetrgarmr. Daughter of Vetrkona, Daughter of Hati Hróðvitnisson.”
 A crushing of snow behind him signalled more wolves. Halvar knew his time was
 over.
 
-Never a skald around… He began, then was interrupted by a yelp and a thud. He
+_Never a skald around…_ He began, then was interrupted by a yelp and a thud. He
 glanced over his shoulder to see one of the two wolves laying still, an ax in
 its side. From the woods, a figure emerged.
 
@@ -147,7 +147,7 @@ defeated on the snow.
 
 “You fight with conviction, Haakonson,” she spit, as blood ran from her mouth.
 “Beware my father’s fang, manling. He will devour your gods.” The light faded
-from the great beast, as the last fog of its breath faded into the cold night
+from the great beast, as the last fog of its breath disappeared into the cold night
 air.
 
 The two men made haste to the village. The night now silent.
@@ -183,11 +183,11 @@ Haakon handed a cup to Halvar, and they drank.
 “Ages past, when myths were made, and magic was commonplace, the keepers of the
 runes used their powers to gift man with powerful weapons and armor and other
 trinkets. This sword is one such weapon. I know not its true name. My father
-told me it was called  Eljunvegr (Enduring Hope), as I have told you, but there
+told me it was called  Eljunvegr, Enduring Hope, as I have told you, but there
 is another name, lost to time. These runes, they are more than just decoration,
 as you well know. Legend says, in the time of the great war, this sword was used
 by a great berserker of Odin. Odin’s ritual to save humanity would destroy any
-and all around him, and Odin commanded his men flee, to live. This berserker
+and all around him, and Odin commanded his men flee and live. This berserker
 refused the command of the god, and fought alone to protect the All Father,
 ensuring his victory. He fought with this sword, as you now will.”
 
@@ -202,29 +202,27 @@ As Halvar neared the edge of the village, there stood two men. He recognized one
 as Baldur, and after a moment recognized the second as Tad.
 
 “Leaving so soon? Surely you’ve tales of your daring rescue last night?” Baldur
-said, stifling a yawn. “We heard you were to leave. It looks like you ride to
+said, stifling a yawn. “Where are you off to so early? It looks like you ride to
 war!” He chuckled.
 
 “You saved this village last night. That caravan had food and medicine.” Tad
 chimed in.
 
 “We saved the village, Tad. You, me and Ivar. We did.” Halvar replied, his voice
-lacking in it’s usual bravado.
+lacking in its usual bravado.
 
 “Well, seems your adventures were a bit humbling. I admit, I fear what an actual
-adventure will make you!” Baldur laughed. “Every great warrior needs a shield,
-Halvar, and despite my jabs, I always remember the shield you told me of, the
-shield that saved you that night many years ago.”
+adventure will make you!” Baldur laughed. His expression then grew sober. “Every
+great warrior needs a shield, Halvar. I know how much this means to you. I
+restored it as best I could."
 
 From his side, Baldur lifted a round shield. It was expertly crafted, and
 perfectly balanced. Upon its face, a rune was burned into the wood, and gelded
 in silver.
 
 “Take this too, it’s from my family.” Tad held forth a horn, carved of bone with
-a steel mouthpiece.
-
-“Consider them a reminder: your legend started here. Now go, your father will
-have our beards if we’re seen with you.”
+a steel mouthpiece. “Consider them a reminder: your legend started here. Now go,
+your father will have our beards if we’re seen with you.”
 
 With a nod, Halvar rode from the village. He knew not to where he went, but he
 knew his destiny would not let him stray far.
