@@ -1,7 +1,6 @@
 ---
      tabtitle: "Seneca's Letter to Lucilius, Letter 11"
      title: "Seneca's Letter to Lucilius, Letter 11: On the Blush of Modesty"
-     Friendship"
      topics: [philosophy]
      pub: "2018-01-28"
      short_desc: "Letter 11 deals with accepting our faults, staring an
