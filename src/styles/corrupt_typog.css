@@ -1,4 +1,3 @@
-
 html {
     font-family: sans-serif;
     /* Change this value to any color you want */
@@ -6,108 +5,61 @@ html {
 }
 
 a,a:visited,a:link,a:focus {
-    text-decoration: underline; color: white;
+    text-decoration: none; 
+    color: darkgrey;
 }
 
 a:hover {
     font-style: italic;
+    color: var(--hilite);
 }
 
-.title div {
-    margin: 0px; padding: 0px;
-    font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+header div {
+    font: 1.5vw "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.8em;
 }
 
-.title div::first-letter {
-    margin: 0px; padding: 0px 2px;
-    font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+header div::first-letter {
+    font: 1.75vw "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: white;
 }
 
-.cor_menu a:link,a:visited,a:focus {
-    text-decoration: none;
-    color: darkgrey;
-}
-
-.cor_menu a:hover {
-    font-weight: normal;
-    color: white;
-}
-
-.cor_topics {
-    display: flex; flex-flow: row wrap; justify-content: center;
+nav {
     font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    text-align: center; color: darkgrey; letter-spacing: 0.6em; line-height: 2.0em;
+    color: darkgrey; letter-spacing: 0.6em; line-height: 2.0em;
 }
 
-.cor_topics a,a:visited,a:link,a:focus {
-    color: darkgrey;
-    text-decoration: none;
-}
-
-.cor_topics a:hover {
-    font-style: normal;
-    color: white;
-}
-
-.cor_footer #about p {
+#about p {
     line-height: 1.5em; letter-spacing: 0.1em; text-align: left; color: white;
     padding: 0em 1em;
 }
 
-.cor_footer #about h2 {
-    text-align: right;
-    padding: 10px;
-    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: darkgrey; letter-spacing: 0.6em;
-}
-
-#posts a,a:visited,a:link,a:focus {
-    color: darkgrey;
-    text-decoration: none;
-}
-
-#posts a:hover {
-    font-style: normal;
-    color: white;
-}
-
-#cor_coll_title {
-    margin: 0px; padding-bottom: 10px;
-    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: darkgrey; letter-spacing: 0.5em; text-align: center;
-}
-
-#content h1 {
+h1 {
     padding: 10px;
     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.5em;
 }
 
-#content h1::first-letter {
-    margin: 0px; padding: 0px;
+h1::first-letter {
     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: white;
 }
 
-#content h2 {
+h2 {
     text-align: left;
     padding: 10px;
-    border-bottom: 1px solid darkgrey;
     font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.6em;
 }
 
-#content h3 {
+h3 {
     text-align: right;
     padding: 10px;
-    border-bottom: 1px solid darkgrey;
     font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.6em;
 }
 
-#content h4 {
+h4 {
     text-align: center;
     padding: 10px;
     border-top: 1px solid darkgrey;
@@ -115,15 +67,28 @@ a:hover {
     color: darkgrey; letter-spacing: 0.4em;
 }
 
-#content p {
+h5 {
+    padding: 10px;
+    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.5em; text-align: center;
+}
+
+h6 {
+    padding: 10px;
+    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.5em; text-align: center;
+    border: 1px solid darkgrey;
+}
+
+article p {
     padding: 0em 2em;
     color: white;
 }
 
-#content ul {
+ul {
     color: white;
 }
 
-#content ol {
+ol {
     color: white;
 }

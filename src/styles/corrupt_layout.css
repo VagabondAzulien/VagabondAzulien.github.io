@@ -1,5 +1,4 @@
 html {
-    font-family: sans-serif;
     /* Change this value to any color you want */
     --hilite: #8D3FC5;
 }
@@ -9,27 +8,128 @@ body {
     margin: 0;
 }
 
-.cor_page {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: minmax(50px, auto);
-    grid-template-areas:
-        "hd   hd   hd   hd   hd   ft   ft"
-        "main main main main main ft   ft";
-}
 
-.cor_head {
-    grid-area: hd;
+header {
     background-color: #202020;
     border-bottom: 1px solid var(--hilite);
     box-shadow: 0px 5px 30px -5px var(--hilite);
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
-.cor_menu {
-    grid-area: ft;
+footer {
     background-color: #202020;
+    border-top: 1px solid var(--hilite);
+    box-shadow: 0px -5px 30px -5px var(--hilite);
 }
 
-.cor_content {
-    grid-area: main;
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+footer #social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+main {
+}
+
+main #details {
+    display: flex; flex-flow: row wrap;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid darkgrey;
+    font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.4em;
+}
+
+main #date {
+    width: 100%;
+    text-align: center;
+    color: grey;
+}
+
+main #tags {
+    width: 100%;
+    text-align: center;
+    color: grey;
+}
+
+main #desc {
+    padding: 0em 2em 2em 2em;
+    color: white;
+}
+
+@supports (display: grid) {
+
+    .cor_page {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas:
+            "head head head head head head head"
+            ".    body body body body body ."
+            "foot foot foot foot foot foot foot";
+    }
+
+    header {
+        grid-area: head;
+    }
+
+    footer {
+        grid-area: foot;
+    }
+
+    main {
+        grid-area: body;
+    }
+
+    @media only screen and (min-width: 1250px) and (min-height: 750px) {
+        .cor_page {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas:
+                "head head head head head head head foot foot"
+                ".    body body body body body .    foot foot";
+        }
+
+        header {
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 10px;
+        }
+
+        footer {
+            border-top: 0px;
+            box-shadow: unset;
+        }
+
+        nav {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 50px 0px;
+        }
+
+        main #date {
+            width: 50%;
+            text-align: left;
+            color: grey;
+        }
+
+        main #tags {
+            width: 50%;
+            text-align: right;
+            color: grey;
+        }
+    }
 }
