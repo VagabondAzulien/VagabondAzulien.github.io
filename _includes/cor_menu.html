@@ -1,50 +1,40 @@
-<div class="cor_menu">
-    <div class="cor_topics">
+<footer>
+    <nav>
         <div><a href="/">home</a></div>
         {% for topic in site.topics %}
             <div><a href="/topics/{{ topic.title }}">{{ topic.title }}</a></div>
         {% endfor %}
-    </div>
-    <div class="cor_footer">
-        <div class="" id="about">
-            <h2>The Site</h2>
-            <p>This site is a small slice of internet real-estate that I use for
-                occasional writing. Nothing I say is visionary or profound. I
-                will tend to focus on technology, gaming, and philosophy.</p>
-            <h2>The Vagabond</h2>
-            <p>My name is Bill Niblock. I'm a computer scientist by education, a
-                technologist by trade, a gamer by hobby, and a philosopher by
-                accident.</p>
-        </div>
-        <div id="social">
-            <div class="">
-                <a href="https://github.com/VagabondAzulien">
-                    <img src="{{ site.url }}/src/images/github_light.png"
-                        width="32" height="32" alt="GitHub"
-                        title="My GitHub Repos" />
-                </a>
-            </div>
-            <div class="">
-                <a href="https://twitter.com/Azulien">
-                    <img src="{{ site.url }}/src/images/twitter_light.png"
-                        width="32" height="32" alt="Twitter"
-                        title="My Twitter Feed" />
-                </a>
-            </div>
-            <div class="">
-                <a href="https://www.twitch.tv/vagabondazulien/profile">
-                    <img src="{{ site.url }}/src/images/twitch_light.png"
-                        width="32" height="32" alt="Twitch"
-                        title="My Twitch Profile" />
-                </a>
-            </div>
-            <div class="">
-                <a href="https://steamcommunity.com/id/azulien">
-                    <img src="{{ site.url }}/src/images/steam_light.png"
-                        width="32" height="32" alt="Steam"
-                        title="My Steam Profile" />
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+    </nav>
+    <section id="about">
+        <h3>The Site</h3>
+        <p>This site is a small slice of internet real-estate that I use for
+            occasional writing. Nothing I say is visionary or profound. I
+            will tend to focus on technology, gaming, and philosophy.</p>
+        <h3>The Vagabond</h3>
+        <p>My name is Bill Niblock. I'm a computer scientist by education, a
+            technologist by trade, a gamer by hobby, and a philosopher by
+            accident.</p>
+    </section>
+    <section id="social">
+        <a href="https://github.com/VagabondAzulien">
+            <img src="{{ site.url }}/src/images/github_light.png"
+                width="32" height="32" alt="GitHub"
+                title="My GitHub Repos" />
+        </a>
+        <a href="https://twitter.com/Azulien">
+            <img src="{{ site.url }}/src/images/twitter_light.png"
+                width="32" height="32" alt="Twitter"
+                title="My Twitter Feed" />
+        </a>
+        <a href="https://www.twitch.tv/vagabondazulien/profile">
+            <img src="{{ site.url }}/src/images/twitch_light.png"
+                width="32" height="32" alt="Twitch"
+                title="My Twitch Profile" />
+        </a>
+        <a href="https://steamcommunity.com/id/azulien">
+            <img src="{{ site.url }}/src/images/steam_light.png"
+                width="32" height="32" alt="Steam"
+                title="My Steam Profile" />
+        </a>
+    </section>
+</footer>

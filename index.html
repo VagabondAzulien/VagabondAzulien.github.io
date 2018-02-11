@@ -4,16 +4,15 @@
 ---
 
 {% for post in site.posts limit:5 %}
-    <div id="posts">
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <div class="" id="details">
-            <div class="" id="date">{{ post.pub }}</div>
-            <div class="" id="tags">
-                {% for topic in post.topics %}
-                    <a href="/topics/{{topic}}">{{topic}}</a> 
-                {% endfor %}
-            </div>
-        </div>
-        <div id="desc">{{ post.short_desc }}</div>
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<div id="details">
+    <div id="date">{{ post.pub }}</div>
+    <div id="tags">
+        {% for topic in post.topics %}
+            <a href="/topics/{{topic}}">{{topic}}</a> 
+        {% endfor %}
     </div>
+</div>
+<div id="desc">{{ post.short_desc }}</div>
 {% endfor %}
+<h6><a href="/topics/all">All Posts</a></h6>

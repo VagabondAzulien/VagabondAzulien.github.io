@@ -6,25 +6,27 @@
         content="Rants of a wandering techy, in search of truth, knowledge, and a decent ping." />
     <meta name="author" content="Bill 'Vagabond Azulien' Nibz" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/src/styles/corrupt.css" />
-    <link rel="icon" type="image/x-icon" href="{{ site.url }}/src/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" 
+          href="{{ site.url }}/src/styles/corrupt_layout.css" />
+    <link rel="stylesheet" type="text/css"
+          href="{{ site.url }}/src/styles/corrupt_typog.css" />
+    <link rel="icon" type="image/x-icon" 
+          href="{{ site.url }}/src/images/favicon.ico" />
 </head>
 <body>
 <div class="cor_page">
-    <div class="cor_content">
-        <div class="cor_head">
-            <div class="title">
-                <div>The</div><div>Internet</div><div>Vagabond</div>
-            </div>
-        </div>
-        <div id="content">
+    <header>
+        <div> The </div><div> Internet </div><div> Vagabond </div>
+    </header>
+    <main>
+        <article>
             {{ content }}
             <h4>[ {{ page.author }} ][ {{ page.pub }} ][
             {% for topic in page.topics %}
                 <a href="/topics/{{topic}}">{{topic}}</a> 
             {% endfor %}]</h4>
-        </div>
-    </div>
+        </article>
+    </main>
     {% include cor_menu.html %}
 </div>
 </body>
