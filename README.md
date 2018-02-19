@@ -6,10 +6,11 @@ All stuff here is my opinion yada yada yada.
 
 ### To-Do
 * [ ] Update 404 page
+* [ ] Research and implement nicer typography
 * [ ] Finalize theme, and publish it?
 
-#### Latest Update :: 2018-01-11
-* Completely redesigned site to a new custom theme, called Corrupted.
+#### Latest Technology Update :: 2018-02-19
+* Update Corrupted to use CSS Grid
 
 ### License
 

@@ -1,0 +1,90 @@
+html {
+    font-family: sans-serif;
+    /* Change this value to any color you want */
+    --hilite: #8D3FC5;
+}
+
+ul,ol,p {
+    color: white;
+}
+
+a,a:visited,a:link,a:focus {
+    text-decoration: none; 
+    color: darkgrey;
+}
+
+a:hover {
+    color: white;
+}
+
+nav a:hover {
+    color: var(--hilite);
+}
+
+header div {
+    color: darkgrey; letter-spacing: 0.8em;
+}
+
+header div::first-letter {
+    color: white;
+}
+
+nav {
+    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.6em; line-height: 2.0em;
+}
+
+#about p {
+    line-height: 1.5em; letter-spacing: 0.1em; text-align: left; color: white;
+    padding: 0em 1em;
+}
+
+h1 {
+    padding: 10px;
+    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.5em;
+}
+
+h1::first-letter {
+    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+
+h2 {
+    text-align: left;
+    padding: 10px;
+    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.6em;
+}
+
+h3 {
+    text-align: right;
+    padding: 10px;
+    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.6em;
+}
+
+h4 {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid darkgrey;
+    font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.4em;
+}
+
+h5 {
+    padding: 10px;
+    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.5em; text-align: center;
+}
+
+h6 {
+    padding: 10px;
+    font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.5em; text-align: center;
+    border: 1px solid darkgrey;
+}
+
+article p {
+    padding: 0em 2em;
+}

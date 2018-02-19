@@ -15,5 +15,5 @@ defaults:
       path: ''
       type: "topics"
     values:
-      layout: "corrupt_collection"
+      layout: "corrupt_index"
       permalink: "/topics/:name"
