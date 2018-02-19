@@ -72,7 +72,7 @@ main #desc {
     .cor_page {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-auto-rows: minmax(50px, auto);
+        grid-template-rows: 50px max-content;
         grid-template-areas:
             "head head head head head head head"
             ".    body body body body body ."
@@ -95,7 +95,7 @@ main #desc {
         .cor_page {
             display: grid;
             grid-template-columns: repeat(9, 1fr);
-            grid-auto-rows: minmax(50px, auto);
+            grid-template-rows: 50px max-content;
             grid-template-areas:
                 "head head head head head head head foot foot"
                 ".    body body body body body .    foot foot";
@@ -110,6 +110,7 @@ main #desc {
         footer {
             border-top: 0px;
             box-shadow: unset;
+            min-height: 100vh;
         }
 
         nav {
