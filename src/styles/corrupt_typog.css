@@ -4,23 +4,28 @@ html {
     --hilite: #8D3FC5;
 }
 
+ul,ol,p {
+    color: white;
+}
+
 a,a:visited,a:link,a:focus {
     text-decoration: none; 
     color: darkgrey;
 }
 
 a:hover {
-    font-style: italic;
+    color: white;
+}
+
+nav a:hover {
     color: var(--hilite);
 }
 
 header div {
-    font: 1.5vw "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.8em;
 }
 
 header div::first-letter {
-    font: 1.75vw "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: white;
 }
 
@@ -82,13 +87,4 @@ h6 {
 
 article p {
     padding: 0em 2em;
-    color: white;
-}
-
-ul {
-    color: white;
-}
-
-ol {
-    color: white;
 }
