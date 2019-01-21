@@ -1,16 +1,16 @@
 <footer>
     <nav>
-        <div><a href="/">home</a></div>
+        <h5><a href="/">home</a></h5>
         {% for topic in site.topics %}
-            <div><a href="/topics/{{ topic.title }}">{{ topic.title }}</a></div>
+            <h5><a href="/topics/{{ topic.title }}">{{ topic.title }}</a></h5>
         {% endfor %}
     </nav>
     <section id="about">
-        <h3>The Site</h3>
+        <h5>The Site</h5>
         <p>This site is a small slice of internet real-estate that I use for
             occasional writing. Nothing I say is visionary or profound. I
             will tend to focus on technology, gaming, and philosophy.</p>
-        <h3>The Vagabond</h3>
+        <h5>The Vagabond</h5>
         <p>My name is Bill Niblock. I'm a computer scientist by education, a
             technologist by trade, a gamer by hobby, and a philosopher by
             accident.</p>
