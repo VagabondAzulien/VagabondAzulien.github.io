@@ -32,6 +32,10 @@ nav {
     justify-content: space-around;
 }
 
+footer hr {
+    margin: 20px 5em;
+}
+
 footer #social {
     display: flex;
     flex-flow: row wrap;
@@ -39,7 +43,6 @@ footer #social {
 }
 
 main {
-    margin: 0 2em;
 }
 
 main #details {
@@ -119,7 +122,7 @@ main #desc {
             flex-flow: column nowrap;
             justify-content: flex-end;
             align-items: flex-end;
-            padding: 50px 0px;
+            padding: 50px 0px 0px 0px;
         }
 
         main {
