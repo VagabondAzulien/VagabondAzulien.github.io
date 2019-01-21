@@ -39,6 +39,7 @@ footer #social {
 }
 
 main {
+    margin: 0 2em;
 }
 
 main #details {
@@ -75,7 +76,7 @@ main #desc {
         grid-template-rows: 50px max-content;
         grid-template-areas:
             "head head head head head head head"
-            ".    body body body body body ."
+            "body body body body body body body"
             "foot foot foot foot foot foot foot";
     }
 
@@ -98,7 +99,7 @@ main #desc {
             grid-template-rows: 50px max-content;
             grid-template-areas:
                 "head head head head head head head foot foot"
-                ".    body body body body body .    foot foot";
+                "body body body body body body body foot foot";
         }
 
         header {
@@ -119,6 +120,10 @@ main #desc {
             justify-content: flex-end;
             align-items: flex-end;
             padding: 50px 0px;
+        }
+
+        main {
+            margin: 0 5em;
         }
 
         main #date {
