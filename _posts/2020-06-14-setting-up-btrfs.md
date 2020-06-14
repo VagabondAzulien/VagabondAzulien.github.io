@@ -222,7 +222,7 @@ Syncthing, which will be an upcoming topic of discussion. Some next steps:
     leveraging wake-on-lan, to allow for streaming media remotely whenever,
     without having to leave my desktop on
 
-#### Sources
+### Sources
 
 - [btrfs on the Arch Wiki](https://wiki.archlinux.org/index.php/Btrfs)
 - [Snapper on the Arch Wiki](https://wiki.archlinux.org/index.php/Snapper)

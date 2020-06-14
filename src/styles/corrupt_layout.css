@@ -8,7 +8,6 @@ body {
     margin: 0;
 }
 
-
 header {
     background-color: #202020;
     border-bottom: 1px solid var(--hilite);
@@ -43,6 +42,7 @@ footer #social {
 }
 
 main {
+  max-width: 100%;
 }
 
 main #details {
@@ -69,6 +69,22 @@ main #tags {
 main #desc {
     padding: 0em 2em 2em 2em;
     color: white;
+}
+
+main pre.highlight {
+    overflow-x: auto;
+    color: white;
+    background-color: #2B2B2B;
+    margin: 0em 4em;
+    padding: 1em;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid var(--hilite);
+    border-right: 2px solid var(--hilite);
+}
+
+main ul {
+  padding: 0em 4em;
 }
 
 @supports (display: grid) {
@@ -98,7 +114,7 @@ main #desc {
     @media only screen and (min-width: 1250px) and (min-height: 750px) {
         .cor_page {
             display: grid;
-            grid-template-columns: repeat(9, 1fr);
+            grid-template-columns: repeat(9, minmax(0,1fr));
             grid-template-rows: 50px max-content;
             grid-template-areas:
                 "head head head head head head head foot foot"
