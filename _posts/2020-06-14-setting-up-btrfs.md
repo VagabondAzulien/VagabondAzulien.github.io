@@ -197,7 +197,7 @@ What each snapshot will capture are any changes that have been made to the data.
 ## Creating Backups from Snapshots
 
 The final phase of my BTRFS journey is to establish backups. One thing that must
-be emphasized: *SNAPSHOTS ARE NOT BACKUPS*. They can be used to make backups,
+be emphasized: **SNAPSHOTS ARE NOT BACKUPS**. They can be used to make backups,
 though. The way I'm doing that currently is with a program called snap-sync.
 snap-sync will iterate through each Snapper config, and send a snapshot from
 each to a remote BTRFS-formatted source. In my case, the remote source is an
@@ -224,7 +224,8 @@ Syncthing, which will be an upcoming topic of discussion. Some next steps:
 
 ### Sources
 
-- [btrfs on the Arch Wiki](https://wiki.archlinux.org/index.php/Btrfs)
-- [Snapper on the Arch Wiki](https://wiki.archlinux.org/index.php/Snapper)
-- [snap-sync](https://github.com/wesbarnett/snap-sync)
-- [The BTRFS Wiki](https://btrfs.wiki.kernel.org/index.php/Main_Page)
+|----|
+|[btrfs on the Arch Wiki](https://wiki.archlinux.org/index.php/Btrfs)|
+|[Snapper on the Arch Wiki](https://wiki.archlinux.org/index.php/Snapper)|
+|[snap-sync](https://github.com/wesbarnett/snap-sync)|
+|[The BTRFS Wiki](https://btrfs.wiki.kernel.org/index.php/Main_Page)|

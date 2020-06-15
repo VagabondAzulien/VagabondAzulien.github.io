@@ -98,6 +98,10 @@ article p {
     padding: 0em 2em;
 }
 
+/* Inline code formatting */
 article p code {
-    font: 1.0em monospace;
+    font: 1.05em monospace;
+    color: #ededed;
+    background-color: #2B2B2B;
+    padding: 0em 0.25em;
 }
