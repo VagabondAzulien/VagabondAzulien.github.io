@@ -41,6 +41,12 @@ footer #social {
     justify-content: space-around;
 }
 
+footer #email {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
 main {
   max-width: 100%;
 }

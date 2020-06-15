@@ -29,6 +29,10 @@ header div::first-letter {
     color: white;
 }
 
+footer #email {
+  color: darkgrey;
+}
+
 nav {
     font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.6em; line-height: 2.0em;
