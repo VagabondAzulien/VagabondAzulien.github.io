@@ -6,11 +6,10 @@ All stuff here is my opinion yada yada yada.
 
 ### To-Do
 * [ ] Update 404 page
-* [ ] Research and implement nicer typography
-* [ ] Finalize theme, and publish it?
 
 #### Latest Technology Update :: 2018-02-19
-* Update Corrupted to use CSS Grid
+* Improved the handling of code blocks, both in-line and stand-alone
+* Added styles for a "Sources" table. See rule `h3 + table` in the styles
 
 ### License
 
