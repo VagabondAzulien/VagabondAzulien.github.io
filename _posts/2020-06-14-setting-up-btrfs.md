@@ -222,6 +222,9 @@ Syncthing, which will be an upcoming topic of discussion. Some next steps:
     leveraging wake-on-lan, to allow for streaming media remotely whenever,
     without having to leave my desktop on
 
+I'm writing this post as part of [#100DaysToOffload](https://100daystooffload),
+an initiative to inspire writing habits. Perhaps you could do the same.
+
 ### Sources
 
 |----|
