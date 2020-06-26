@@ -15,13 +15,42 @@
 </head>
 <body>
 <div class="cor_page">
-    <header>
-        <div>The</div><div>Internet</div><div>Vagabond</div>
-    </header>
-    <main>
-        {{ content }}
-    </main>
-    {% include cor_menu.html %}
+
+  <header>
+    <div>The</div><div>Internet</div><div>Vagabond</div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include cor_menu.html %}
 </div>
+<!-- IndieWeb h-card -->
+<section style="display: none;" class="h-card">
+  <!-- IndieWeb: About Me -->
+  <span class="p-name">Bill Niblock</span>
+  <span class="p-note">
+    I'm a computer scientist by education, a technologist
+    by trade, a gamer by hobby, and a philosopher by accident.
+  </span>
+  <!-- IndieWeb: Profile Pic (WIP) -->
+  <!-- IndieWeb: Location -->
+  <span class="p-locality">Buffalo</span>
+  <span class="p-region">New York</span>
+  <span class="p-country-name">United States of America</span>
+  <!-- IndieWeb: Links -->
+  <a class="u-url u-uid" href="https://theinternetvagabond.com"></a>
+  <a class="u-email" rel="me" href="mailto:bill@theinternetvagabond.com"></a>
+  <a class="u-url" rel="me" href="https://github.com/VagabondAzulien"></a>
+  <a class="u-url" rel="me" href="https://steamcommunity.com/id/azulien"></a>
+  <a class="u-url" rel="me" href="https://matrix.to/#/@vagabondazulien:exp.farm"></a>
+  <!-- IndieWeb: Categories -->
+  <span class="p-category">Gaming</span>
+  <span class="p-category">Technology</span>
+  <span class="p-category">Philosophy</span>
+  <span class="p-category">Open Source Software</span>
+  <span class="p-category">Coffee</span>
+</section>
 </body>
 </html>
