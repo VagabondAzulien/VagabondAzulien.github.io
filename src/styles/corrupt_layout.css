@@ -12,11 +12,15 @@ header {
     background-color: #202020;
     border-bottom: 1px solid var(--hilite);
     box-shadow: 0px 5px 30px -5px var(--hilite);
+}
+
+header a {
     display: flex;
     flex-flow: row nowrap;
     align-content: space-between;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 footer {
@@ -133,7 +137,7 @@ h3 + table {
                 "body body body body body body body foot foot";
         }
 
-        header {
+        header a {
             align-items: center;
             justify-content: flex-start;
             padding-left: 10px;

@@ -8,39 +8,60 @@
 
     <hr />
 
-    <section id="about">
-        <h5>The Site</h5>
-        <p>This site is a small slice of internet real-estate that I use for
-            occasional writing. Nothing I say is visionary or profound. I
-            will tend to focus on technology, gaming, and philosophy.</p>
-        <h5>The Vagabond</h5>
-        <p>My name is Bill Niblock. I'm a computer scientist by education, a
-            technologist by trade, a gamer by hobby, and a philosopher by
-            accident.</p>
-    </section>
-    <section id="social">
-        <a rel="me" href="https://github.com/VagabondAzulien">
-            <img src="{{ site.url }}/src/images/github_light.png"
-                width="32" height="32" alt="GitHub"
-                title="My GitHub Repos" />
+    <section class="h-card">
+      <section id="about">
+          <h5>The Site</h5>
+          <a class="u-url u-uid" href="https://theinternetvagabond.com"></a>
+          <p>
+            This site is a small slice of internet real-estate that I use for
+            occasional writing. Nothing I say is visionary or profound. I will
+            tend to focus on technology, gaming, and philosophy.
+          </p>
+          <h5>The Vagabond</h5>
+          <p>
+            My name is <span class="p-name">Bill Niblock</span>. <span
+            class="p-note">I'm a computer scientist by education, a technologist
+            by trade, a gamer by hobby, and a philosopher by accident. I
+            currently live in <span class="p-locality">Buffalo</span>, <span
+            class="p-region">New York</span>, <span class="p-country-name">USA
+            </span>.
+          </p>
+      </section>
+      <section id="social">
+          <a class="u-url" rel="me" href="https://github.com/VagabondAzulien">
+              <img src="{{ site.url }}/src/images/github_light.png"
+                  width="32" height="32" alt="GitHub"
+                  title="My GitHub Repos" />
+          </a>
+          <a class="u-url" rel="me" href="https://www.twitch.tv/vagabondazulien/profile">
+              <img src="{{ site.url }}/src/images/twitch_light.png"
+                  width="32" height="32" alt="Twitch"
+                  title="My Twitch Profile" />
+          </a>
+          <a class="u-url" rel="me" href="https://steamcommunity.com/id/azulien">
+              <img src="{{ site.url }}/src/images/steam_light.png"
+                  width="32" height="32" alt="Steam"
+                  title="My Steam Profile" />
+          </a>
+          <a class="u-url" rel="me" href="https://matrix.to/#/@vagabondazulien:exp.farm">
+              <img src="{{ site.url }}/src/images/matrix_light.png"
+                  width="32" height="32" alt="Matrix"
+                  title="Speak to me on Matrix" />
+          </a>
+      </section>
+      <section id="email">
+        <a class="u-email" rel="me" 
+          href="mailto:bill@theinternetvagabond.com">
+          bill at theinternetvagabond.com
         </a>
-        <a rel="me" href="https://www.twitch.tv/vagabondazulien/profile">
-            <img src="{{ site.url }}/src/images/twitch_light.png"
-                width="32" height="32" alt="Twitch"
-                title="My Twitch Profile" />
-        </a>
-        <a rel="me" href="https://steamcommunity.com/id/azulien">
-            <img src="{{ site.url }}/src/images/steam_light.png"
-                width="32" height="32" alt="Steam"
-                title="My Steam Profile" />
-        </a>
-        <a rel="me" href="https://matrix.to/#/@vagabondazulien:exp.farm">
-            <img src="{{ site.url }}/src/images/matrix_light.png"
-                width="32" height="32" alt="Matrix"
-                title="My Steam Profile" />
-        </a>
-    </section>
-    <section id="email">
-        bill at theinternetvagabond.com
+      </section>
+      <section style="display: none;">
+        <span class="p-category">Gaming</span>
+        <span class="p-category">Technology</span>
+        <span class="p-category">Philosophy</span>
+        <span class="p-category">Open Source Software</span>
+        <span class="p-category">Self-Hosting</span>
+        <span class="p-category">Coffee</span>
+      </section>
     </section>
 </footer>

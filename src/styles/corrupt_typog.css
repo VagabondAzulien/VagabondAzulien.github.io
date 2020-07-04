@@ -25,6 +25,10 @@ header div {
     color: darkgrey; letter-spacing: 0.8em;
 }
 
+header a:hover > div {
+    color: white;
+}
+
 header div::first-letter {
     color: white;
 }
