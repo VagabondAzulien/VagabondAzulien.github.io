@@ -12,24 +12,28 @@
           href="{{ site.url }}/src/styles/corrupt_typog.css" />
     <link rel="icon" type="image/x-icon" 
           href="{{ site.url }}/src/images/favicon.ico" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+          integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+          crossorigin="anonymous">
 </head>
 <body>
-<div class="cor_page">
-    <header>
-      <a href="/">
-        <div>The</div><div>Internet</div><div>Vagabond</div>
-      </a>
-    </header>
-    <main>
-        <article>
-            {{ content }}
-            <h4>[ {{ page.author }} ][ {{ page.pub }} ][
-            {% for topic in page.topics %}
-                <a href="/topics/{{topic}}">{{topic}}</a> 
-            {% endfor %}]</h4>
-        </article>
-    </main>
-    {% include cor_menu.html %}
-</div>
+  <div class="cor_page">
+      <header>
+        <a href="/">
+          <div>The</div><div>Internet</div><div>Vagabond</div>
+        </a>
+      </header>
+      <main>
+          <article>
+              {{ content }}
+              <h4>[ {{ page.author }} ][ {{ page.pub }} ][
+              {% for topic in page.topics %}
+                  <a href="/topics/{{topic}}">{{topic}}</a> 
+              {% endfor %}]</h4>
+          </article>
+      </main>
+      {% include cor_menu.html %}
+  </div>
 </body>
 </html>
