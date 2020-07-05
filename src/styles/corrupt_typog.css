@@ -9,28 +9,34 @@ ul,ol,p {
 }
 
 a,a:visited,a:link,a:focus {
-    text-decoration: none; 
+    text-decoration: none;
     color: darkgrey;
+    transition: color 0.5s;
 }
 
 a:hover {
     color: white;
+    transition: color 0.5s;
 }
 
 nav a:hover {
     color: var(--hilite);
+    transition: color 0.5s;
 }
 
 header div {
     color: darkgrey; letter-spacing: 0.8em;
 }
 
-header a:hover > div {
+header span {
     color: white;
+    letter-spacing: 0.9em;
+    transition: color 2s;
 }
 
-header div::first-letter {
-    color: white;
+header a:hover > div > span {
+    color: var(--hilite);
+    transition: color 1s;
 }
 
 footer #email {

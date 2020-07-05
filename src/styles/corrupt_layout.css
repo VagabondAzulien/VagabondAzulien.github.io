@@ -23,6 +23,11 @@ header a {
     height: 100%;
 }
 
+header .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 footer {
     background-color: #202020;
     border-top: 1px solid var(--hilite);
