@@ -31,10 +31,18 @@
       <main>
           <article>
               {{ content }}
-              <h4>[ {{ page.author }} ][ {{ page.pub }} ][
-              {% for topic in page.topics %}
-                  <a href="/topics/{{topic}}">{{topic}}</a> 
-              {% endfor %}]</h4>
+              <h4 class="author_info">
+                <span>[ {{ page.author }} ]</span>
+                <span>[ {{ page.pub }} ]</span>
+                <span>[
+                  {% for topic in page.topics %}
+                      <a href="/topics/{{topic}}">{{topic}}</a> 
+                  {% endfor %}]
+                </span>
+                <span>[ 
+                  <a href="http://www.wtfpl.net/about/">wtfpl</a> ]
+                </span>
+              </h4>
           </article>
       </main>
       {% include cor_menu.html %}

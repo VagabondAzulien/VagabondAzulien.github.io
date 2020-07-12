@@ -108,6 +108,12 @@ h3 + table {
   text-align: right;
 }
 
+h4.author_info {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+}
+
 @supports (display: grid) {
 
     .cor_page {
@@ -176,6 +182,12 @@ h3 + table {
             width: 50%;
             text-align: right;
             color: grey;
+        }
+
+        h4.author_info {
+          display: flex;
+          justify-content: space-around;
+          flex-flow: row wrap;
         }
     }
 }
