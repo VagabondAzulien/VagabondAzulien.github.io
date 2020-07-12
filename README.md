@@ -1,33 +1,26 @@
-![The Internet Vagabond](src/images/TIV_GitHub_Readme.png)
+# The Internet Vagabond dot com
 
-This site is a small chunk of virtual real-estate for Bill Niblock.
+My name is Bill Niblock. I'm a computer scientist by education, a technologist
+by trade, a gamer by hobby, and a philosopher by accident. I currently live in
+Buffalo, New York.
 
-All stuff here is my opinion yada yada yada.
+This site is a small slice of internet real-estate that I use for occasional
+writing. Nothing I say is visionary or profound. I will tend to focus on
+technology, gaming, and philosophy. All opinions my own.
 
 ### To-Do
-* [ ] Update 404 page
+* Look into webmentions
 
-#### Latest Technology Update :: 2018-02-19
-* Improved the handling of code blocks, both in-line and stand-alone
-* Added styles for a "Sources" table. See rule `h3 + table` in the styles
+### Latest Technology Update :: 2020-06/07
+* Improved the handling of code blocks, both in-line and stand-alone.
+* Added styles for a "Sources" table. See rule `h3 + table` in the styles.
+* Updated 404 page to use proper styles.
+* Added a license file, and a copyright notice on each article. Not that it
+    matters: continue to do what the fuck you want.
 
-### License
+## Licenses / Copyrights/ Bureaucracy
 
-This site is licensed under the [WTFPL](http://www.wtfpl.net/), the full license
-text of which can be found below. Everything in \_posts and \_drafts is
-copyright Bill Niblock; if you redistribute it, please credit me. A link to the
-source would be even better.
+All code and content licensed under the [WTFPL](http://www.wtfpl.net/about/)
 
-> **DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE**
->
-> _Version 2, December 2004_ || 
-> _Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>_
->
-> Everyone is permitted to copy and distribute verbatim or modified 
-> copies of this license document, and changing it is allowed as long 
-> as the name is changed. 
->
-> DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-> TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
->
->     0. You just DO WHAT THE FUCK YOU WANT TO.
+You can contact me via email at [bill at theinternetvagabond dot
+com](mailto:bill@theinternetvagabond.com)
