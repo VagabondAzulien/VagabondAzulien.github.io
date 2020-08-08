@@ -157,5 +157,6 @@ arrested Jhoric, the half-elf, and a nearby gnome that witnessed the explosion.
 This is where his story truly begins.
 
 ### 100 Days
-I'm writing this post as part of [#100DaysToOffload](https://100daystooffload),
-an initiative to inspire writing habits. Perhaps you could do the same.
+I'm writing this post as part of
+[#100DaysToOffload](https://100daystooffload.com), an initiative to inspire
+writing habits. Perhaps you could do the same.

@@ -130,5 +130,6 @@ in her voice.
 given it.”
 
 ### 100 Days
-I'm writing this post as part of [#100DaysToOffload](https://100daystooffload),
-an initiative to inspire writing habits. Perhaps you could do the same.
+I'm writing this post as part of
+[#100DaysToOffload](https://100daystooffload.com), an initiative to inspire
+writing habits. Perhaps you could do the same.
