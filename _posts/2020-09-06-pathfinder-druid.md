@@ -5,7 +5,7 @@
      pub: "2020-09-05"
      short_desc: "One of my favorite activities is creating characters. I love
      theory crafting, pouring through source material, and setting limits. While
-     I've made many, _many_ characters, one class I haven't touched is druid."
+     I've made many, many characters, one class I haven't touched is druid."
 ---
 
 # Let's Make a Druid

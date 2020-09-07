@@ -1,6 +1,6 @@
 ---
-     tabtitle: "Pathfinder One-Shot: The crater of Igrevor"
-     title: "Pathfinder One-Shot: The crater of Igrevor"
+     tabtitle: "Pathfinder One-Shot: The Crater of Igrevor"
+     title: "Pathfinder One-Shot: The Crater of Igrevor"
      topics: [gaming]
      pub: "2020-07-10"
      short_desc: "The first of several one-shot adventures I ran for Pathfinder"
