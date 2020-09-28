@@ -3,7 +3,7 @@
      title: "Pathfinder Characters: Eldritch Knight"
      topics: [gaming]
      pub: "2020-09-27"
-     short_desc: "The Eldritch Knight is represents my favorite archetype of a
+     short_desc: "The Eldritch Knight represents my favorite archetype of a
      fantasy character: sword and sorcery. Here's how I build mine."
 ---
 
