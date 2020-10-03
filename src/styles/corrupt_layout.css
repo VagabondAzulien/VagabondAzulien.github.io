@@ -48,11 +48,6 @@ footer #social {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-}
-
-footer #email {
-    display: flex;
-    justify-content: space-around;
     padding: 1em;
 }
 

@@ -1,4 +1,10 @@
 url: https://www.theinternetvagabond.com
+title: "The Internet Vagabond"
+author: "Bill Niblock"
+
+plugins:
+  - jekyll-feed
+
 collections:
   topics:
     output: true

@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>The Internet Vagabond :: {{ page.tabtitle }}</title>
+    {% feed_meta %}
     <meta name="description" 
         content="Rants of a wandering techy, in search of truth, knowledge, and a decent ping." />
-    <meta name="author" content="Bill 'Vagabond Azulien' Nibz" />
+    <meta name="author" content="{{ site.author }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" 
           href="{{ site.url }}/src/styles/corrupt_layout.css" />
