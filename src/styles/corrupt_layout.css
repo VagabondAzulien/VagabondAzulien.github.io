@@ -133,7 +133,7 @@ h4.author_info {
         grid-area: body;
     }
 
-    @media only screen and (min-width: 1250px) and (min-height: 750px) {
+    @media only screen and (min-width: 1250px) {
         .cor_page {
             display: grid;
             grid-template-columns: repeat(9, minmax(0,1fr));

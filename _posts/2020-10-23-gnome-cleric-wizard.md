@@ -10,7 +10,8 @@
 Gnomes are interesting. I can't help but play them as small frantic stressballs.
 Like hobbits from _Lord of the Rings_, dialed up to 11, minus the extra
 breakfasts, and plus ceaseless banter. Gnomes are fun. This write up was for a
-character for the same campaign as [Halvar], when he had to step away for a bit.
+character for the same campaign as [Halvar](/2018/01/27/halvar.html), when he had
+to step away for a bit.
 
 ## Backstory
 
