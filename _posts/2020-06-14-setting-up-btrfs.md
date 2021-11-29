@@ -226,10 +226,9 @@ I'm writing this post as part of [#100DaysToOffload](
 https://100daystooffload.com), an initiative to inspire writing habits. Perhaps
 you could do the same.
 
-### Sources
+# Sources
 
-|----|
-|[btrfs on the Arch Wiki](https://wiki.archlinux.org/index.php/Btrfs)|
-|[Snapper on the Arch Wiki](https://wiki.archlinux.org/index.php/Snapper)|
-|[snap-sync](https://github.com/wesbarnett/snap-sync)|
-|[The BTRFS Wiki](https://btrfs.wiki.kernel.org/index.php/Main_Page)|
+* [btrfs on the Arch Wiki](https://wiki.archlinux.org/index.php/Btrfs)
+* [Snapper on the Arch Wiki](https://wiki.archlinux.org/index.php/Snapper)
+* [snap-sync](https://github.com/wesbarnett/snap-sync)
+* [The BTRFS Wiki](https://btrfs.wiki.kernel.org/index.php/Main_Page)

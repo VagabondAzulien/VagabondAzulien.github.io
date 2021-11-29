@@ -89,14 +89,13 @@ but I'm not certain that I'll hang onto it. For now, I just need a simple way to
 synchronize pictures between my phone and my desktop, and Syncthing provides
 that.
 
-### 100 Days
+# 100 Days
 I'm writing this post as part of
 [#100DaysToOffload](https://100daystooffload.com), an initiative to inspire
 writing habits. Perhaps you could do the same.
 
-### Sources
+# Sources
 
-|----|
-|[Syncthing](https://syncthing.net/)|
-|[SyncTrayzor](https://github.com/canton7/SyncTrayzor)|
-|[Markor](https://gsantner.net/project/markor.html)|
+* [Syncthing](https://syncthing.net/)
+* [SyncTrayzor](https://github.com/canton7/SyncTrayzor)
+* [Markor](https://gsantner.net/project/markor.html)

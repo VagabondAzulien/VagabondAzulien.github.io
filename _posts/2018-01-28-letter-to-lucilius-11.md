@@ -101,7 +101,9 @@ follow. A few names jump out: Tim Ferris, and Elon Musk. Ferris for his
 unrelenting pursuit to better himself, and Musk for his unrelenting pursuit to
 better the world around him.
 
-### Source
+# Sources
 
-[Moral Letters to Lucilius, Letter 11 on Wikisource](
+* [Moral Letters to Lucilius, Letter 11 on Wikisource](
 https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_11)
+
+###### [Letter Index]({{ site.baseurl }}{% post_url 2018-01-15-Letters-To-Lucilius %})

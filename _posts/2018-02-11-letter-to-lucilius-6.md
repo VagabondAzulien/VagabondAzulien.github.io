@@ -87,12 +87,11 @@ of fighting against every negative feeling or doubt, you must find strength and
 power. Only then will you live with such assurance that you will harbor respect
 wherever you walk.
 
-### Source
+# Sources
 
-[Moral Letters to Lucilius, Letter 6 on Wikisource](
+* [Moral Letters to Lucilius, Letter 6 on Wikisource](
 https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_6)
-
-[Why I Quit Being So Accomidating](
+* [Why I Quit Being So Accomidating](
 https://mikecanex.wordpress.com/2012/12/26/1922-why-i-quit-being-so-accommodating/)
 
 ###### [Letter Index]({{ site.baseurl }}{% post_url 2018-01-15-Letters-To-Lucilius %})

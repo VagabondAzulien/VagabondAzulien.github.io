@@ -73,12 +73,13 @@ h2 {
     color: darkgrey; letter-spacing: 0.6em;
 }
 
-/* Article section Header, right-aligned */
+/* Article section Sub-Header, left-aligned */
 h3 {
-    text-align: right;
+    text-align: left;
     padding: 10px;
-    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: darkgrey; letter-spacing: 0.6em;
+    margin-left: 10px;
+    font: 0.85em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.5em;
 }
 
 /* Article footer and tags */

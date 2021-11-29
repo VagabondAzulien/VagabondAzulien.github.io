@@ -61,7 +61,7 @@ mounts; and two [Umbral
 Dragon](https://www.d20pfsrd.com/bestiary/monster-listings/dragons/dragon/-primal-umbral/umbral-dragon-juvenile)
 brothers.
 
-## The crater of Igrevor
+# The Crater of Igrevor
 
 >_While enjoying a pint and a quiet night at Tuckleberry’s tavern, The Leaf and
 >Lyre, the party is rudely interrupted by the sound of a massive explosion,
@@ -299,7 +299,7 @@ scales of the dragon, which gives them the immunities of the dragon. This turned
 out to be a _very_ powerful option: immune to cold, death effects, negative
 energy, paralysis, sleep.
 
-## Aftermath
+# Aftermath
 
 I had a lot of fun with this one. The party made their way with through with
 consistent progress, and the boss battle was challenging but not overwhelming. I
@@ -309,7 +309,7 @@ and the driving motivation for my upcoming third adventure. I look forward to
 sharing those as well! Feel free to make use of this adventure in your own
 games!
 
-## MapTools
+# MapTools
 
 But wait, there's more! This adventure was my first foray into MapTools, a free
 and open-source virtual table top system. It allows you to create detailed
@@ -334,13 +334,12 @@ to the campaign maps for this adventure [here (click to download)](
 {{ site.url }}/src/campaigns/crater_of_igrevor.cmpgn).
 
 
-### 100 Days
+# 100 Days
 I'm writing this post as part of
 [#100DaysToOffload](https://100daystooffload.com), an initiative to inspire
 writing habits. Perhaps you could do the same.
 
 
-### Sources
+# Sources
 
-|----|
-|[MapTools](https://www.rptools.net/toolbox/maptool/)|
+* [MapTools](https://www.rptools.net/toolbox/maptool/)

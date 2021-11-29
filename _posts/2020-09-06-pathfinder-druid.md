@@ -271,9 +271,8 @@ necessary.
 
 This is very much a first draft, but I think it could be a fun one! 
 
-### Sources
+# Sources
 
-|----|
-|[Pathfinder SRD](https://www.d20pfsrd.com/)|
-|[Prometheus Guide to the Druid](https://docs.google.com/document/d/1PXamF43boZgYtCUlyJAMojfrPaAdYyjPOaGOo1vfqdM/edit#heading=h.nxj7sifd7tvs)|
-|[Treantmonk's Guide to Druids](https://docs.google.com/Doc?docid=0AcNyxDTKvAmqZGRtZzhzdjZfNDZnNHpzcmdodA&hl=en)|
+* [Pathfinder SRD](https://www.d20pfsrd.com/)
+* [Prometheus Guide to the Druid](https://docs.google.com/document/d/1PXamF43boZgYtCUlyJAMojfrPaAdYyjPOaGOo1vfqdM/edit#heading=h.nxj7sifd7tvs)
+* [Treantmonk's Guide to Druids](https://docs.google.com/Doc?docid=0AcNyxDTKvAmqZGRtZzhzdjZfNDZnNHpzcmdodA&hl=en)
