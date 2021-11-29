@@ -111,9 +111,9 @@ them effect your sense of self-worth. Second, endure the riches of yourself, and
 do not let it inflate your self-worth. Finally, endure all riches, and recognize
 them as an indifference, preferred but never at the expense of virtue.
 
-### Source
+# Source
 
-[Moral Letters to Lucilius, Letter 5 on Wikisource](
+* [Moral Letters to Lucilius, Letter 5 on Wikisource](
 https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_5)
 
 ###### [Letter Index]({{ site.baseurl }}{% post_url 2018-01-15-Letters-To-Lucilius %})

@@ -305,8 +305,7 @@ out cool spells to add to the spell book, worthwhile scrolls, and just imagining
 scenarios. Despite the apparent short-comings, the Eldritch Knight can
 definitely hold it's own, though it does require a ramp-up time.
 
-### Sources
+# Sources
 
-|----|
-|[Pathfinder SRD](https://www.d20pfsrd.com/)|
-|[The Muscle Wizard Guide](https://docs.google.com/document/d/10x042PGSyqX4JqHbYFf7vDsK1NCnhBT2ck8i1eG6kpc/edit)|
+* [Pathfinder SRD](https://www.d20pfsrd.com/)
+* [The Muscle Wizard Guide](https://docs.google.com/document/d/10x042PGSyqX4JqHbYFf7vDsK1NCnhBT2ck8i1eG6kpc/edit)

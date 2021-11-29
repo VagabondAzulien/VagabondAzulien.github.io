@@ -129,7 +129,7 @@ in her voice.
 “I am the patron of Silent Fall. I am Erathis. You asked for my help. I have
 given it.”
 
-### 100 Days
+# 100 Days
 I'm writing this post as part of
 [#100DaysToOffload](https://100daystooffload.com), an initiative to inspire
 writing habits. Perhaps you could do the same.
