@@ -20,7 +20,10 @@ technology, gaming, and philosophy. All opinions my own.
 
 ## Licenses / Copyrights/ Bureaucracy
 
-All code and content licensed under the [WTFPL](http://www.wtfpl.net/about/)
+All code and content licensed under the [WTFPL](http://www.wtfpl.net/about/),
+unless otherwise noted in the individual files:
+* GoatCounter Javascript (/src/scripts/goatcounter.js) licensed under the
+    [ISC](https://opensource.org/licenses/ISC)
 
 You can contact me via email at [bill at theinternetvagabond dot
 com](mailto:bill@theinternetvagabond.com)
