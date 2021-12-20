@@ -3,77 +3,87 @@ html {
     /* Change this value to any color you want */
     --hilite: #8D3FC5;
 }
-
 ul,ol,p {
     color: white;
 }
-
 a,a:visited,a:link,a:focus {
     text-decoration: none;
     color: darkgrey;
     transition: color 0.5s;
 }
-
 a:hover {
     color: white;
     transition: color 0.5s;
 }
-
 nav a:hover {
     color: var(--hilite);
     transition: color 0.5s;
 }
-
 header div {
     color: darkgrey; letter-spacing: 0.8em;
 }
-
 header span {
     color: white;
     letter-spacing: 0.9em;
     transition: color 2s;
 }
-
 header a:hover > div > span {
     color: var(--hilite);
     transition: color 1s;
 }
-
-footer #email {
-  color: darkgrey;
+article p {
+    padding: 0em 2em;
 }
-
+article p code {
+    font: 1.05em monospace;
+    color: #ededed;
+    background-color: #2B2B2B;
+    padding: 0em 0.25em;
+}
+article .author_info {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid darkgrey;
+    font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.4em;
+}
 nav {
     font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.6em; line-height: 2.0em;
 }
-
-#about p {
+nav div {
+    text-align: right;
+    padding: 10px;
+    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.6em;
+    margin-top: 0; margin-bottom: 0;
+}
+footer p {
     line-height: 1.5em; letter-spacing: 0.1em; text-align: left; color: white;
     padding: 0em 1em;
 }
-
-/* Article Titles */
+footer div {
+    text-align: right;
+    padding: 10px;
+    font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: darkgrey; letter-spacing: 0.6em;
+    margin-top: 0; margin-bottom: 0;
+}
 h1 {
     padding: 10px;
     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.25em;
 }
-
 h1::first-letter {
     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: white;
 }
-
-/* Article section Header, left-aligned */
 h2 {
     text-align: left;
     padding: 10px;
     font: 1.0em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.6em;
 }
-
-/* Article section Sub-Header, left-aligned */
 h3 {
     text-align: left;
     padding: 10px;
@@ -81,8 +91,6 @@ h3 {
     font: 0.85em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.5em;
 }
-
-/* Article footer and tags */
 h4 {
     text-align: center;
     padding: 10px;
@@ -90,8 +98,6 @@ h4 {
     font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.4em;
 }
-
-/* Footer links and section titles */
 h5 {
     text-align: right;
     padding: 10px;
@@ -99,24 +105,9 @@ h5 {
     color: darkgrey; letter-spacing: 0.6em;
     margin-top: 0; margin-bottom: 0;
 }
-
-/* Category button */
-/* TODO: Change this to a different tag */
 h6 {
     padding: 10px;
     font: 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.5em; text-align: center;
     border: 1px solid darkgrey;
-}
-
-article p {
-    padding: 0em 2em;
-}
-
-/* Inline code formatting */
-article p code {
-    font: 1.05em monospace;
-    color: #ededed;
-    background-color: #2B2B2B;
-    padding: 0em 0.25em;
 }

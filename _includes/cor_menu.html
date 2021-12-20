@@ -1,28 +1,33 @@
 <footer>
     <nav>
-        <h5><a href="/">home</a></h5>
+        <div><a href="/">home</a></div>
         {% for topic in site.topics %}
-            <h5><a href="/topics/{{ topic.title }}">{{ topic.title }}</a></h5>
+            <div><a href="/topics/{{ topic.title }}">{{ topic.title }}</a></div>
         {% endfor %}
     </nav>
 
     <hr />
 
     <section class="h-card">
-      <section id="about">
-          <h5>
-            The Site | 
+      <section class="footer_about" id="about">
+          <div>The Site</div>
+          <div>
             <a class="u-url" href="{{ site.url }}/feed.xml"
                aria-label="RSS feed for the site">
               <span class="fa fa-rss" aria-hidden="true"
                     title="RSS Feed"</span>
             </a> | 
             <a class="u-url" href="https://theinternetvagabond.goatcounter.com/"
-               aria-label="GoatCounter statistics for the stie">
+               aria-label="GoatCounter statistics for the site">
               <span class="fa fa-bar-chart" aria-hidden="true"
                     title="GoatCounter Statistics"</span>
+            </a> | 
+            <a class="u-url" href="https://github.com/VagabondAzulien/VagabondAzulien.github.io"
+               aria-label="Source code repository for the site">
+              <span class="fa fa-code" aria-hidden="true"
+                    title="Site Source Code"</span>
             </a>
-          </h5>
+          </div>
           <a class="u-url u-uid" href="https://theinternetvagabond.com"></a>
           <p>
             This site is a small slice of internet real-estate that I use for
@@ -30,15 +35,30 @@
             focus on technology, gaming, and philosophy. All opinions my
             own.
           </p>
-          <h5>
-            The Vagabond | 
+          <div>The Vagabond</div>
+          <div>
             <a class="u-email" rel="me"
               href="mailto:bill@theinternetvagabond.com"
               aria-label="Email Bill at The Internet Vagabond dot com">
               <span class="fa fa-envelope-o" aria-hidden="true"
-                    title="bill at theinternetvagabond.com"</span>
+                    title="Email bill at theinternetvagabond.com"</span>
+            </a> | 
+            <a class="u-url" rel="me" href="https://matrix.to/#/@vagabondazulien:exp.farm"
+               aria-label="Link to me on Matrix">
+              <span class="fa fa-matrix-org " aria-hidden="true"
+                    title="Speak with me on Matrix"</span>
+            </a> | 
+            <a class="u-url" rel="me" href="https://www.twitch.tv/vagabondazulien/profile"
+               aria-label="Link to my Twitch channel">
+              <span class="fa fa-twitch " aria-hidden="true"
+                    title="My Twitch channel"</span>
+            </a> | 
+            <a class="u-url" rel="me" href="https://github.com/VagabondAzulien"
+               aria-label="Link to my GitHub profile">
+              <span class="fa fa-github" aria-hidden="true"
+                    title="My GitHub profile"</span>
             </a>
-          </h5>
+          </div>
           <p>
             My name is <span class="p-name">Bill Niblock</span>. <span
             class="p-note">I'm a computer scientist by education, a technologist
@@ -46,28 +66,6 @@
             live in <span class="p-locality">Buffalo</span>, <span class="p-region">
             New York</span>, <span class="p-country-name">USA</span>.
           </p>
-      </section>
-      <section id="social">
-          <a class="u-url" rel="me" href="https://github.com/VagabondAzulien"
-             aria-label="Link to my GitHub profile">
-            <span class="fa fa-github fa-2x" aria-hidden="true"
-                  title="My GitHub profile"</span>
-          </a>
-          <a class="u-url" rel="me" href="https://www.twitch.tv/vagabondazulien/profile"
-             aria-label="Link to my Twitch channel">
-            <span class="fa fa-twitch fa-2x" aria-hidden="true"
-                  title="My Twitch channel"</span>
-          </a>
-          <a class="u-url" rel="me" href="https://steamcommunity.com/id/azulien"
-             aria-label="Link to my Steam profile">
-            <span class="fa fa-steam fa-2x" aria-hidden="true"
-                  title="My Steam profile"</span>
-          </a>
-          <a class="u-url" rel="me" href="https://matrix.to/#/@vagabondazulien:exp.farm"
-             aria-label="Link to me on Matrix">
-            <span class="fa fa-matrix-org fa-2x" aria-hidden="true"
-                  title="Speak with me on Matrix"</span>
-          </a>
       </section>
       <section style="display: none;">
         <span class="p-category">Gaming</span>
