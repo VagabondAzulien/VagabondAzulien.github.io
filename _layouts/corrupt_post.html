@@ -15,8 +15,8 @@
     <link rel="icon" type="image/x-icon" 
           href="{{ site.url }}/src/images/favicon.ico" />
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-          integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+          href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+          integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
           crossorigin="anonymous">
     <script data-goatcounter="https://theinternetvagabond.goatcounter.com/count"
             async src="{{ site.url }}/src/scripts/goatcounter.js"></script>
@@ -35,18 +35,26 @@
       <main>
           <article>
               {{ content }}
-              <h4 class="author_info">
-                <span>[ {{ page.author }} ]</span>
-                <span>[ {{ page.pub }} ]</span>
-                <span>[
+              <div class="author_info">
+                {{ page.author }}
+                <a href="https://unlicense.org/"
+                   aria-label="Code dedicated to the public domain under Unlicense">
+                  <span class="fa fa-cc-pd" aria-hidden="true"
+                        title="Code dedicated to the public domain under Unlicense"</span>
+                </a>
+                <a href="https://creativecommons.org/publicdomain/zero/1.0/"
+                   aria-label="Published to the public domain under CC0">
+                  <span class="fa fa-cc-zero" aria-hidden="true"
+                        title="Content dedicated to the public domain under CC0"</span>
+                </a>
+                {{ page.pub }}
+                <br />
+                [
                   {% for topic in page.topics %}
                       <a href="/topics/{{topic}}">{{topic}}</a> 
-                  {% endfor %}]
-                </span>
-                <span>[ 
-                  <a href="http://www.wtfpl.net/about/">wtfpl</a> ]
-                </span>
-              </h4>
+                  {% endfor %}
+                ]
+              </div>
           </article>
       </main>
       {% include cor_menu.html %}

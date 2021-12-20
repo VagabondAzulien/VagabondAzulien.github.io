@@ -2,7 +2,6 @@ html {
     /* Change this value to any color you want */
     --hilite: #8D3FC5;
 }
-
 body {
     background-color: #3B3B3B;
     margin: 0;
@@ -13,7 +12,6 @@ header {
     border-bottom: 1px solid var(--hilite);
     box-shadow: 0px 5px 30px -5px var(--hilite);
 }
-
 header a {
     display: flex;
     flex-flow: row nowrap;
@@ -22,7 +20,6 @@ header a {
     justify-content: center;
     height: 100%;
 }
-
 header .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -33,28 +30,18 @@ footer {
     border-top: 1px solid var(--hilite);
     box-shadow: 0px -5px 30px -5px var(--hilite);
 }
-
 nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
-
 footer hr {
     margin: 20px 5em;
-}
-
-footer #social {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 1em;
 }
 
 main {
   max-width: 100%;
 }
-
 main #details {
     display: flex; flex-flow: row wrap;
     text-align: center;
@@ -63,24 +50,20 @@ main #details {
     font: 0.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: darkgrey; letter-spacing: 0.4em;
 }
-
 main #date {
     width: 100%;
     text-align: center;
     color: grey;
 }
-
 main #tags {
     width: 100%;
     text-align: center;
     color: grey;
 }
-
 main #desc {
     padding: 0em 2em 2em 2em;
     color: white;
 }
-
 main pre.highlight {
     overflow-x: auto;
     color: white;
@@ -92,25 +75,11 @@ main pre.highlight {
     border-bottom: 2px solid var(--hilite);
     border-right: 2px solid var(--hilite);
 }
-
 main ul {
   padding: 0em 4em;
 }
 
-h3 + table {
-  width: 100%;
-  padding: 0em 1em;
-  text-align: right;
-}
-
-h4.author_info {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: column;
-}
-
 @supports (display: grid) {
-
     .cor_page {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -154,7 +123,6 @@ h4.author_info {
             box-shadow: unset;
             min-height: 100vh;
         }
-
         nav {
             display: flex;
             flex-flow: column nowrap;
@@ -166,23 +134,15 @@ h4.author_info {
         main {
             margin: 0 5em;
         }
-
         main #date {
             width: 50%;
             text-align: left;
             color: grey;
         }
-
         main #tags {
             width: 50%;
             text-align: right;
             color: grey;
-        }
-
-        h4.author_info {
-          display: flex;
-          justify-content: space-around;
-          flex-flow: row wrap;
         }
     }
 }
