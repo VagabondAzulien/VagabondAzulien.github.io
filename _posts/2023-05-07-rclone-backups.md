@@ -85,7 +85,7 @@ bucket doesn't cost anything, I decided to split my backups similarly. I created
 the buckets I wanted, and did a "manual" RClone sync of the data.
 
 `rclone sync --fast-list --transfers 20 /path/to/Books
-backblaze:bucket-for-books`
+backblaze:bucket-for-Books-backups`
 
 The "--fast-list" and "--transfers" options are specified on the [RClone
 Backblaze B2 page](https://rclone.org/b2/), along with some others that may be
@@ -97,6 +97,22 @@ sync commands once a week, and all is set. I don't want to remember to do
 things, though.
 
 ## Automating the Process
+
+The first thing to do is create a user-agnostic location for the configuration
+file and some additional files. I chose `/etc/rclone`, and copied the RClone
+configuration file generated previously to this directory as `backblaze.conf`.
+
+Next, I created a filter file. RClone has extensive [filtering
+options](https://rclone.org/filtering/). For my current needs, a single file
+will suffice.
+
+### default.filter
+```
+# Exclude BTRFS snapshot directories
+- .snapshots/**
+# Exclude Syncthing configuration directories
+- .stfolder/**
+```
 
 systemd timer units ( [[Arch
 Wiki](https://wiki.archlinux.org/title/Systemd/Timers)]
@@ -121,65 +137,44 @@ AccuracySec=30min
 RandomizedDelaySec=5min
 
 # The %i is whatever value is after the "@" for the configured unit. For
-# example, rclone-backup@books.timer will run the rclone-backup-books.service
-Unit=rclone-backup-%i.service
+# example, rclone-backup@Books.timer will run the rclone-backup@Books.service
+Unit=rclone-backup@%i.service
 
 [Install]
 WantedBy=timers.target
 ```
 
-Then I can `enable` and `start` a timer for each service unit I setup. I'll use
-my music service file as an example:
+Then I can `enable` and `start` a timer for each directory to backup. To
+minimize configuration, I also setup the service file to be a template. This
+requires a bit of inflexible coordination: the directory name must match to a
+part of the bucket name.
 
-### rclone-backup-music.service
+### rclone-backup@.service
 ```
 [Unit]
-Description=RClone Backup of Music
+Description=RClone Backup of %I
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/rclone sync -v --config "/path/to/user/home-dir/.config/rclone/rclone.conf" --fast-list --transfers 20 --exclude ".snapshots/**" /path/to/Music/ backblaze:bucket-for-music
+ExecStart=/usr/bin/rclone sync -v --config "/etc/rclone/backblaze.conf" --fast-list --transfers 20 --filter-from "/etc/rclone/default.filter" /path/to/%i/ backblaze:bucket-for-%i-backups
 ```
 
-The `--config` option is required, since the service will run as root, and my
-RClone is configured in my user directory. This can also be excluded if the
-RClone configuration file lives in the root directory. I include `-v` to have
-some additional output in the journal. Again, `--fast-list` and `--transfers`
-are used to speed up the process and keep costs lower. Then I `--exclude` what I
-don't want (in this case, the directory for BTRFS snapshots).
+The `--config` option allows us to specify the configuration in the `/etc`
+directory. I include `-v` to have some additional output in the journal.
+Again, `--fast-list` and `--transfers` are used to speed up the process and keep
+costs lower. Then I `--filter-from` the "default.filter" file.
 
-Place each of these files (`rclone-backup@.timer` and
-`rclone-backup-music.service`) into `/etc/systemd/system`, and then `sudo
-systemctl enable rclone-backup@music.timer` and `sudo systemctl start
-rclone-backup@music.timer`. If all works, checking `sudo systemctl status
-rclone-backup-music.service` will show the backup started, will show how much
-was transferred, how long it took, and that the service deactivated
-successfully. Repeat for each service file.
+Place each of these files (`rclone-backup@.timer` and `rclone-backup@.service`)
+into `/etc/systemd/system`. For each directory, enable and start the timer
+unit; `systemctl enable rclone-backup@Example.timer` and `systemctl start
+rclone-backup@Example.timer` will backup `/path/to/Example/` to the
+`bucket-for-Example-backups` bucket.
 
 # Next Steps
 
-RClone is a Go binary, which means I could move the entire backup "stack" into a
-user space. Similar to the setup I used for [Syncthing on the Steam
-Deck](/2022/07/04/steam_deck_syncthing.html). I may consider this, if only
-because I like the organization of it. The drive mounts are handled by the
-system root, though, so permissions might get complicated.
-
-More immediately, I'm interested in switching from using `--exclude` to a file
-with `--filter-from`. I could store this in the same path as the RClone
-configuration file (default to the `$HOME/.config/rclone` directory). I could
-also have multiple files, each a filter for the specific backup target.
-
-I am also curious if I can switch from individual service units to a template
-service unit. It would require consolidating naming schemes, mostly. If I have a
-`/path/to/Books` directory I want to backup, then the "Books" in that has to
-also be usable in the bucket name. Conveniently, while bucket names in B2 can
-include upper- and lower-case letters, they are case-insensitive. Of course, it
-would also be used for the additional filter file, if I went that route, but
-that's easy to do.
-
-I also would like to get some sort of metrics and dashboards setup to track
-backup status and statistics. It could be very useful to be notified if a backup
-ever fails.
+I would like to get some sort of metrics and dashboards setup to track backup
+status and statistics. It could be very useful to be notified if a backup ever
+fails.
 
 Eventually, I'll upload this to a repository somewhere for ease of access and
 backup. When I do, I'll update this post.
